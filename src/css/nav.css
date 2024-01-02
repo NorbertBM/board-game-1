@@ -1,0 +1,51 @@
+/* Mobile-first approach: Default styles are for mobile devices */
+a,
+li {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+}
+
+.navbar li {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar li:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive layout - makes the menu and the dropdown content stack on top of each other */
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
