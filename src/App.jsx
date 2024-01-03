@@ -1,15 +1,24 @@
+import React, { useState, useEffect } from "react";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
+import Nav from "./components/nav";
+
 import Home from "./routes/home";
+import About from "./routes/about";
+import Dashboard from "./routes/dashboard";
 export default function App() {
+  // responsive
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width:600px)").matches
+  );
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsMobile(window.matchMedia("(max-width:600px)").matches);
+    });
+  }, []);
+
   return (
-    <div>
-      <h1>Welcome to Board Game Arena!</h1>
-
-      <p>This example test site for the upcoming boar game arena.</p>
-
-      {/* Routes nest inside one another. Nested route paths build upon
-            parent route paths, and nested route elements render inside
-            parent route elements. See the note about <Outlet> below. */}
+    <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -29,47 +38,21 @@ export default function App() {
 function Layout() {
   return (
     <div>
-      {/* A "layout route" is a good place to put markup you want to
-          share across all the pages on your site, like navigation. */}
-      <nav className="navbar">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/nothing-here">Nothing Here</Link>
-          </li>
-        </ul>
-      </nav>
-
+      <Nav />
       <hr />
+      <h1>
+        Welcome to <span className="game-name">"Oneiros"</span> Board Game
+      </h1>
+      {/* createa a hover over the word "Oneiros" when the user howers over the word a popup will apear with the descriptuon of the word  */}
 
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
+      <p>Oneiros is a Greek word meaning "dream".</p>
+      <p>In Greek mythology, Oneiros was the personification of dreams.</p>
+      <img
+        className="oneiros-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/James_Heath_-_Nestor_Appearing_in_a_Dream_to_Agamemnon%2C_1805.jpg/440px-James_Heath_-_Nestor_Appearing_in_a_Dream_to_Agamemnon%2C_1805.jpg"
+        alt=""
+      />
       <Outlet />
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
     </div>
   );
 }

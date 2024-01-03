@@ -1,0 +1,17 @@
+/* create a light and dark loop animation for a image */
+
+.oneiros-img {
+  animation: light 5s ease-in-out infinite;
+}
+
+@keyframes light {
+  0% {
+    filter: brightness(90%);
+  }
+  50% {
+    filter: brightness(200%);
+  }
+  100% {
+    filter: brightness(90%);
+  }
+}
