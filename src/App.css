@@ -1,6 +1,6 @@
 @import url("./css/nav");
 @import url("./css/animations");
-
+@import url("./css/page");
 .App {
   text-align: center;
   background-color: #282c34;
@@ -17,6 +17,7 @@
 
   color: #f4b556;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
