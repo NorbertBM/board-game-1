@@ -22,6 +22,9 @@ ul,
 ol {
   text-align: left;
 }
+p {
+  padding: auto 0.5rem;
+}
 @media (max-width: 400px) {
   /* .story {
     display: flex;

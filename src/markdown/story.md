@@ -96,20 +96,26 @@ game.
 _IDEA — you can conquer your fear by destroying the same demon three times? And if
 you do what happens once you have no fear to manifest anymore?_
 
-THE MANIFESTATION
+## THE MANIFESTATION
+
 So how do you bring about a demon into this world? Well it’s simple: one of the actions
 the player can perform is explore. When you explore you draw a card and depending on
 what the card says, well, that thing happens.
 So for example if you decide to explore and you draw a card that says “manifest fear”,
 you know what fear your character has chosen and you manifest it.
+
 What does that mean? — that means you take the demon figurine assigned to the fear
 and place it in the nearest adjacent square to you.
 You have just manifested your fear. Good luck :)
+
 Why is this not something you want? — because as stated, fears are incredibly hard to
 beat and most of the time you will be running or hiding from them.
+
 Hiding from them? How the hell do you hide in a board game?
 I’m glad you asked. Let’s look at the actions a player can perform.
-THE ACTIONS
+
+## THE ACTIONS
+
 On any given turn the player will be able to do 2 things:
 
 1. Move
@@ -141,49 +147,53 @@ On any given turn the player will be able to do 2 things:
    diﬀerent squares so that you can go around them. Again you have to be a certain
    distance away from them, so you can’t distract a mob that is on the same square as
    you.
-   Now let’s go back to character for a second :)
-   THE CHARACTERS
-   Each of our four main characters share the same stats. They are:
-   HP — manages life and you die when it reaches 0.
-   Stamina — manages movement and actions and can only be replenished per turn (or in
-   some special cases).
-   Sanity — manages the mind of the character and when it reaches max level you go
-   insane and die / lose the game. Sanity can NEVER be reduced, it only goes up.
-   While it is true that our characters all share the same stats, they do however vary slightly.
-   Some will have a bit more stamina, or HP or sanity resistance, or even carry more items.
-   This is a slight variations but one that does make a diﬀerence.
-   You have four characters in total and each has their own backstory and everything.
-   Main dude
-   Shaman
-   Character 3
-   Character 4
-   THE ITEMS
-   This is NOT Diablo hack and slash or Dark Souls boss fights!
-   The items you find in the game are unique, very hard to come by and they oﬀer what
-   might appear to be slight advantages, but in truth they matter a lot.
-   And also, the items can be used for multiple purses, which makes the game more
-   replayable. For instance if you use this key here, it’s gone, but you could’ve used it
-   somewhere else. Next time!
-   Player choice in item usage is very important and makes a huge diﬀerence.
-   How do you win / lose?
-   You lose by getting to 0 HP or going insane.
-   You win by…???
-   IDEA — there have to be at least 10 ways to beat the game which makes playing it over
-   and over again new and exciting.
-   Game impact — everything you do in the game matters and has a huge impact or
-   repercussions.
-   Theme(s)???
-   NPCs
-   While exploring the Nightmare Realm you will come across various NPCs you can interact
-   with. They will give you quests or missions to go on and if you complete them you get
-   stuﬀ.
-   These NPCs are others like you, “lost dreamers”, some who got here by accident, some
-   that want to stay, some that are stuck, etc.
-   Unique abilities
-   These are unique abilities you acquire only once and they are hard to come by. A lot of
-   times you won’t even get them as they are so hard to acquire. Some ideas include:
-   Phasing — going through object — perhaps after killing the shadow demon?
-   Mirror walk — ability to travel between mirrors (which are waypoints basically)
-   Block tiles — ability to block certain tiles when they move?
-   Possible issue — is the game just an endless loop of move, explore, move, explore?
-   MOOD BOARD / THE NIGHTMARE REALM
+
+Now let’s go back to character for a second :)
+
+## THE CHARACTERS
+
+Each of our four main characters share the same stats. They are:
+
+- **HP** — manages life and you die when it reaches 0.
+- **Stamina** — manages movement and actions and can only be replenished per turn (or in
+  some special cases).
+- **Sanity** — manages the mind of the character and when it reaches max level you go insane and die / lose the game. Sanity can NEVER be reduced, it only goes up.
+
+While it is true that our characters all share the same stats, they do however vary slightly.
+Some will have a bit more stamina, or HP or sanity resistance, or even carry more items.
+This is a slight variations but one that does make a diﬀerence.
+You have four characters in total and each has their own backstory and everything.
+Main dude
+Shaman
+Character 3
+Character 4
+THE ITEMS
+This is NOT Diablo hack and slash or Dark Souls boss fights!
+The items you find in the game are unique, very hard to come by and they oﬀer what
+might appear to be slight advantages, but in truth they matter a lot.
+And also, the items can be used for multiple purses, which makes the game more
+replayable. For instance if you use this key here, it’s gone, but you could’ve used it
+somewhere else. Next time!
+Player choice in item usage is very important and makes a huge diﬀerence.
+How do you win / lose?
+You lose by getting to 0 HP or going insane.
+You win by…???
+IDEA — there have to be at least 10 ways to beat the game which makes playing it over
+and over again new and exciting.
+Game impact — everything you do in the game matters and has a huge impact or
+repercussions.
+Theme(s)???
+NPCs
+While exploring the Nightmare Realm you will come across various NPCs you can interact
+with. They will give you quests or missions to go on and if you complete them you get
+stuﬀ.
+These NPCs are others like you, “lost dreamers”, some who got here by accident, some
+that want to stay, some that are stuck, etc.
+Unique abilities
+These are unique abilities you acquire only once and they are hard to come by. A lot of
+times you won’t even get them as they are so hard to acquire. Some ideas include:
+Phasing — going through object — perhaps after killing the shadow demon?
+Mirror walk — ability to travel between mirrors (which are waypoints basically)
+Block tiles — ability to block certain tiles when they move?
+Possible issue — is the game just an endless loop of move, explore, move, explore?
+MOOD BOARD / THE NIGHTMARE REALM
