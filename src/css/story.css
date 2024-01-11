@@ -13,12 +13,15 @@ h1 {
   /* color: red; */
 }
 img {
-  max-width: fit-content;
-  height: 100%;
+  max-width: 100%;
+  height: fit-content;
   object-fit: cover;
 }
 /* Phone format */
-
+ul,
+ol {
+  text-align: left;
+}
 @media (max-width: 400px) {
   /* .story {
     display: flex;

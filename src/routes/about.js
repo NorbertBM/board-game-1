@@ -22,7 +22,7 @@ export default function About() {
   }, [file_name]);
   return (
     <div className="page">
-      <h2>About Us</h2>
+      <h2>The story so far</h2>
       <Markdown>{page}</Markdown>
     </div>
   );

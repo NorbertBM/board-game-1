@@ -52,38 +52,50 @@ What does that mean? — that means that every other number of turns the entire 
 will move (a la Forbidden Desert) and will form a new landscape every time. As such
 things will never be where you found or left them and the player will have to use his wits
 (and a bit of luck) to eﬀectively navigate and escape the realm.
+
 And if that wasn’t enough, there is one more feature about the Nightmare Realm that
 players will have to deal with…
 …the fact that this realm can manifest their fears. These fears are basically the bad NPCs
 that will hunt (and haunt) the player for the duration of the game. They are very hard to kill
 and each have unique abilities depending on what kind of fear they are.
+
 So let’s look at that for a second.
 IDEA — the map also moves vertically, not just left, right, up and down. This allows for
 certain places to be very hard to be reached.
-THE FEARS
+
+## THE FEARS
+
 There are 10 fears to choose from (fear of fire, fear of the dark, etc.) and each players
 either choose one or gets one random at the start of the game.
-Here are some examples:
-Fear of fire — manifests fire demon (can’t go near it, if so, you take 1 damage)
-Fear of dark — manifests shadow demon (can pass through objects)
-Fear of snakes —
-Fear of spiders —
-Fear or noise — acusticuphobia — demon can push and pull you
-Fear of dogs —
-Fear of blood — demon regens, cannot be killed (only a certain specific way)
-Fear of closed spaces —
-Fear of choking —
-Fear of storms —
-Fear of being alone —
-Fear of time —
-Fear of daylight —
-Fear of going blind — demon can’t see you, but it goes by sound
-Fear of speed — fast demon
+
+![primal fears](/img/story/primal-fears.jpeg)
+
+### Here are some examples:
+
+- Fear of fire — manifests fire demon (can’t go near it, if so, you take 1 damage)
+- Fear of dark — manifests shadow demon (can pass through objects)
+- Fear of snakes —
+- Fear of spiders —
+- Fear or noise — acusticuphobia — demon can push and pull you
+- Fear of dogs —
+- Fear of blood — demon regens, cannot be killed (only a certain specific way)
+- Fear of closed spaces —
+- Fear of choking —
+- Fear of storms —
+- Fear of being alone —
+- Fear of time —
+- Fear of daylight —
+- Fear of going blind — demon can’t see you, but it goes by sound
+- Fear of speed — fast demon
+
 Etc.
+
 Fears are important because they aﬀect sanity and they are basically the bad guys of the
 game.
-IDEA — you can conquer your fear by destroying the same demon three times? And if
-you do what happens once you have no fear to manifest anymore?
+
+_IDEA — you can conquer your fear by destroying the same demon three times? And if
+you do what happens once you have no fear to manifest anymore?_
+
 THE MANIFESTATION
 So how do you bring about a demon into this world? Well it’s simple: one of the actions
 the player can perform is explore. When you explore you draw a card and depending on
