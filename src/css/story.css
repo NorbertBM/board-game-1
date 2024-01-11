@@ -8,11 +8,40 @@ a {
   text-decoration: none;
   list-style: none;
 }
+
 h1 {
   /* color: red; */
 }
 img {
-  width: 100%;
+  max-width: fit-content;
   height: 100%;
   object-fit: cover;
+}
+/* Phone format */
+
+@media (max-width: 400px) {
+  /* .story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .story__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  } */
+  img {
+    max-width: 350px;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+  /* .story__text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .story__btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  } */
 }

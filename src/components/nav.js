@@ -14,9 +14,9 @@ export default function Nav() {
         <li>
           <Link to="/dashboard">Dashboard</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/nothing-here">Nothing Here</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
