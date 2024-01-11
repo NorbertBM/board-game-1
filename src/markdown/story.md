@@ -162,38 +162,55 @@ Each of our four main characters share the same stats. They are:
 While it is true that our characters all share the same stats, they do however vary slightly.
 Some will have a bit more stamina, or HP or sanity resistance, or even carry more items.
 This is a slight variations but one that does make a diﬀerence.
+
 You have four characters in total and each has their own backstory and everything.
+
 Main dude
 Shaman
 Character 3
 Character 4
-THE ITEMS
+
+## THE ITEMS
+
 This is NOT Diablo hack and slash or Dark Souls boss fights!
+
 The items you find in the game are unique, very hard to come by and they oﬀer what
 might appear to be slight advantages, but in truth they matter a lot.
+
 And also, the items can be used for multiple purses, which makes the game more
 replayable. For instance if you use this key here, it’s gone, but you could’ve used it
 somewhere else. Next time!
+
 Player choice in item usage is very important and makes a huge diﬀerence.
+
 How do you win / lose?
 You lose by getting to 0 HP or going insane.
 You win by…???
-IDEA — there have to be at least 10 ways to beat the game which makes playing it over
-and over again new and exciting.
+
+_IDEA — there have to be at least 10 ways to beat the game which makes playing it over
+and over again new and exciting._
+
 Game impact — everything you do in the game matters and has a huge impact or
 repercussions.
 Theme(s)???
+
 NPCs
+
 While exploring the Nightmare Realm you will come across various NPCs you can interact
 with. They will give you quests or missions to go on and if you complete them you get
 stuﬀ.
+
 These NPCs are others like you, “lost dreamers”, some who got here by accident, some
 that want to stay, some that are stuck, etc.
 Unique abilities
 These are unique abilities you acquire only once and they are hard to come by. A lot of
 times you won’t even get them as they are so hard to acquire. Some ideas include:
+
 Phasing — going through object — perhaps after killing the shadow demon?
+
 Mirror walk — ability to travel between mirrors (which are waypoints basically)
+
 Block tiles — ability to block certain tiles when they move?
+
 Possible issue — is the game just an endless loop of move, explore, move, explore?
 MOOD BOARD / THE NIGHTMARE REALM

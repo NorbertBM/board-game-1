@@ -4,7 +4,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Root from "./routes/root";
 import Home from "./routes/home";
 import About from "./routes/about";
-import Dashboard from "./routes/dashboard";
+import Quests from "./routes/quests";
 import Index from "./routes/indexRoute";
 export default function App() {
   // responsive
@@ -26,7 +26,7 @@ export default function App() {
           <Route index element={<Index />} />
           <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="quests" element={<Quests />} />
 
           <Route path="*" element={<NoMatch />} />
         </Route>

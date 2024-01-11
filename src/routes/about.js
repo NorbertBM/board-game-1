@@ -20,6 +20,7 @@ export default function About() {
         });
     });
   }, [file_name]);
+
   return (
     <div className="page">
       <h2>The story so far</h2>

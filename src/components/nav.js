@@ -12,7 +12,7 @@ export default function Nav() {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/quests">Quests</Link>
         </li>
         {/* <li>
           <Link to="/nothing-here">Nothing Here</Link>

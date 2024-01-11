@@ -1,0 +1,60 @@
+/* Dependencies */
+/* End Dependencies */
+
+.quest-pad {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #222;
+  text-align: left;
+  display: flex;
+  & header {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+  }
+  .quest__title {
+    font-size: 20px;
+    color: #fff;
+  }
+  .quest_status {
+    margin: 0;
+    padding: 0;
+    /* font-size: 20px; */
+    color: #fff;
+    &.completed {
+      color: #0f0;
+    }
+    &.failed {
+      color: #f00;
+    }
+  }
+  .quest_tasks {
+    .quest_task {
+      margin-bottom: 0.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .task_title {
+      margin: 0;
+      margin-bottom: 0.5rem;
+      padding: 0;
+    }
+    .task_description {
+      margin: 0;
+      padding: 0;
+    }
+    .task_status {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+  }
+}
