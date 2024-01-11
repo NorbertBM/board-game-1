@@ -24,7 +24,7 @@ export default function Dashboard() {
           aplaseszi pe pad.
         </li>
       </ul>
-      <QuestPad />
+      <QuestPad></QuestPad>
     </div>
   );
 }
