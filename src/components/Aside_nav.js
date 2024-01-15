@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css/aside_nav.css";
 export default function Aside_nav() {
   return (
