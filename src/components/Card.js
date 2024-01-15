@@ -29,9 +29,16 @@ export default function Card({
       <div className="img-container">
         <img src={img} alt="img" />
         <div className="unit-parts">
-          <div className="head">{head}</div>
-          <div className="body">{body}</div>
-          <div className="limbs">{limbs}</div>
+          <div className="head">
+            {head} <br /> 3x
+          </div>
+          <div className="body">
+            {body}
+            <br /> 2x
+          </div>
+          <div className="limbs">
+            {limbs} <br /> 1x
+          </div>
         </div>
       </div>
       {children}
