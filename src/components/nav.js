@@ -13,6 +13,9 @@ export default function Nav() {
         </li>
         <li>
           <Link to="/quests">Quests</Link>
+        </li>{" "}
+        <li>
+          <Link to="/guide">Guide</Link>
         </li>
         {/* <li>
           <Link to="/nothing-here">Nothing Here</Link>

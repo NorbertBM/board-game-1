@@ -6,6 +6,10 @@ import Home from "./routes/home";
 import About from "./routes/about";
 import Quests from "./routes/quests";
 import Index from "./routes/indexRoute";
+import Guide from "./routes/guide";
+import IndexGuide from "./routes/indexGuide";
+import Units from "./routes/units";
+import Items from "./routes/items";
 export default function App() {
   // responsive
   //   const [isMobile, setIsMobile] = useState(
@@ -27,7 +31,13 @@ export default function App() {
           <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="quests" element={<Quests />} />
-
+          <Route path="guide" element={<Guide />}>
+            {/* nested routs */}
+            <Route index element={<IndexGuide />} />
+            <Route path="units" element={<Units />} />
+            <Route path="items" element={<Items />} />
+            <Route path="/guide" element={<NoMatch />} />
+          </Route>
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
