@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 export default function units() {
   return (
     <div className="sub-page">

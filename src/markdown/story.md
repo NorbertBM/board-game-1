@@ -70,7 +70,7 @@ either choose one or gets one random at the start of the game.
 
 ![primal fears](/img/story/primal-fears.jpeg)
 
-### Here are some examples:
+### Here are some examples
 
 - Fear of fire — manifests fire demon (can’t go near it, if so, you take 1 damage)
 - Fear of dark — manifests shadow demon (can pass through objects)
@@ -214,3 +214,29 @@ Block tiles — ability to block certain tiles when they move?
 
 Possible issue — is the game just an endless loop of move, explore, move, explore?
 MOOD BOARD / THE NIGHTMARE REALM
+
+## Explore Explained
+
+You start the game with nothing but base stuff. You get your first quest, which is to do
+whatever. At the end of that quest you will get the explore ability.
+This ability however is NOT something you can use willy nilly.
+
+No.
+
+It’s something you have to be very careful when and how you use, not only because of
+what it could discover on the square, but also for another reason…
+…it’s a resource based ability.
+
+Unlike Dash, Distract and Hide, which go on cool down, Explore is a resource based
+ability, which means you have to “power it up” somehow, like a battery.
+
+This means that player choice is again at the forefront because you have to ask yourself
+whether or not you really, really, really want to explore this square when you only have one
+more “energy” in you.
+
+The resource needed for Explore will be scattered around the map, but will NOT be all
+over the place or easy to come by.
+
+Also the ability is powered by a lantern the player has to carry around with them. The
+lantern, which is connected to the Nightmare Realm by some kind of occult magic, has
+the ability to see and reveal things beyond the naked eye.

@@ -8,8 +8,9 @@ import Quests from "./routes/quests";
 import Index from "./routes/indexRoute";
 import Guide from "./routes/guide";
 import IndexGuide from "./routes/indexGuide";
-import Units from "./routes/units";
-import Items from "./routes/items";
+import Units from "./routes/guide_routes/units";
+import Items from "./routes/guide_routes/items";
+import GamePlay from "./routes/guide_routes/game_play";
 export default function App() {
   // responsive
   //   const [isMobile, setIsMobile] = useState(
@@ -36,7 +37,8 @@ export default function App() {
             <Route index element={<IndexGuide />} />
             <Route path="units" element={<Units />} />
             <Route path="items" element={<Items />} />
-            <Route path="/guide" element={<NoMatch />} />
+            <Route path="gameplay" element={<GamePlay />} />
+            <Route path="/guide/" element={<NoMatch />} />
           </Route>
           <Route path="*" element={<NoMatch />} />
         </Route>

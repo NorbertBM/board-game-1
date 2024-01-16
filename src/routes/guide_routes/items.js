@@ -1,6 +1,6 @@
 import React from "react";
-import Item from "../components/Item";
-import DiceRoller from "../components/Dice";
+import Item from "../../components/Item";
+import DiceRoller from "../../components/Dice";
 // import { GiPoisonBottle } from "react-icons/gi";
 export default function items() {
   return (
