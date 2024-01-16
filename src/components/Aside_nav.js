@@ -1,22 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../css/aside_nav.css";
-export default function Aside_nav() {
+export default function Aside_nav({ activate_nav }) {
   return (
-    <aside className="aside-nav">
+    <aside className={`guide_aside-nav ${activate_nav}`}>
       <ul className="nav-items">
         <li>
-          <Link to="/guide/units">Units</Link>
+          <NavLink to="/guide/units">Units</NavLink>
         </li>
         <li>
-          <Link to="/guide/items">Items</Link>
+          <NavLink to="/guide/items">Items</NavLink>
         </li>
         <li>
-          <Link to="/guide/game_play">About</Link>
+          <NavLink to="/guide/game_play">About</NavLink>
         </li>
 
         <li>
-          <Link to="/guide/items">Guide</Link>
+          <NavLink to="/guide/items">Guide</NavLink>
+        </li>
+        <li>
+          <NavLink to="/guide/dice">Guide</NavLink>
         </li>
         {/* <li>
             <Link to="/nothing-here">Nothing Here</Link>
