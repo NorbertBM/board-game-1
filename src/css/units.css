@@ -1,0 +1,26 @@
+.units-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h4 {
+    background-color: #ddd;
+    color: #282c34;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .units-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    transition: all 0.5s ease-in-out;
+    &.hide {
+      display: none;
+    }
+  }
+}

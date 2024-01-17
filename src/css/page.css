@@ -5,9 +5,7 @@
   animation: fade 0.5s ease-in-out, slide 0.5s ease-in-out;
 }
 .sub-page {
-  width: 100%;
-  min-height: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   animation: fade 0.5s ease-in-out, slide 0.5s ease-in-out;
 }
 /* add fade and slide animation for the page  */

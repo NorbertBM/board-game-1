@@ -7,7 +7,7 @@ import About from "./routes/about";
 import Quests from "./routes/quests";
 import Index from "./routes/indexRoute";
 import Guide from "./routes/guide";
-import IndexGuide from "./routes/indexGuide";
+import IndexGuide from "./routes/guide_routes/indexGuide";
 import Units from "./routes/guide_routes/units";
 import Items from "./routes/guide_routes/items";
 import GamePlay from "./routes/guide_routes/game_play";

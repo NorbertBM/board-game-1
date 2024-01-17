@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../../components/Card";
-export default function units() {
+import "../../css/units.css";
+export default function Units() {
+  // show hide units container by adding and removing the state of hide to the class name
+  const [hide, setHide] = useState({ dogs: "", soldiers: "" });
+  const toggleHideDogs = () => {
+    if (hide.dogs === "") {
+      setHide({ ...hide, dogs: "hide" });
+    } else {
+      setHide({ ...hide, dogs: "" });
+    }
+  };
+  const toggleHideSoldiers = () => {
+    if (hide.soldiers === "") {
+      setHide({ ...hide, soldiers: "hide" });
+    } else {
+      setHide({ ...hide, soldiers: "" });
+    }
+  };
   return (
     <div className="sub-page">
       <h2>Units</h2>
@@ -9,90 +26,87 @@ export default function units() {
         className="main-container"
         style={{ display: "flex", gap: 30, flexWrap: "wrap" }}
       >
-        <h4>Dogs</h4>
-        <section
-          className="units-container"
-          style={{ display: "flex", gap: 30, flexWrap: "wrap" }}
-        >
-          {/* Dogs */}
-          <Card
-            card-type="unit_card"
-            card_name={"Mutant Dog"}
-            hp={30}
-            attack={2}
-            img={"/img/units/dogs/301289_Mutant_dog.png"}
-            head={"10-9"}
-            body={"8-6"}
-            limbs={"5-1"}
-          >
-            {" "}
-            <p className="description">
-              Mutant dogs are the most common enemies in the game. They are fast
-              and can easily overwhelm you if you are not careful. They are also
-              the weakest enemies in the game. They are usually found in packs
-              of 3-5.
-            </p>
-          </Card>{" "}
-          <Card
-            card-type="unit_card"
-            card_name={"Mutant Dog"}
-            hp={30}
-            attack={2}
-            img={"/img/units/dogs/301287_Mutant_dog.png"}
-            head={"10-9"}
-            body={"8-6"}
-            limbs={"5-1"}
-          >
-            {" "}
-            <p className="description">
-              Mutant dogs are the most common enemies in the game. They are fast
-              and can easily overwhelm you if you are not careful. They are also
-              the weakest enemies in the game. They are usually found in packs
-              of 3-5.
-            </p>
-          </Card>
-          <Card
-            card-type="unit_card"
-            card_name={"Mutant Dog"}
-            hp={30}
-            attack={2}
-            img={"/img/units/dogs/301290_Mutant_dog.png"}
-            head={"10-9"}
-            body={"8-6"}
-            limbs={"5-1"}
-          >
-            {" "}
-            <p className="description">
-              Mutant dogs are the most common enemies in the game. They are fast
-              and can easily overwhelm you if you are not careful. They are also
-              the weakest enemies in the game. They are usually found in packs
-              of 3-5.
-            </p>
-          </Card>
-          <Card
-            card-type="unit_card"
-            card_name={"Mutant Dog"}
-            hp={30}
-            attack={2}
-            img={"/img/units/dogs/301288_Mutant dog.png"}
-            head={"10-9"}
-            body={"8-6"}
-            limbs={"5-1"}
-          >
-            {" "}
-            <p className="description">
-              Mutant dogs are the most common enemies in the game. They are fast
-              and can easily overwhelm you if you are not careful. They are also
-              the weakest enemies in the game. They are usually found in packs
-              of 3-5.
-            </p>
-          </Card>
+        <section className="units-section dogs">
+          <h4 onClick={() => toggleHideDogs()}>Dogs</h4>
+          <div className={`units-container  ${hide.dogs}`}>
+            {/* Dogs */}
+            <Card
+              card-type="unit_card"
+              card_name={"Mutant Dog"}
+              hp={30}
+              attack={2}
+              img={"/img/units/dogs/301289_Mutant_dog.png"}
+              head={"10-9"}
+              body={"8-6"}
+              limbs={"5-1"}
+            >
+              {" "}
+              <p className="description">
+                Mutant dogs are the most common enemies in the game. They are
+                fast and can easily overwhelm you if you are not careful. They
+                are also the weakest enemies in the game. They are usually found
+                in packs of 3-5.
+              </p>
+            </Card>{" "}
+            <Card
+              card-type="unit_card"
+              card_name={"Mutant Dog"}
+              hp={30}
+              attack={2}
+              img={"/img/units/dogs/301287_Mutant_dog.png"}
+              head={"10-9"}
+              body={"8-6"}
+              limbs={"5-1"}
+            >
+              {" "}
+              <p className="description">
+                Mutant dogs are the most common enemies in the game. They are
+                fast and can easily overwhelm you if you are not careful. They
+                are also the weakest enemies in the game. They are usually found
+                in packs of 3-5.
+              </p>
+            </Card>
+            <Card
+              card-type="unit_card"
+              card_name={"Mutant Dog"}
+              hp={30}
+              attack={2}
+              img={"/img/units/dogs/301290_Mutant_dog.png"}
+              head={"10-9"}
+              body={"8-6"}
+              limbs={"5-1"}
+            >
+              {" "}
+              <p className="description">
+                Mutant dogs are the most common enemies in the game. They are
+                fast and can easily overwhelm you if you are not careful. They
+                are also the weakest enemies in the game. They are usually found
+                in packs of 3-5.
+              </p>
+            </Card>
+            <Card
+              card-type="unit_card"
+              card_name={"Mutant Dog"}
+              hp={30}
+              attack={2}
+              img={"/img/units/dogs/301288_Mutant dog.png"}
+              head={"10-9"}
+              body={"8-6"}
+              limbs={"5-1"}
+            >
+              {" "}
+              <p className="description">
+                Mutant dogs are the most common enemies in the game. They are
+                fast and can easily overwhelm you if you are not careful. They
+                are also the weakest enemies in the game. They are usually found
+                in packs of 3-5.
+              </p>
+            </Card>
+          </div>
         </section>
-        <section
-          className="units-container"
-          style={{ display: "flex", gap: 30, flexWrap: "wrap" }}
-        >
-          {/* Soldiers */}
+        {/* Soldiers */}
+        <section className="units-section soldiers">
+          <h4 onClick={() => toggleHideSoldiers()}>Dogs</h4>
           <Card
             card-type="unit_card"
             card_name={"Mutant Solider"}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../../css/page.css";
 export default function GamePlay() {
   return (
     <div className="sub-page">
