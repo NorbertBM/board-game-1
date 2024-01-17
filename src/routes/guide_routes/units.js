@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Card from "../../components/Card";
+import UnitCard from "../../components/cards/UnitCard";
+
 import "../../css/page.css";
 import "../../css/units.css";
 export default function Units() {
@@ -25,20 +26,12 @@ export default function Units() {
     <div className="sub-page">
       <h2>Units</h2>
 
-      <main
-        className="main-container"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 30,
-          flexWrap: "wrap",
-        }}
-      >
+      <main className="main-container">
         <section className="units-section dogs">
           <h4 onClick={() => toggleHideDogs()}>Dogs</h4>
           <div className={`units-container  ${hide.dogs}`}>
             {/* Dogs */}
-            <Card
+            <UnitCard
               card-type="unit_card"
               card_name={"Mutant Dog"}
               hp={30}
@@ -55,8 +48,8 @@ export default function Units() {
                 are also the weakest enemies in the game. They are usually found
                 in packs of 3-5.
               </p>
-            </Card>{" "}
-            <Card
+            </UnitCard>{" "}
+            <UnitCard
               card-type="unit_card"
               card_name={"Mutant Dog"}
               hp={30}
@@ -73,8 +66,8 @@ export default function Units() {
                 are also the weakest enemies in the game. They are usually found
                 in packs of 3-5.
               </p>
-            </Card>
-            <Card
+            </UnitCard>
+            <UnitCard
               card-type="unit_card"
               card_name={"Mutant Dog"}
               hp={30}
@@ -91,8 +84,8 @@ export default function Units() {
                 are also the weakest enemies in the game. They are usually found
                 in packs of 3-5.
               </p>
-            </Card>
-            <Card
+            </UnitCard>
+            <UnitCard
               card-type="unit_card"
               card_name={"Mutant Dog"}
               hp={30}
@@ -109,14 +102,14 @@ export default function Units() {
                 are also the weakest enemies in the game. They are usually found
                 in packs of 3-5.
               </p>
-            </Card>
+            </UnitCard>
           </div>
         </section>
         {/* Soldiers */}
         <section className="units-section soldiers">
           <h4 onClick={() => toggleHideSoldiers()}>Solider</h4>
           <div className={`units-container  ${hide.soldiers}`}>
-            <Card
+            <UnitCard
               card-type="unit_card"
               card_name={"Mutant Solider"}
               hp={140}
@@ -132,8 +125,8 @@ export default function Units() {
                 if you do not have a good weapon. They are usually found in
                 packs of 2-3.
               </p>
-            </Card>{" "}
-            <Card
+            </UnitCard>{" "}
+            <UnitCard
               card-type="unit_card"
               card_name={"Mutant Solider"}
               hp={140}
@@ -149,8 +142,8 @@ export default function Units() {
                 if you do not have a good weapon. They are usually found in
                 packs of 2-3.
               </p>
-            </Card>{" "}
-            <Card
+            </UnitCard>{" "}
+            <UnitCard
               card-type="unit_card"
               card_name={"Mutant Solider"}
               hp={140}
@@ -166,8 +159,8 @@ export default function Units() {
                 if you do not have a good weapon. They are usually found in
                 packs of 2-3.
               </p>
-            </Card>{" "}
-            <Card
+            </UnitCard>{" "}
+            <UnitCard
               card-type="unit_card"
               card_name={"Mutant Solider"}
               hp={140}
@@ -183,7 +176,7 @@ export default function Units() {
                 if you do not have a good weapon. They are usually found in
                 packs of 2-3.
               </p>
-            </Card>
+            </UnitCard>
           </div>
         </section>
       </main>

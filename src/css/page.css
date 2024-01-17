@@ -8,6 +8,11 @@
   width: 100%;
   padding: 0.5rem;
   animation: fade 0.5s ease-in-out, slide 0.5s ease-in-out;
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 /* add fade and slide animation for the page  */
 

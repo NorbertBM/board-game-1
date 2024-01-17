@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/card.css";
+import "../../css/card.css";
 import { FaHeartbeat } from "react-icons/fa";
 import { RiFocus3Fill } from "react-icons/ri";
-export default function Card({
+export default function UnitCard({
   children,
   card_name,
   card_type,

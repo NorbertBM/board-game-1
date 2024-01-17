@@ -27,8 +27,8 @@
       align-items: center;
       padding: 10px;
       font-weight: 600;
-      box-shadow: inset 0 5px 20px rgba(0, 0, 0, 1);
-      border-radius: 5px;
+      box-shadow: inset 0 5px 20px #000;
+      border-radius: 15px;
       text-shadow: 0 0 15px rgb(163, 11, 11);
     }
     .hp {
@@ -38,8 +38,11 @@
       font-size: 1.5rem;
       background-color: #296a2d;
       padding: 5px 10px;
-      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
       border-radius: 5px;
+      &.exploration {
+        background-color: #1267ac;
+      }
     }
     .attack {
       text-shadow: 0 0 15px rgb(163, 11, 11);
@@ -47,6 +50,12 @@
   }
   .img-container {
     position: relative;
+    .card-img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
     .unit-parts {
       z-index: 100;
       position: absolute;
@@ -71,8 +80,24 @@
     }
   }
   .description {
+    margin: auto;
     font-size: 0.88rem;
     color: #ddd;
     padding: 0 10px;
+  }
+  &.flip {
+    transform: rotateY(180deg);
+    .card-header {
+      background-color: #111;
+      color: #fff;
+      .hp,
+      .attack {
+        box-shadow: inset 0 5px 20px #000;
+        text-shadow: 0 0 15px rgb(163, 11, 11);
+      }
+      .hp {
+        text-shadow: 0 0 15px rgb(163, 11, 11);
+      }
+    }
   }
 }
