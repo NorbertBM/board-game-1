@@ -18,7 +18,7 @@ export default function Guide() {
           <button onClick={() => toggleNav()}>
             <BsFillMenuButtonWideFill />
           </button>
-          <AsideNav activate_nav={activate_nav} />
+          <AsideNav />
         </nav>
         <Outlet className="guide_outlet" />
       </main>
