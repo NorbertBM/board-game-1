@@ -4,6 +4,7 @@ import "../../css/units.css";
 export default function Units() {
   // show hide units container by adding and removing the state of hide to the class name
   const [hide, setHide] = useState({ dogs: "", soldiers: "" });
+  // Toggle hide dogs
   const toggleHideDogs = () => {
     if (hide.dogs === "") {
       setHide({ ...hide, dogs: "hide" });
@@ -11,6 +12,7 @@ export default function Units() {
       setHide({ ...hide, dogs: "" });
     }
   };
+  // Toggle hide soldiers
   const toggleHideSoldiers = () => {
     if (hide.soldiers === "") {
       setHide({ ...hide, soldiers: "hide" });
