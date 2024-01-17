@@ -17,19 +17,7 @@ export default function Nav() {
         <li>
           <Link to="/guide">Guide</Link>
         </li>
-        {/* <li>
-          <Link to="/nothing-here">Nothing Here</Link>
-        </li> */}
       </ul>
     </nav>
   );
 }
-
-// <NavLink
-//   to="/messages"
-//   className={({ isActive, isPending }) =>
-//     isPending ? "pending" : isActive ? "active" : ""
-//   }
-// >
-//   Messages
-// </NavLink>;

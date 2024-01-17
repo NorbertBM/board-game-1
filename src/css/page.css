@@ -1,10 +1,11 @@
 .page {
-  width: 100%;
+  max-width: 1400px;
   min-height: 80vh;
   padding: 0.5rem 0;
   animation: fade 0.5s ease-in-out, slide 0.5s ease-in-out;
 }
 .sub-page {
+  width: 100%;
   padding: 0.5rem;
   animation: fade 0.5s ease-in-out, slide 0.5s ease-in-out;
 }
@@ -18,8 +19,3 @@
     opacity: 1;
   }
 }
-/* @media (max-width: 400px) {
-  .page {
-    padding: 0.5rem 1rem;
-  }
-} */

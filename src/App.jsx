@@ -10,6 +10,7 @@ import Guide from "./routes/guide";
 import IndexGuide from "./routes/guide_routes/indexGuide";
 import Units from "./routes/guide_routes/units";
 import Items from "./routes/guide_routes/items";
+import Explore from "./routes/guide_routes/explore";
 import GamePlay from "./routes/guide_routes/game_play";
 export default function App() {
   // responsive
@@ -37,6 +38,7 @@ export default function App() {
             <Route index element={<IndexGuide />} />
             <Route path="units" element={<Units />} />
             <Route path="items" element={<Items />} />
+            <Route path="explore" element={<Explore />} />
             <Route path="gameplay" element={<GamePlay />} />
             <Route path="/guide/" element={<NoMatch />} />
           </Route>
