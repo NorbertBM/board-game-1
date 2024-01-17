@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWpexplorer } from "react-icons/fa";
 import ExplorationCard from "../../components/cards/ExplorationCard";
+import Slider from "../../components/Slider";
 export default function Explore() {
   return (
     <div className="sub-page">
@@ -15,6 +16,7 @@ export default function Explore() {
       <p>
         Exploration cards are marked with the icon above. You can explore the
       </p>
+      <Slider />
       <section className="exploration-section ">
         <h4>Exploration Cards</h4>
         <div
