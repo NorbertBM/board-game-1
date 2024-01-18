@@ -1,0 +1,33 @@
+.battle-field-container {
+  width: 210mm;
+  height: 297mm;
+  background-color: #000;
+  .battle-field {
+    position: relative;
+    width: 200mm;
+    height: 200mm;
+    margin: 0 auto;
+  }
+  .battle-field-img {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    width: 200mm;
+    height: 200mm;
+  }
+  .battle-field-squares {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .square {
+    width: 25mm;
+    height: 25mm;
+    background-color: transparent;
+    border: 1px solid #aaaa;
+  }
+}

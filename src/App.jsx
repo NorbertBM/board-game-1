@@ -12,6 +12,7 @@ import Units from "./routes/guide_routes/units";
 import Items from "./routes/guide_routes/items";
 import Explore from "./routes/guide_routes/explore";
 import GamePlay from "./routes/guide_routes/game_play";
+import Battle from "./routes/guide_routes/battle";
 export default function App() {
   // responsive
   //   const [isMobile, setIsMobile] = useState(
@@ -40,6 +41,7 @@ export default function App() {
             <Route path="items" element={<Items />} />
             <Route path="explore" element={<Explore />} />
             <Route path="gameplay" element={<GamePlay />} />
+            <Route path="battle" element={<Battle />} />
             <Route path="/guide/" element={<NoMatch />} />
           </Route>
           <Route path="*" element={<NoMatch />} />

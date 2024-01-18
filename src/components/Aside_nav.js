@@ -14,12 +14,14 @@ export default function Aside_nav({ activate_nav }) {
         <li>
           <NavLink to="/guide/explore">Explore</NavLink>
         </li>
-
         <li>
           <NavLink to="/guide/gameplay">Game</NavLink>
         </li>
         <li>
           <NavLink to="/guide/dice">Guide</NavLink>
+        </li>{" "}
+        <li>
+          <NavLink to="/guide/battle">Battle</NavLink>
         </li>
         {/* <li>
             <Link to="/nothing-here">Nothing Here</Link>

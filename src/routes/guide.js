@@ -5,7 +5,7 @@ import AsideNav from "../components/Aside_nav";
 import "../css/guide.css";
 
 export default function Guide() {
-  const [activate_nav, setActivate_nav] = useState("");
+  const [activate_nav, setActivate_nav] = useState("active");
 
   function toggleNav() {
     !activate_nav ? setActivate_nav("active") : setActivate_nav("");
