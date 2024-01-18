@@ -5,7 +5,7 @@ import "../../css/page.css";
 import "../../css/units.css";
 export default function Units() {
   // show hide units container by adding and removing the state of hide to the class name
-  const [hide, setHide] = useState({ dogs: "", soldiers: "" });
+  const [hide, setHide] = useState({ dogs: "", soldiers: "", archer: "" });
   // Toggle hide dogs
   const toggleHideDogs = () => {
     if (hide.dogs === "") {
@@ -20,6 +20,14 @@ export default function Units() {
       setHide({ ...hide, soldiers: "hide" });
     } else {
       setHide({ ...hide, soldiers: "" });
+    }
+  };
+  // Toggle hide archer
+  const toggleHideArcher = () => {
+    if (hide.archer === "") {
+      setHide({ ...hide, archer: "hide" });
+    } else {
+      setHide({ ...hide, archer: "" });
     }
   };
   return (
@@ -166,6 +174,79 @@ export default function Units() {
               hp={140}
               attack={8}
               img={"/img/units/soldiers/323563_Enraged_Mutant_solider.png"}
+              head={"10"}
+              body={"9-6"}
+              limbs={"5-1"}
+            >
+              <p className="description">
+                Mutant soldiers are the second most common enemies in the game.
+                They are stronger than mutant dogs and can easily overwhelm you
+                if you do not have a good weapon. They are usually found in
+                packs of 2-3.
+              </p>
+            </UnitCard>
+          </div>
+        </section>
+        <section className="units-section soldiers">
+          <h4 onClick={() => toggleHideArcher()}>Archer</h4>
+          <div className={`units-container  ${hide.archer}`}>
+            <UnitCard
+              card-type="unit_card"
+              card_name={"Archer"}
+              hp={140}
+              attack={8}
+              img={"/img/units/archers/archer-1.jpeg"}
+              head={"10"}
+              body={"9-6"}
+              limbs={"5-1"}
+            >
+              <p className="description">
+                Mutant soldiers are the second most common enemies in the game.
+                They are stronger than mutant dogs and can easily overwhelm you
+                if you do not have a good weapon. They are usually found in
+                packs of 2-3.
+              </p>
+            </UnitCard>{" "}
+            <UnitCard
+              card-type="unit_card"
+              card_name={"Archer"}
+              hp={140}
+              attack={8}
+              img={"/img/units/archers/archer-2.jpeg"}
+              head={"10"}
+              body={"9-6"}
+              limbs={"5-1"}
+            >
+              <p className="description">
+                Mutant soldiers are the second most common enemies in the game.
+                They are stronger than mutant dogs and can easily overwhelm you
+                if you do not have a good weapon. They are usually found in
+                packs of 2-3.
+              </p>
+            </UnitCard>{" "}
+            <UnitCard
+              card-type="unit_card"
+              card_name={"Archer"}
+              hp={140}
+              attack={8}
+              img={"/img/units/archers/archer-3.jpeg"}
+              head={"10"}
+              body={"9-6"}
+              limbs={"5-1"}
+            >
+              <p className="description">
+                Mutant soldiers are the second most common enemies in the game.
+                They are stronger than mutant dogs and can easily overwhelm you
+                if you do not have a good weapon. They are usually found in
+                packs of 2-3.
+              </p>
+            </UnitCard>{" "}
+            <UnitCard
+              card-type="unit_card"
+              card_name={"Archer"}
+              hp={140}
+              attack={8}
+              img={"/img/units/archers/archer-4.jpeg"}
               head={"10"}
               body={"9-6"}
               limbs={"5-1"}
