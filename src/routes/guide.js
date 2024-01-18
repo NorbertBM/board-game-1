@@ -11,17 +11,19 @@ export default function Guide() {
     !activate_nav ? setActivate_nav("active") : setActivate_nav("");
   }
   return (
-    <div className="page">
-      <h1>Game Guide</h1>
-      <main className="guide">
-        <nav className="guide_nav">
-          <button onClick={() => toggleNav()}>
-            <BsFillMenuButtonWideFill />
-          </button>
-          <AsideNav />
-        </nav>
-        <Outlet className="guide_outlet" />
-      </main>
-    </div>
+    <>
+      <nav className="guide_aside-nav">
+        <button onClick={() => toggleNav()}>
+          <BsFillMenuButtonWideFill />
+        </button>
+        <AsideNav activate_nav={activate_nav} />
+      </nav>
+      <div className="page">
+        <h1>Game Guide</h1>
+        <main className="guide">
+          <Outlet className="guide_outlet" />
+        </main>
+      </div>
+    </>
   );
 }

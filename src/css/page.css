@@ -3,6 +3,7 @@
   min-height: 80vh;
   padding: 0.5rem 0;
   animation: fade 0.5s ease-in-out, slide 0.5s ease-in-out;
+  margin: 0 auto;
 }
 .sub-page {
   width: 100%;

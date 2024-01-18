@@ -1,14 +1,17 @@
 .guide {
   display: grid;
-  grid-template-columns: 100px calc(100% - 100px);
+  /* grid-template-columns: 100px calc(100% - 100px); */
 }
 
 .guide_aside-nav {
+  position: sticky;
+  left: 0;
+  top: 10vh;
   height: 100%;
-  /* transform: translateX(-100vw); */
   transition: transform 0.3s ease-in-out;
+  transform: translateX(-100px);
   &.active {
-    transform: translateX(0);
+    transform: translateX(100px);
   }
   .nav-items {
     list-style: none;
@@ -38,11 +41,11 @@
   }
   .guide_aside-nav {
     position: sticky;
-    top: 50vh;
+    /* top: 50vh; */
     left: 0;
     width: 100%;
     background-color: #000;
-    transform: translateX(0);
+    /* transform: translateX(0); */
     z-index: 100;
 
     transition: transform 0.3s ease-in-out;
@@ -50,7 +53,7 @@
     .nav-items {
       display: flex;
       flex-direction: row;
-      overflow: scroll;
+      overflow-x: scroll;
       li {
         padding: 0.2rem 0;
         text-transform: uppercase;
