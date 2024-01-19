@@ -18,7 +18,7 @@ export default function Aside_nav({ activate_nav }) {
           <NavLink to="/guide/gameplay">Game</NavLink>
         </li>
         <li>
-          <NavLink to="/guide/dice">Guide</NavLink>
+          <NavLink to="/guide/enemies">Enemies</NavLink>
         </li>{" "}
         <li>
           <NavLink to="/guide/battle">Battle</NavLink>
