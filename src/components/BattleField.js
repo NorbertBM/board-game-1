@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/battle-field.css";
+import { MdLocalPrintshop } from "react-icons/md";
 export default function BattleField({
   img,
   name = "Battle Field",
@@ -72,9 +73,18 @@ export default function BattleField({
     }
     return squares;
   }
+  // make the battle field printable on the screen
+
+  const printBattleField = () => {
+    console.log("print");
+    window.print();
+  };
 
   return (
     <div className="battle-field-container">
+      <button className="print-btn" onClick={printBattleField}>
+        <MdLocalPrintshop />
+      </button>
       <h4 className="battle-field-name">{name}</h4>
       <section className="battle-field">
         <img className="battle-field-img" src={img} alt={name} />

@@ -1,7 +1,7 @@
 .battle-field-container {
   width: 210mm;
   height: 297mm;
-  background-color: #000;
+  background-color: #fff;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -51,5 +51,22 @@
       /* Your styles for every 7th child of .square */
       border-right: none;
     }
+  }
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-btn {
+    display: none;
+  }
+  .battle-field-container,
+  .battle-field-container * {
+    visibility: visible;
+  }
+  .battle-field-container {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
