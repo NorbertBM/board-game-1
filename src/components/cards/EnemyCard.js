@@ -59,7 +59,7 @@ export default function EnemyCard({
     } else if (special_1 === "none") {
       setSpecials(special.split(","));
     }
-  }, [specials, special_1, special_2, special]);
+  }, [special_1]);
   return (
     <div className={`enemy-card`}>
       <header className="enemy-card-header">
