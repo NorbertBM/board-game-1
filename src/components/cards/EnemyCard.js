@@ -51,7 +51,7 @@ export default function EnemyCard({
     } else {
       setType(<GiLightningBow color="#111" size={30} />);
     }
-  }, [icon_left]);
+  }, [icon_right]);
 
   // Specials
 
@@ -59,10 +59,10 @@ export default function EnemyCard({
   useEffect(() => {
     if (special_1 === "piercing") {
       setSpecials({ ...specials, icon_1: <GiShieldImpact /> });
-    } else {
+    } else if (special_1 === "none") {
       setSpecials(special.split(","));
     }
-  }, [special]);
+  }, [specials, special_1, special_2, special]);
   return (
     <div className={`card ${size !== "mini" && null} enemy-card ${card_type}`}>
       <header className="enemy-card-header">

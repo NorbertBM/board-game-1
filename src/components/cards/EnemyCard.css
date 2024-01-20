@@ -113,9 +113,7 @@
         .defense,
         .body,
         .attack,
-        .range,
-        .special_1,
-        .special_2 {
+        .range {
           position: relative;
           margin-left: 10px;
           height: 13mm;
@@ -141,6 +139,7 @@
             position: absolute;
             top: 5px;
             font-size: 1.4rem;
+            color: rgb(246, 169, 114) 0%;
           }
         }
       }
@@ -164,8 +163,8 @@
 .special_2 {
   position: relative;
   /* margin-left: 10px; */
-  height: 18mm;
-  width: 18mm;
+  height: 15mm;
+  width: 15mm;
   background-color: #fae9dd;
   /* Create a gradiant inwords  */
   background: rgb(250, 233, 221);
@@ -183,4 +182,11 @@
   align-items: center;
   font-size: 4rem;
   color: #000;
+}
+.special_1 {
+  background: radial-gradient(
+    circle,
+    rgb(246, 169, 114) 0%,
+    rgb(149, 68, 14) 100%
+  );
 }
