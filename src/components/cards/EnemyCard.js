@@ -64,7 +64,7 @@ export default function EnemyCard({
     }
   }, [specials, special_1, special_2, special]);
   return (
-    <div className={`${size !== "mini" && null} enemy-card ${card_type}`}>
+    <div className={`enemy-card`}>
       <header className="enemy-card-header">
         <div className="enemy-lvl">
           {rank}
