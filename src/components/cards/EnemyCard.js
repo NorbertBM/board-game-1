@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./EnemyCard.css";
+import "../../css/enemy-card.css";
 import { GiRank1, GiRank2, GiRank3, GiShieldImpact } from "react-icons/gi";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
@@ -19,9 +19,6 @@ export default function EnemyCard({
   icon_right,
   icon_right_value,
   img,
-
-  card_type,
-  size,
   children,
   attack,
   defense,
