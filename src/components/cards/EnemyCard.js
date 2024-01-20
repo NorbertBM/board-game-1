@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../../css/enemy-card.css";
-import { GiRank1, GiRank2, GiRank3, GiShieldImpact } from "react-icons/gi";
+import {
+  GiRank1,
+  GiRank2,
+  GiRank3,
+  GiShieldImpact,
+  GiCaduceus,
+} from "react-icons/gi";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
 
@@ -23,7 +29,6 @@ export default function EnemyCard({
   attack,
   defense,
   hp,
-  special,
   range,
   special_1,
   special_2,
@@ -56,10 +61,10 @@ export default function EnemyCard({
   useEffect(() => {
     if (special_1 === "piercing") {
       setSpecials({ ...specials, icon_1: <GiShieldImpact /> });
-    } else if (special_1 === "none") {
-      setSpecials(special.split(","));
+    } else if (special_1 === "heal") {
+      setSpecials({ ...specials, icon_1: <GiCaduceus /> });
     }
-  }, [special_1]);
+  }, [specials, special_1]);
   return (
     <div className={`enemy-card`}>
       <header className="enemy-card-header">

@@ -69,6 +69,24 @@ export default function Enemies() {
                 defense. It is the first unit you will encounter in the game.
               </p> */}
             </EnemyCard>{" "}
+            <EnemyCard
+              icon_left={"1"}
+              icon_right={"melee"}
+              card_name={"Skeleton Warrior"}
+              img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
+              defense={"2"}
+              hp={"2"}
+              attack={1}
+              special={"none"}
+              range={3}
+              special_1={"heal"}
+            >
+              {" "}
+              {/* <p className="description">
+                Skeleton Worrier is a basic melee unit with low attack and
+                defense. It is the first unit you will encounter in the game.
+              </p> */}
+            </EnemyCard>{" "}
           </div>
         </section>
         {/* Soldiers */}
