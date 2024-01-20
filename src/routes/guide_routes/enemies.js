@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import EnemyCard from "../../components/cards/EnemyCard";
-
+import { GiLightningBow, GiPocketBow, GiBroadsword } from "react-icons/gi";
 import "../../css/page.css";
 // import "../../css/units.css";
 export default function Enemies() {
@@ -34,27 +34,40 @@ export default function Enemies() {
 
   return (
     <div className="sub-page">
-      <h2>Units</h2>
+      <h2>Enemies</h2>
 
+      <h3>Enemy placement</h3>
+      <p>The placement of the enemy is determined by two factors</p>
+      <ul>
+        <p>
+          Enemy type: Range, {<GiPocketBow />}, Melee {<GiBroadsword />}, or
+          Magic {<GiLightningBow />}, to be placed on the according icon.
+        </p>
+
+        <p>Enemy level</p>
+      </ul>
       <main className="main-container">
         <section className="units-section lvl_1">
           <h4 onClick={() => toggleHideLvl_1()}>Lvl_1</h4>
           <div className={`units-container  ${hide.lvl_1}`}>
             {/* lvl_1 */}
             <EnemyCard
-              icon_left={"2"}
-              card_name={"Skeleton Worrier"}
+              icon_left={"1"}
+              icon_right={"melee"}
+              card_name={"Skeleton Warrior"}
               img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
-              defence={"2"}
+              defense={"2"}
               hp={"2"}
+              attack={1}
+              special={"none"}
+              range={3}
+              special_1={"piercing"}
             >
               {" "}
-              <p className="description">
-                Mutant dogs are the most common enemies in the game. They are
-                fast and can easily overwhelm you if you are not careful. They
-                are also the weakest enemies in the game. They are usually found
-                in packs of 3-5.
-              </p>
+              {/* <p className="description">
+                Skeleton Worrier is a basic melee unit with low attack and
+                defense. It is the first unit you will encounter in the game.
+              </p> */}
             </EnemyCard>{" "}
           </div>
         </section>

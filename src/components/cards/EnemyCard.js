@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
-import "../../css/card.css";
-import { GiRank1, GiRank2, GiRank3 } from "react-icons/gi";
+import "./EnemyCard.css";
+import { GiRank1, GiRank2, GiRank3, GiShieldImpact } from "react-icons/gi";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
-import { GiCrossedSwords } from "react-icons/gi";
+
 import { BsFillEyeFill } from "react-icons/bs";
+import {
+  GiSwordsEmblem,
+  GiLightningBow,
+  GiPocketBow,
+  GiBroadsword,
+} from "react-icons/gi";
+
 export default function EnemyCard({
   card_name,
   icon_left,
@@ -17,57 +24,88 @@ export default function EnemyCard({
   size,
   children,
   attack,
-  defence,
+  defense,
   hp,
   special,
   range,
+  special_1,
+  special_2,
 }) {
   const [rank, setRank] = useState(<GiRank1 />);
   useEffect(() => {
     if (icon_left === "2") {
-      setRank(<GiRank2 size={30} />);
+      setRank(<GiRank2 color="#111" size={30} />);
     } else if (icon_left === "3") {
-      setRank(<GiRank3 size={30} />);
+      setRank(<GiRank3 color="#111" size={30} />);
     } else {
-      setRank(<GiRank1 size={30} />);
+      setRank(<GiRank1 color="#111" size={30} />);
     }
   }, [icon_left]);
 
+  const [type, setType] = useState(<GiLightningBow />);
+  useEffect(() => {
+    if (icon_right === "range") {
+      setType(<GiPocketBow color="#111" size={30} />);
+    } else if (icon_right === "melee") {
+      setType(<GiBroadsword color="#111" size={30} />);
+    } else {
+      setType(<GiLightningBow color="#111" size={30} />);
+    }
+  }, [icon_left]);
+
+  // Specials
+
+  const [specials, setSpecials] = useState({ icon_1: "", icon_2: "" });
+  useEffect(() => {
+    if (special_1 === "piercing") {
+      setSpecials({ ...specials, icon_1: <GiShieldImpact /> });
+    } else {
+      setSpecials(special.split(","));
+    }
+  }, [special]);
   return (
-    <div className={`card ${size !== "mini" && null} game-card ${card_type}`}>
-      <header className="card-header">
-        <p className="icon-left">
+    <div className={`card ${size !== "mini" && null} enemy-card ${card_type}`}>
+      <header className="enemy-card-header">
+        <div className="enemy-lvl">
           {rank}
           {icon_left_value === undefined ? null : icon_left_value}
-        </p>
+        </div>
         <h2 className="card-name"> {card_name}</h2>
-        <p className="icon-right">
-          {icon_right}
+        <div className="icon-right">
+          {type}
           {icon_right_value === undefined ? null : icon_right_value}
-        </p>
+        </div>
       </header>
-      <div className="img-container">
-        <div className="unit-parts">
-          <div className="defance">
-            <p className="value">{defence}</p>{" "}
-            <MdShield color="#111" size={35} />
+      <div className="enemy-details-container">
+        <div className="enemy-details">
+          <div className="defense">
+            <p className="value">{defense}</p>{" "}
+            <MdShield color="#111" size={45} />
           </div>
           <div className="body">
-            <p className="value">{hp}</p> <IoIosHeart color="#111" size={35} />
+            <p className="value">{hp}</p> <IoIosHeart color="#111" size={50} />
           </div>
           <div className="attack">
-            {attack} <GiCrossedSwords color="#111" size={35} />
+            <p className="value">{attack}</p>
+            <GiSwordsEmblem color="#111" size={50} />
           </div>
           <div className="range">
-            {range} <BsFillEyeFill color="#111" size={35} />
+            <p className="value"> {range} </p>
+            <BsFillEyeFill color="#111" size={50} />
           </div>
           {/* <div className="special">
             {special} <br /> 1x
           </div> */}
         </div>
-        <img src={img} alt="img" className="card-img" />
+        <section className="img-and-specials">
+          <img src={img} alt="img" className="enemy-img" />
+          <section className="specials">
+            <div className="special_1">{specials.icon_1}</div>
+            <div className="special_2">{specials.icon_2}</div>
+          </section>
+        </section>
       </div>
-      {/* {children} */}
+      {children}
     </div>
   );
 }

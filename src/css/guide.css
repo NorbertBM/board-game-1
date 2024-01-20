@@ -8,10 +8,22 @@
   left: 0;
   top: 10vh;
   height: 100%;
+  width: fit-content;
   transition: transform 0.3s ease-in-out;
   transform: translateX(-100px);
   &.active {
     transform: translateX(100px);
+  }
+  button {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
   }
   .nav-items {
     list-style: none;

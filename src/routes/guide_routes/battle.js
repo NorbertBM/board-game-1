@@ -1,7 +1,7 @@
 import React from "react";
 import BattleField from "../../components/BattleField";
-import { GiLightningBow, GiPocketBow } from "react-icons/gi";
-import { GiBroadsword } from "react-icons/gi";
+import { GiLightningBow, GiPocketBow, GiBroadsword } from "react-icons/gi";
+
 import { GiStoneWall } from "react-icons/gi";
 import { BsPersonCircle } from "react-icons/bs";
 export default function Battle() {
