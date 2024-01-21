@@ -20,6 +20,7 @@ import {
 
 export default function EnemyCard({
   card_name,
+  customImgStyle,
   icon_left,
   icon_left_value,
   icon_right,
@@ -100,7 +101,12 @@ export default function EnemyCard({
           </div> */}
         </div>
         <section className="img-and-specials">
-          <img src={img} alt="img" className="enemy-img" />
+          <img
+            src={img}
+            alt="img"
+            style={customImgStyle}
+            className="enemy-img"
+          />
           <section className="specials">
             <div className="special_1">{specials.icon_1}</div>
             <div className="special_2">{specials.icon_2}</div>

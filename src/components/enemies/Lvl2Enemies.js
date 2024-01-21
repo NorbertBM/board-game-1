@@ -1,12 +1,12 @@
 import React from "react";
-import EnemyCard from "../../components/cards/EnemyCard";
-export default function Lvl1Enemies() {
+
+export default function Lvl2Enemies() {
   return (
     <>
       {" "}
       {/* lvl_1 */}
       <EnemyCard
-        icon_left={"1"}
+        icon_left={"2"}
         icon_right={"melee"}
         card_name={"Skeleton Warrior"}
         img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
@@ -20,7 +20,7 @@ export default function Lvl1Enemies() {
       <EnemyCard
         card_name={"Skeleton Mage"}
         customImgStyle={{ border: "none", width: "45mm", height: "45mm" }}
-        icon_left={"1"}
+        icon_left={"2"}
         icon_right={"magic"}
         img={
           "/img/units/enemies/lvl_1/skeleton-mage-warrior-1 Background Removed.png"
@@ -34,9 +34,9 @@ export default function Lvl1Enemies() {
       >
         {" "}
         {/* <p className="description">
-      Skeleton Worrier is a basic melee unit with low attack and
-      defense. It is the first unit you will encounter in the game.
-    </p> */}
+    Skeleton Worrier is a basic melee unit with low attack and
+    defense. It is the first unit you will encounter in the game.
+  </p> */}
       </EnemyCard>{" "}
     </>
   );
