@@ -1,4 +1,5 @@
 import React from "react";
+import EnemyCard from "../../components/cards/EnemyCard";
 
 export default function Lvl2Enemies() {
   return (
@@ -19,7 +20,6 @@ export default function Lvl2Enemies() {
       ></EnemyCard>{" "}
       <EnemyCard
         card_name={"Skeleton Mage"}
-        customImgStyle={{ border: "none", width: "45mm", height: "45mm" }}
         icon_left={"2"}
         icon_right={"magic"}
         img={

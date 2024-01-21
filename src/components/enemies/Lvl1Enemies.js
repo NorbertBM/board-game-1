@@ -19,25 +19,16 @@ export default function Lvl1Enemies() {
       ></EnemyCard>{" "}
       <EnemyCard
         card_name={"Skeleton Mage"}
-        customImgStyle={{ border: "none", width: "45mm", height: "45mm" }}
         icon_left={"1"}
         icon_right={"magic"}
-        img={
-          "/img/units/enemies/lvl_1/skeleton-mage-warrior-1 Background Removed.png"
-        }
+        img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-1.jpeg"}
         defense={"1"}
         hp={"1"}
         attack={1}
         special={"none"}
         range={3}
         special_1={"heal"}
-      >
-        {" "}
-        {/* <p className="description">
-      Skeleton Worrier is a basic melee unit with low attack and
-      defense. It is the first unit you will encounter in the game.
-    </p> */}
-      </EnemyCard>{" "}
+      ></EnemyCard>{" "}
     </>
   );
 }

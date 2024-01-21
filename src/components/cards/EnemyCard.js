@@ -12,8 +12,8 @@ import { IoIosHeart } from "react-icons/io";
 
 import { BsFillEyeFill } from "react-icons/bs";
 import {
+  GiMagicSwirl,
   GiSwordsEmblem,
-  GiLightningBow,
   GiPocketBow,
   GiBroadsword,
 } from "react-icons/gi";
@@ -45,14 +45,14 @@ export default function EnemyCard({
     }
   }, [icon_left]);
 
-  const [type, setType] = useState(<GiLightningBow />);
+  const [type, setType] = useState(<GiMagicSwirl />);
   useEffect(() => {
     if (icon_right === "range") {
       setType(<GiPocketBow color="#111" size={30} />);
     } else if (icon_right === "melee") {
       setType(<GiBroadsword color="#111" size={30} />);
     } else {
-      setType(<GiLightningBow color="#111" size={30} />);
+      setType(<GiMagicSwirl color="#111" size={30} />);
     }
   }, [icon_right]);
 

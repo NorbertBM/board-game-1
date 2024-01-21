@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { GiLightningBow, GiPocketBow, GiBroadsword } from "react-icons/gi";
 import "../../css/page.css";
 import Lvl1Enemies from "../../components/enemies/Lvl1Enemies";
+import Lvl2Enemies from "../../components/enemies/Lvl2Enemies";
+import Lvl3Enemies from "../../components/enemies/Lvl3Enemies";
 // import "../../css/units.css";
 export default function Enemies() {
   // show hide units container by adding and removing the state of hide to the class name
@@ -57,11 +59,16 @@ export default function Enemies() {
         {/* Soldiers */}
         <section className="units-section soldiers">
           <h4 onClick={() => toggleHideLvl_2()}>Solider</h4>
-          <div className={`units-container  ${hide.soldiers}`}></div>
+          <div className={`units-container  ${hide.lvl_2}`}>
+            <Lvl2Enemies />
+          </div>
         </section>
         <section className="units-section soldiers">
           <h4 onClick={() => toggleHideLvl_3()}>Archer</h4>
-          <div className={`units-container  ${hide.archer}`}></div>
+          <div className={`units-container  ${hide.lvl_3}`}>
+            {" "}
+            <Lvl3Enemies />
+          </div>
         </section>
       </main>
     </div>
