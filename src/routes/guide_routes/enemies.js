@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EnemyCard from "../../components/cards/EnemyCard";
+
 import { GiLightningBow, GiPocketBow, GiBroadsword } from "react-icons/gi";
 import "../../css/page.css";
 import Lvl1Enemies from "../../components/enemies/Lvl1Enemies";
