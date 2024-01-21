@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import EnemyCard from "../../components/cards/EnemyCard";
 import { GiLightningBow, GiPocketBow, GiBroadsword } from "react-icons/gi";
 import "../../css/page.css";
+import Lvl1Enemies from "../../components/enemies/Lvl1Enemies";
 // import "../../css/units.css";
 export default function Enemies() {
   // show hide units container by adding and removing the state of hide to the class name
@@ -50,43 +51,7 @@ export default function Enemies() {
         <section className="units-section lvl_1">
           <h4 onClick={() => toggleHideLvl_1()}>Lvl_1</h4>
           <div className={`units-container  ${hide.lvl_1}`}>
-            {/* lvl_1 */}
-            <EnemyCard
-              icon_left={"1"}
-              icon_right={"melee"}
-              card_name={"Skeleton Warrior"}
-              img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
-              defense={"2"}
-              hp={"2"}
-              attack={1}
-              special={"none"}
-              range={3}
-              special_1={"piercing"}
-            >
-              {" "}
-              {/* <p className="description">
-                Skeleton Worrier is a basic melee unit with low attack and
-                defense. It is the first unit you will encounter in the game.
-              </p> */}
-            </EnemyCard>{" "}
-            <EnemyCard
-              icon_left={"1"}
-              icon_right={"melee"}
-              card_name={"Skeleton Warrior"}
-              img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
-              defense={"2"}
-              hp={"2"}
-              attack={1}
-              special={"none"}
-              range={3}
-              special_1={"heal"}
-            >
-              {" "}
-              {/* <p className="description">
-                Skeleton Worrier is a basic melee unit with low attack and
-                defense. It is the first unit you will encounter in the game.
-              </p> */}
-            </EnemyCard>{" "}
+            <Lvl1Enemies />
           </div>
         </section>
         {/* Soldiers */}

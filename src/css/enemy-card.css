@@ -1,7 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 
 .enemy-card {
-  /* font-family: "Philosopher", sans-serif; */
+  font-family: "Philosopher", sans-serif;
   color: #fae9dd;
   width: 63.5mm;
   height: 88mm;
@@ -139,7 +139,8 @@
           position: absolute;
           top: 5px;
           font-size: 1.4rem;
-          color: rgb(246, 169, 114) 0%;
+          color: rgb(245, 162, 103);
+          /* color: #95440e; */
         }
       }
     }
