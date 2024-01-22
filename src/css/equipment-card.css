@@ -65,75 +65,102 @@
   .stats-container {
     /* width: 63mm; */
     position: relative;
+    height: 70mm;
     display: grid;
 
     grid-template-columns: 1fr 1fr;
     gap: 35mm;
     margin: 0 2.5mm;
     max-height: 100%;
-    .stats-required,
-    .attributes-gained {
+    .stats-required {
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       background: rgb(250, 233, 221);
       box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
       border: 1px solid #111;
       border-radius: 15px;
-      height: 45mm;
+      height: 36mm;
+      width: 11mm;
       z-index: 1;
       .strength,
       .agility,
       .intelligence,
-      .spirit,
-      .armor,
-      .attack,
-      .resistance {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-      }
-      .value {
-        color: #111;
-      }
-    }
-    .stats-required {
-      /* .strength,
-      .agility,
-      .intelligence,
-      .spirit,
-      .armor,
-      .attack,
-      .resistance {
+      .spirit {
         display: flex;
         justify-content: center;
         align-items: center;
-      } */
+        flex-direction: row;
+        width: 100%;
+        height: 12mm;
+        height: 5mm;
+        border-bottom: 1px solid #111;
+        &:last-child {
+          border-bottom: none;
+        }
+        padding-bottom: 2mm;
+      }
+      .value {
+        color: #111;
+        border-left: 1px solid #111;
+        padding-left: 1mm;
+        font-size: 5mm;
+      }
     }
-    .attributes-gained {
-      .armor,
-      .attack,
-      .resistance {
-        /* font-size: 0.8rem; */
-        /* font-weight: 600; */
 
+    .attributes-gained {
+      position: absolute;
+      top: 55mm;
+      left: 0;
+      width: 100%;
+      height: 13mm;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      background: #fae9dd;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+      border: 1px solid #111;
+      border-radius: 15px;
+      .defense,
+      .health,
+      .attack,
+      .range {
+        position: relative;
+        align-items: center;
+        flex-direction: column;
         .value {
-          /* font-size: 0.8rem; */
-          /* font-weight: 600;
-          color: #23023d; */
+          color: darkgoldenrod;
+          position: absolute;
+          top: 0;
+          left: 4mm;
         }
       }
     }
     .img-and-specials {
-      & img {
+      display: flex;
+      flex-direction: column;
+      .equipment-img {
         position: absolute;
         top: 0;
-        left: 0;
-        height: 60%;
+        left: 13mm;
+        height: 40mm;
         z-index: 0;
+      }
+      .description {
+        position: absolute;
+        top: 37mm;
+        height: 13mm;
+        left: 0;
+        background: #fae9dd;
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+        border: 1mm solid #000;
+        border-radius: 15px;
+        color: #111;
+        font-size: 3.5mm;
       }
     }
   }

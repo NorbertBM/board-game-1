@@ -5,9 +5,9 @@ import {
   GiHand,
   GiHeadbandKnot,
   GiCapeArmor,
-  GiSwitchWeapon,
+  // GiSwitchWeapon,
   GiGears,
-  GiHorseshoe,
+  // GiHorseshoe,
   GiSwordsEmblem,
 } from "react-icons/gi";
 
@@ -82,18 +82,18 @@ export default function EquipmentCard({
         <div className="attributes-gained">
           <div className="defense">
             <p className="value">{defense}</p>{" "}
-            <MdShield color="#111" size={45} />
+            <MdShield color="#111" size={40} />
           </div>
-          <div className="body">
-            <p className="value">{hp}</p> <IoIosHeart color="#111" size={50} />
+          <div className="health">
+            <p className="value">{hp}</p> <IoIosHeart color="#111" size={40} />
           </div>
           <div className="attack">
             <p className="value">{attack}</p>
-            <GiSwordsEmblem color="#111" size={50} />
+            <GiSwordsEmblem color="#111" size={40} />
           </div>
           <div className="range">
             <p className="value"> {range} </p>
-            <BsFillEyeFill color="#111" size={50} />
+            <BsFillEyeFill color="#111" size={40} />
           </div>
         </div>
         <section className="img-and-specials">
@@ -101,9 +101,14 @@ export default function EquipmentCard({
             src={img}
             alt="img"
             style={customImgStyle}
-            className="enemy-img"
+            className="equipment-img"
           />
+
           <section className="specials">
+            <p className="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+              facilis obcaecati
+            </p>
             {/* <div className="special_1">{specials.icon_1}</div>
             <div className="special_2">{specials.icon_2}</div> */}
           </section>
