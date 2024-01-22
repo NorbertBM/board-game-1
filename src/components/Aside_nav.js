@@ -12,6 +12,9 @@ export default function Aside_nav({ activate_nav }) {
           <NavLink to="/guide/items">Items</NavLink>
         </li>
         <li>
+          <NavLink to="/guide/equipment">Equipment</NavLink>
+        </li>
+        <li>
           <NavLink to="/guide/explore">Explore</NavLink>
         </li>
         <li>
