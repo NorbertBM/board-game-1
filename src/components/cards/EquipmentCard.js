@@ -89,7 +89,7 @@ export default function EquipmentCard({
           </div>
           <div className="attack">
             <p className="value">{attack}</p>
-            <GiSwordsEmblem color="#111" size={40} />
+            <GiSwordsEmblem color="#111" size={41} />
           </div>
           <div className="range">
             <p className="value"> {range} </p>
