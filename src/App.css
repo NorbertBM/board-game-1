@@ -1,6 +1,7 @@
 @import url("./css/nav");
 @import url("./css/animations");
 @import url("./css/page");
+@import url("./css/enemy-card.css");
 .App {
   text-align: center;
   background-color: #282c34;
@@ -50,4 +51,21 @@ code {
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace; */
   font-family: "Niconne", cursive;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-btn {
+    display: none;
+  }
+  .battle-field-container,
+  .battle-field-container * {
+    visibility: visible;
+  }
+  .battle-field-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }

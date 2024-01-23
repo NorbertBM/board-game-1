@@ -10,6 +10,7 @@ import Guide from "./routes/guide";
 import IndexGuide from "./routes/guide_routes/indexGuide";
 import Units from "./routes/guide_routes/units";
 import Items from "./routes/guide_routes/items";
+import Abilities from "./routes/guide_routes/abilities";
 import Explore from "./routes/guide_routes/explore";
 import GamePlay from "./routes/guide_routes/game_play";
 import Enemies from "./routes/guide_routes/enemies";
@@ -40,6 +41,7 @@ export default function App() {
             {/* nested routs */}
             <Route index element={<IndexGuide />} />
             <Route path="units" element={<Units />} />
+            <Route path="abilities" element={<Abilities />} />
             <Route path="items" element={<Items />} />
             <Route path="equipment" element={<Equipment />} />
             <Route path="explore" element={<Explore />} />
