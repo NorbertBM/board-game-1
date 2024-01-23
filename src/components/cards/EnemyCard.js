@@ -65,7 +65,7 @@ export default function EnemyCard({
     } else if (special_1 === "heal") {
       setSpecials({ ...specials, icon_1: <GiCaduceus /> });
     }
-  }, [special_1, specials]);
+  }, [special_1]);
 
   return (
     <div className={`enemy-card`}>
