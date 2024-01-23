@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWpexplorer } from "react-icons/fa";
-import { FaEye } from "react-icons/fa6";
+// import { FaEye } from "react-icons/fa6";
 import { GiWingfoot } from "react-icons/gi";
 import "../../css/ability-card.css";
 export default function AbilityCard({
