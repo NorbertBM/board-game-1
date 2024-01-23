@@ -14,8 +14,10 @@ import {
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
 import { BsFillEyeFill } from "react-icons/bs";
+
 export default function EquipmentCard({
   card_name,
+  isSetItem,
   icon_left,
   icon_left_value,
   icon_right,
@@ -40,8 +42,14 @@ export default function EquipmentCard({
       setEquipmentType(<GiCapeArmor color="#111" size={30} />);
     }
   }, [icon_left]);
+  const [set_item, setSetItem] = useState("");
+  useEffect(() => {
+    if (isSetItem === true) {
+      setSetItem("set-item");
+    }
+  }, [isSetItem]);
   return (
-    <div className="equipment-card">
+    <div className={`equipment-card ${set_item}`}>
       <header className="equipment-card-header">
         <div className="icon-left">
           {icon_left === undefined ? (
