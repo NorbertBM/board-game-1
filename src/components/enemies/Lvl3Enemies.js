@@ -10,7 +10,7 @@ export default function Lvl3Enemies() {
         icon_left={"3"}
         icon_right={"melee"}
         card_name={"Skeleton Warrior"}
-        img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
+        img={"/img/units/enemies/lvl_1/skeleton-archer-warrior-2.jpeg"}
         defense={"2"}
         hp={"2"}
         attack={1}
@@ -22,9 +22,7 @@ export default function Lvl3Enemies() {
         card_name={"Skeleton Mage"}
         icon_left={"3"}
         icon_right={"magic"}
-        img={
-          "/img/units/enemies/lvl_1/skeleton-mage-warrior-1 Background Removed.png"
-        }
+        img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-3.jpeg"}
         defense={"1"}
         hp={"1"}
         attack={1}

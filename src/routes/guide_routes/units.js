@@ -30,6 +30,7 @@ export default function Units() {
       setHide({ ...hide, archer: "" });
     }
   };
+
   return (
     <div className="sub-page">
       <h2>Units</h2>

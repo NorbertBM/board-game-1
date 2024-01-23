@@ -1,6 +1,6 @@
 import React from "react";
 import AbilityCard from "../../components/cards/AbilityCard";
-
+import { GiInfinity } from "react-icons/gi";
 export default function Abilities() {
   return (
     <div className="sub-page">
@@ -31,12 +31,19 @@ export default function Abilities() {
       </p>
       <h3>Enemy placement</h3>
       <p>The placement of the enemy is determined by two factors</p>
+      {/* create a infinity sign */}
       <main className="main-container">
         <section className="units-section lvl_1">
           <AbilityCard
             card_name={"Hide"}
+            stamina={<GiInfinity />}
             img={"/img/abilities/ability-hide-1.jpeg"}
-          ></AbilityCard>
+          >
+            <p className="description">
+              Use all stamina to hide from enemies. Enemies will move to your
+              last known location.
+            </p>
+          </AbilityCard>
         </section>
       </main>
     </div>

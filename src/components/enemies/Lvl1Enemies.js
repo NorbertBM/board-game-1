@@ -1,37 +1,12 @@
 import React from "react";
 import EnemyCard from "../../components/cards/EnemyCard";
-import { MdLocalPrintshop } from "react-icons/md";
-import { EnemyStyle } from "./EnemyStyle";
-export default function Lvl1Enemies() {
-  const printEnemyCard = () => {
-    console.log("print");
-    const enemyCard = document.getElementById("enemy-card");
-    if (enemyCard) {
-      const printWindow = window.open("", "_blank");
-      printWindow.document.write(enemyCard.innerHTML);
-      printWindow.document.write(
-        `<style>
-${EnemyStyle}
-        @media print {
-          .print-btn {
-            display: none;
-          }
-        }
-        </style>`
-      );
-      printWindow.document.close();
-      printWindow.print();
-    }
-  };
 
+export default function Lvl1Enemies() {
   return (
     <>
       {/* lvl_1 */}
 
       <>
-        <button className="print-btn" onClick={printEnemyCard}>
-          <MdLocalPrintshop />
-        </button>
         <EnemyCard
           icon_left={"1"}
           icon_right={"melee"}
