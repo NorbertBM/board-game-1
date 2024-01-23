@@ -17,7 +17,7 @@ import { BsFillEyeFill } from "react-icons/bs";
 
 export default function EquipmentCard({
   card_name,
-  isSetItem,
+  equipmentRarity,
   icon_left,
   icon_left_value,
   icon_right,
@@ -31,6 +31,9 @@ export default function EquipmentCard({
   defense,
   hp,
   range,
+  children,
+  card_description_title = "Description",
+  card_description_text = "Lor em ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.",
 }) {
   const [equipmentType, setEquipmentType] = useState(<GiCapeArmor />);
   useEffect(() => {
@@ -42,14 +45,31 @@ export default function EquipmentCard({
       setEquipmentType(<GiCapeArmor color="#111" size={30} />);
     }
   }, [icon_left]);
-  const [set_item, setSetItem] = useState("");
+
+  const [rarity, setRarity] = useState("normal");
   useEffect(() => {
-    if (isSetItem === true) {
-      setSetItem("set-item");
+    if (equipmentRarity === "set") {
+      setRarity("set-item");
+    } else if (equipmentRarity === "unique") {
+      setRarity("unique");
+    } else {
+      setRarity("normal");
     }
-  }, [isSetItem]);
+  }, [equipmentRarity]);
+
+  const [showCardDescription, setShowCardDescription] = useState("");
+  const handleShowCardDescription = () => {
+    if (showCardDescription === "") {
+      setShowCardDescription("show");
+    } else {
+      setShowCardDescription("");
+    }
+  };
   return (
-    <div className={`equipment-card ${set_item}`}>
+    <div
+      className={`equipment-card ${rarity}`}
+      onClick={() => handleShowCardDescription()}
+    >
       <header className="equipment-card-header">
         <div className="icon-left">
           {icon_left === undefined ? (
@@ -89,18 +109,19 @@ export default function EquipmentCard({
         </div>
         <div className="attributes-gained">
           <div className="defense">
-            <p className="value">{defense}</p>{" "}
+            <p className="value">{!defense ? null : defense} </p>{" "}
             <MdShield color="#111" size={40} />
           </div>
           <div className="health">
-            <p className="value">{hp}</p> <IoIosHeart color="#111" size={40} />
+            <p className="value">{!hp ? null : hp}</p>{" "}
+            <IoIosHeart color="#111" size={40} />
           </div>
           <div className="attack">
-            <p className="value">{attack}</p>
+            <p className="value">{!attack ? null : attack}</p>
             <GiSwordsEmblem color="#111" size={41} />
           </div>
           <div className="range">
-            <p className="value"> {range} </p>
+            <p className="value"> {!range ? null : range} </p>
             <BsFillEyeFill color="#111" size={40} />
           </div>
         </div>
@@ -113,14 +134,15 @@ export default function EquipmentCard({
           />
 
           <section className="specials">
-            <p className="description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-              facilis obcaecati
-            </p>
+            <p className="description">{children}</p>
             {/* <div className="special_1">{specials.icon_1}</div>
             <div className="special_2">{specials.icon_2}</div> */}
           </section>
         </section>
+      </div>
+      <div className={`card-description ${showCardDescription}`}>
+        <h4 className="card-description-title">{card_description_title}</h4>
+        <p className="card-description-text">{card_description_text}</p>
       </div>
     </div>
   );

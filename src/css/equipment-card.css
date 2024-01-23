@@ -20,21 +20,40 @@
     rgba(0, 0, 0, 1) 91%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23023d",endColorstr="#000000",GradientType=1);
-  &.set-item {
+  &.unique {
     background: rgb(35, 2, 61);
     background: -moz-radial-gradient(
       circle,
-      rgb(0, 196, 0) 21%,
+      rgb(143, 126, 31) 21%,
       rgba(0, 0, 0, 1) 91%
     );
     background: -webkit-radial-gradient(
       circle,
-      rgba(0, 196, 0) 21%,
+      rgba(143, 126, 31) 21%,
       rgba(0, 0, 0, 1) 91%
     );
     background: radial-gradient(
       circle,
-      rgba(0, 196, 0) 21%,
+      rgba(143, 126, 31) 21%,
+      rgba(0, 0, 0, 1) 91%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23023d",endColorstr="#000000",GradientType=1);
+  }
+  &.set-item {
+    background: rgb(35, 2, 61);
+    background: -moz-radial-gradient(
+      circle,
+      rgb(4, 148, 4) 21%,
+      rgba(0, 0, 0, 1) 91%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(4, 148, 4) 21%,
+      rgba(0, 0, 0, 1) 91%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(4, 148, 4) 21%,
       rgba(0, 0, 0, 1) 91%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23023d",endColorstr="#000000",GradientType=1);
@@ -154,7 +173,7 @@
         align-items: center;
         flex-direction: column;
         .value {
-          color: darkgoldenrod;
+          color: rgb(254, 188, 20);
           position: absolute;
           top: 0;
           left: 6mm;
@@ -175,6 +194,7 @@
         position: absolute;
         top: 37mm;
         height: 13mm;
+        /* width: 100%; */
         left: 0;
         background: #fae9dd;
         box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
@@ -182,7 +202,52 @@
         border-radius: 15px;
         color: #111;
         font-size: 3.5mm;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
+    }
+  }
+  .card-description {
+    & h4,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 65mm;
+    color: #fae9dd;
+    width: 63.5mm;
+    height: 75mm;
+    padding: 5mm;
+    &.show {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      z-index: 2000;
+    }
+    background: rgb(35, 2, 61);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(35, 2, 61, 1) 21%,
+      rgba(0, 0, 0, 1) 91%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(35, 2, 61, 1) 21%,
+      rgba(0, 0, 0, 1) 91%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(35, 2, 61, 1) 21%,
+      rgba(0, 0, 0, 1) 91%
+    );
+    .card-description-text {
+      font-size: 0.8rem;
+      margin-top: 2rem;
     }
   }
 }
