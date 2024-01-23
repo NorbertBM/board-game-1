@@ -3,6 +3,7 @@
   color: #fae9dd;
   width: 63.5mm;
   height: 88mm;
+
   background: rgb(35, 2, 61);
   background: -moz-radial-gradient(
     circle,
@@ -249,5 +250,11 @@
       font-size: 0.8rem;
       margin-top: 2rem;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .equipment-card .card-description {
+    top: 90mm;
+    left: 0;
   }
 }
