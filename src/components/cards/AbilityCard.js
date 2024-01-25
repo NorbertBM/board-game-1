@@ -1,9 +1,10 @@
 import React from "react";
+import { AbilityCardStyle } from "./AbilityCardStyle";
 import { GrVulnerability } from "react-icons/gr";
 // import { FaWpexplorer } from "react-icons/fa";
 // import { FaEye } from "react-icons/fa6";
 import { GiWingfoot } from "react-icons/gi";
-import "../../css/ability-card.css";
+// import "../../css/ability-card.css";
 export default function AbilityCard({
   card_type,
   card_name,
@@ -13,7 +14,7 @@ export default function AbilityCard({
   children,
 }) {
   return (
-    <div className={`ability-card  ${card_type}`}>
+    <AbilityCardStyle className={`ability-card  ${card_type}`}>
       <header className="ability-card-header">
         <p className="ability">
           <GrVulnerability size={35} />
@@ -30,6 +31,6 @@ export default function AbilityCard({
         {/* <div className="unit-parts"></div> */}
       </div>
       {children}
-    </div>
+    </AbilityCardStyle>
   );
 }
