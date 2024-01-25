@@ -1,8 +1,10 @@
 import React from "react";
+import styled from "styled-components";
 import AbilityCard from "../../components/cards/AbilityCard";
 import { GiInfinity } from "react-icons/gi";
 
 import { GrVulnerability } from "react-icons/gr";
+
 export default function Abilities() {
   return (
     <div className="sub-page">
@@ -12,9 +14,9 @@ export default function Abilities() {
       </p>
 
       {/* create a infinity sign */}
-      <main className="main-container">
+      <MainContainer>
         <section className="abilities-section hide">
-          <h4>Hide</h4>{" "}
+          <h3 className="section-title">Hide</h3>{" "}
           <p>
             this is another new and appealing mechanic and this is how it goes.
             Hide uses ALL the stamina and makes the player “invisible” for the
@@ -39,7 +41,7 @@ export default function Abilities() {
         </section>
         <section className="abilities-section distract">
           {" "}
-          <h4>Distract</h4>
+          <h3 className="section-title">Distract</h3>
           <p>
             {" "}
             another new action, not sure how it works yet, but going with the
@@ -60,7 +62,7 @@ export default function Abilities() {
           </AbilityCard>
         </section>
         <section className="abilities-section dash">
-          <h4>Dash</h4>
+          <h3 className="section-title">Dash</h3>
           <p>
             — characters can dash across two squares for the price of 3 stamina.
             Example: normally you would pay 2 stamina to walk across 2 squares
@@ -79,7 +81,7 @@ export default function Abilities() {
           </AbilityCard>
         </section>
         <section className="abilities-section interact">
-          <h4>Interact</h4>
+          <h3 className="section-title">Interact</h3>
           <p>
             At this point this is mainly for characters interacting with each
             other to trade items and such, but ideally we want them to be able
@@ -96,7 +98,26 @@ export default function Abilities() {
             </p>
           </AbilityCard>
         </section>
-      </main>
+      </MainContainer>
     </div>
   );
 }
+
+const MainContainer = styled.main`
+  & .abilities-section {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid beige;
+    & .section-title {
+      margin-bottom: 1rem;
+      background-color: beige;
+      color: #282c34;
+      padding: 0.5rem 2.5rem;
+      border-radius: 5px;
+    }
+  }
+`;

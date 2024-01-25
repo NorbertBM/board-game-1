@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const AbilityCardStyle = styled.div`
-  /* @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap"); */
-  /* :root {
+  @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+  :root {
     --border-radius: 15px;
-  } */
+  }
 
   font-family: "Philosopher", sans-serif;
   color: #fae9dd;
@@ -43,23 +43,7 @@ export const AbilityCardStyle = styled.div`
     box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.2);
   }
 
-  .img-container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    justify-content: center;
-    align-items: center;
-    .card-img {
-      width: 51mm;
-      height: 51mm;
-      /* margin: 10px; */
-      margin: 0 auto;
-      object-fit: cover;
-      border-radius: var(--border-radius);
-      border: 2px solid #5e534e;
-    }
-  }
-  .ability-card-header {
+  & .ability-card-header {
     height: 18%;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     background-color: inherit;
@@ -94,7 +78,23 @@ export const AbilityCardStyle = styled.div`
       align-items: center;
     }
   }
-  .description {
+  & .img-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+    align-items: center;
+    .card-img {
+      width: 51mm;
+      height: 51mm;
+      /* margin: 10px; */
+      margin: 0 auto;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      border: 2px solid #5e534e;
+    }
+  }
+  & .description {
     width: 51mm;
     height: 14mm;
     margin: 1mm auto;
