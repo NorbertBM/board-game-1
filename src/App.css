@@ -69,3 +69,8 @@ code {
     top: 0;
   }
 }
+@media print {
+  .print-btn {
+    display: none;
+  }
+}

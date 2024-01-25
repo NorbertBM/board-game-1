@@ -106,4 +106,7 @@
     justify-content: center;
     align-items: center;
   }
+
+  color: #c95503;
+  text-shadow: 0 0 10px #2d1301;
 }

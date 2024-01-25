@@ -76,6 +76,12 @@ export const AbilityCardStyle = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      & .value {
+        color: #c95503;
+        text-shadow: 10px 10px 10px #2d1301;
+        font-size: 1.8rem;
+        position: absolute;
+      }
     }
   }
   & .img-container {
