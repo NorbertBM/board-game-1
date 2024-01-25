@@ -12,15 +12,7 @@ export default function Abilities() {
       </p>
 
       {/* create a infinity sign */}
-      <main
-        className="main-container"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
+      <main className="main-container">
         <section className="abilities-section hide">
           <h4>Hide</h4>{" "}
           <p>
