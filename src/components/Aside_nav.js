@@ -6,6 +6,9 @@ export default function Aside_nav({ activate_nav }) {
     <aside className={`guide_aside-nav ${activate_nav}`}>
       <ul className="nav-items">
         <li>
+          <NavLink to="/guide/basic_mechanics">Mechanics</NavLink>
+        </li>
+        <li>
           <NavLink to="/guide/units">Units</NavLink>
         </li>
         <li>
