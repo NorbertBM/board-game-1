@@ -9,6 +9,9 @@ export default function Aside_nav({ activate_nav }) {
           <NavLink to="/guide/basic_mechanics">Mechanics</NavLink>
         </li>
         <li>
+          <NavLink to="/guide/decks">Decks</NavLink>
+        </li>
+        <li>
           <NavLink to="/guide/units">Units</NavLink>
         </li>
         <li>

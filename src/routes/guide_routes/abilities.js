@@ -7,17 +7,6 @@ import { GrVulnerability } from "react-icons/gr";
 //
 import { Print } from "../../components/Print";
 export default function Abilities() {
-  // const print = () => {
-  //   const printContents = document.querySelector(".main-container");
-  //   if (printContents) {
-  //     const printWindow = window.open("", "_blank");
-  //     printWindow.document.write(printContents.innerHTML);
-  //     // printWindow.document.write(`${(<AbilityCardStyle />)}`);
-  //     printWindow.document.close();
-  //     printWindow.print();
-  //   }
-  // };
-
   return (
     <div className="sub-page">
       <h2>Abilities</h2>

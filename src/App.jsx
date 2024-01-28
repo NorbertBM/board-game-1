@@ -17,6 +17,7 @@ import Enemies from "./routes/guide_routes/enemies";
 import Battle from "./routes/guide_routes/battle";
 import Equipment from "./routes/guide_routes/equipment";
 import BasicMechanics from "./routes/guide_routes/basic_mechanics";
+import Decks from "./routes/guide_routes/decks";
 export default function App() {
   // responsive
   //   const [isMobile, setIsMobile] = useState(
@@ -42,6 +43,7 @@ export default function App() {
             {/* nested routs */}
             <Route index element={<IndexGuide />} />
             <Route path="basic_mechanics" element={<BasicMechanics />} />
+            <Route path="decks" element={<Decks />} />
             <Route path="units" element={<Units />} />
             <Route path="abilities" element={<Abilities />} />
             <Route path="items" element={<Items />} />
