@@ -61,8 +61,8 @@
   }
   .enemy-lvl,
   .icon-right {
-    height: 11mm;
-    width: 11mm;
+    height: 12mm;
+    width: 12mm;
     background-color: #fae9dd;
     /* Create a gradiant inwords  */
     background: rgb(250, 233, 221);
