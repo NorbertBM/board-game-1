@@ -317,6 +317,42 @@ export default function Explore() {
               find. You might find some treasure or you might find some enemies.
             </p>
           </ExplorationCard>
+          <ExplorationCard
+            card_name={"Cathedral of Nox"}
+            card_type={"explore"}
+            img={"/img/explore/explore-the-cathedral-of-nox-2.jpg"}
+            speed={1}
+            sight={1}
+          >
+            <p className="description">
+              You came across the Cathedral of Nox. Here is where he meditated
+              in silence for 10 years.
+            </p>
+          </ExplorationCard>
+          <ExplorationCard
+            card_name={"Amal refugee caves"}
+            card_type={"explore"}
+            img={"/img/explore/explore-Amal-refugee-caves-1.jpg"}
+            speed={1}
+            sight={1}
+          >
+            <p className="description">
+              You came across Amal refugee caves. Here is where where Amal
+              rescued them from the firestorm.
+            </p>
+          </ExplorationCard>
+          <ExplorationCard
+            card_name={"Court of Fools"}
+            card_type={"explore"}
+            img={"/img/explore/explore-court-of-fools-1.jpg"}
+            speed={1}
+            sight={1}
+          >
+            <p className="description">
+              You came across the Court of Fools. A court where no justice will
+              be served only judgmend.
+            </p>
+          </ExplorationCard>
         </div>
       </section>
     </div>
