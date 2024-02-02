@@ -2,7 +2,7 @@ import React from "react";
 import { FaWpexplorer } from "react-icons/fa";
 import { FaEye } from "react-icons/fa6";
 import { GiWingfoot } from "react-icons/gi";
-import "../../css/card.css";
+import "../../css/exploration-card.css";
 export default function ExplorationCard({
   children,
   card_name,
@@ -15,15 +15,15 @@ export default function ExplorationCard({
   // onclick flip the selected card to show the description
 
   return (
-    <div className={`card game-card ${card_type}`}>
+    <div className={`exploration-card`}>
       <header className="card-header">
         <p className="hp">
-          <FaWpexplorer size={50} />
+          <FaWpexplorer size={30} />
           {/* {hp} */}
         </p>
         <h2 className="exploration">{card_name}</h2>
         <p className="attack">
-          <GiWingfoot size={35} />
+          <GiWingfoot size={25} />
           {speed}
         </p>
       </header>

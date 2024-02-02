@@ -1,7 +1,7 @@
 import React from "react";
 import { FaWpexplorer } from "react-icons/fa";
 import ExplorationCard from "../../components/cards/ExplorationCard";
-import Slider from "../../components/Slider";
+// import Slider from "../../components/Slider";
 export default function Explore() {
   // make the cards from the exploration printable
 
@@ -15,7 +15,7 @@ export default function Explore() {
         `<style>
         @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 
-        .card {
+        .exploration-card {
           font-family: "Philosopher", sans-serif;
           color: #fae9dd;
           width: 63.5mm;
@@ -49,25 +49,17 @@ export default function Explore() {
           cursor: pointer;
           transition: all 0.3s ease-in-out;
           box-shadow: 0 20px 10px 2px rgba(0, 0, 0, 0.2);
-          &:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.2);
-          }
+        
           .card-header {
             height: 18%;
             border-radius: 15px 15px 0 0;
             background-color: inherit;
-        
+            margin: 0.5rem;
             display: flex;
             justify-content: space-around;
             align-items: center;
             font-size: 1.5rem;
-            .card-name {
-              text-transform: uppercase;
-              font-size: 1.1rem;
-              font-weight: 600;
-              text-shadow: 0 0 15px rgb(163, 11, 11);
-            }
+        
             .icon-left,
             .icon-right {
               display: flex;
@@ -76,7 +68,7 @@ export default function Explore() {
               align-items: center;
               height: 100%;
               background-color: #fae9dd;
-              /* Create a gradiant inwords  */
+        
               background: rgb(250, 233, 221);
               background: radial-gradient(
                 circle,
@@ -84,41 +76,31 @@ export default function Explore() {
                 rgba(181, 163, 151, 1) 100%
               );
               box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
-              /* opacity: 0.7; */
+        
               border-radius: 50%;
-              .icon {
-                font-size: 1.5rem;
+              /* .icon {
+                font-size: 1.2rem;
                 color: #fff;
                 text-shadow: 0 0 15px rgb(163, 11, 11);
-              }
+              } */
             }
-            .hp,
-            .attack {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              padding: 10px;
-              font-weight: 600;
-              box-shadow: inset 0 5px 20px #000;
-              border-radius: 15px;
-              text-shadow: 0 0 15px rgb(163, 11, 11);
-            }
-            .hp {
-              text-shadow: 0 0 15px rgb(163, 11, 11);
-            }
-            & h2 {
-              font-size: 1.5rem;
-              /* background-color: #296a2d; */
-              /* padding: 5px 10px; */
-              box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
-              border-radius: 5px;
-              &.exploration {
-                background-color: #1267ac;
-              }
-            }
-            .attack {
-              text-shadow: 0 0 15px rgb(163, 11, 11);
-            }
+          }
+          .hp,
+          .attack,
+          .head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            font-weight: 600;
+            box-shadow: inset 0 5px 20px #000;
+            border-radius: 15px;
+            text-shadow: 0 0 15px rgb(163, 11, 11);
+          }
+        
+          .exploration {
+            font-size: 1.2rem;
+            text-transform: uppercase;
           }
           .img-container {
             position: relative;
@@ -134,46 +116,8 @@ export default function Explore() {
               border-radius: 10px;
               border: 2px solid #5e534e;
             }
-            .unit-parts {
-              z-index: 100;
-              /* position: absolute; */
-              top: 0;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              /* height: 95%; */
-              & div {
-                position: relative;
-                margin-left: 10px;
-                height: 40px;
-                width: 40px;
-                background-color: #fae9dd;
-                /* Create a gradiant inwords  */
-                background: rgb(250, 233, 221);
-                background: radial-gradient(
-                  circle,
-                  rgb(247, 237, 230) 0%,
-                  rgba(181, 163, 151, 1) 100%
-                );
-                box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
-                /* opacity: 0.7; */
-                border-radius: 50%;
-                border: 1px solid #111;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.5rem;
-                .attack {
-                  text-shadow: #000;
-                }
-                .value {
-                  position: absolute;
-                  top: -2px;
-                  font-size: 1.4rem;
-                  /* text-shadow: 0 0 15px rgb(163, 11, 11); */
-                }
-              }
-            }
+          }
+          .unit-parts {
           }
           .description {
             margin: auto;
@@ -182,6 +126,7 @@ export default function Explore() {
             padding: 0 10px;
           }
         }
+        
         
         @media print {
           .print-btn {
@@ -207,7 +152,7 @@ export default function Explore() {
       <p>
         Exploration cards are marked with the icon above. You can explore the
       </p>
-      <Slider />
+      {/* <Slider /> */}
       {/* Create a button to proint the section */}
       <button onClick={printExplorationCards}>Print</button>
       <section className="exploration-section">

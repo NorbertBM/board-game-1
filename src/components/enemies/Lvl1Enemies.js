@@ -31,6 +31,18 @@ export default function Lvl1Enemies() {
           range={3}
           special_1={"heal"}
         />
+        <EnemyCard
+          card_name={"Skeleton Mage"}
+          icon_left={"1"}
+          icon_right={"melee"}
+          img={"/img/units/melee/big-dude-1.jpeg"}
+          defense={"1"}
+          hp={"2"}
+          attack={3}
+          special={"none"}
+          range={3}
+          special_1={"heal"}
+        />
       </>
     </>
   );
