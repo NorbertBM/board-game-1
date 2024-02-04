@@ -298,6 +298,51 @@ export default function Explore() {
               be served only judgmend.
             </p>
           </ExplorationCard>
+          <ExplorationCard
+            card_name={"Tar Pits"}
+            card_type={"explore"}
+            img={"/img/explore/explore-tar-pits-2.jpg"}
+            speed={1}
+            sight={-2}
+          >
+            <p className="description">
+              Created by the The Hatebreed, the tar pits are marshlands as far
+              as the eyes can see.
+            </p>
+          </ExplorationCard>
+          <ExplorationCard
+            card_name={"Living Wilds"}
+            card_type={"explore"}
+            img={"/img/explore/explore-living-wilds-2.jpeg"}
+            speed={1}
+            sight={-2}
+          >
+            <p className="description">
+              A unwelcoming place where The G’Nesh, who were living trees, took
+              roots and become the forest.
+            </p>
+          </ExplorationCard>
+          <ExplorationCard
+            card_name={"Pale Citadel"}
+            card_type={"explore"}
+            img={"/img/explore/explore-pale-citadel-1.jpeg"}
+            speed={1}
+            sight={-2}
+          >
+            <p className="description">
+              Home of the Noari, the Pale Citadel is a place of peace and
+              hospitality.
+            </p>
+          </ExplorationCard>
+          <ExplorationCard
+            card_name={"Moon steps"}
+            card_type={"explore"}
+            img={"/img/explore/explore-stairs-to-the-moon.jpeg"}
+            speed={1}
+            sight={-2}
+          >
+            <p className="description">The stairs that lead up to the moon.</p>
+          </ExplorationCard>
         </div>
       </section>
     </div>

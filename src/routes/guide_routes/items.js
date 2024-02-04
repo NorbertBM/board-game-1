@@ -30,6 +30,15 @@ export default function items() {
             for 5 turnes.
           </p>
         </Item>
+        <Item
+          // icon={<GiPoisonBottle color="green" size={60} />}
+          img="/img/items/soul-shards-1.jpeg"
+          name={"Soul Shards"}
+        >
+          <p className="item_description ">
+            Shards of a soul that can be used to summon a demon.
+          </p>
+        </Item>
         <DiceRoller />
       </section>
     </div>
