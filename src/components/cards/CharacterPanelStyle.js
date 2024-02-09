@@ -76,21 +76,32 @@ export const CharacterPanelStyle = styled.div`
       display: flex;
       gap: 10mm;
       width: 100%;
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: bold;
+    }
+    .hp,
+    .mana,
+    .sanity {
+      border-radius: 5px;
+      padding: 5px;
+      height: 15mm;
+      width: 15mm;
     }
     .character-status-hp {
       .hp:last-child {
+        background-color: #000;
         color: red;
       }
     }
     .character-status-mana {
       .mana:last-child {
+        background-color: #000;
         color: blue;
       }
     }
     .character-status-sanity {
       .sanity:last-child {
+        background-color: #000;
         color: purple;
       }
     }
