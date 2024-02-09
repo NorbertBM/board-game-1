@@ -207,11 +207,11 @@ section{
 .character-panel {
   position: relative;
   width: 183.5mm;
-  height: 175mm;
+  height: 150mm;
   padding: 5mm;
   border-radius: 15px;
   color: #666;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background: rgb(16, 16, 17);
   background: -moz-linear-gradient(
     90deg,
@@ -230,11 +230,12 @@ section{
   );
   .character-panel-header {
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
   .character-profile-pic {
-    grid-area: img;
-    width: 63.5mm;
-    height: 88mm;
+    width: 95mm;
+    height: 70mm;
     border: 0.05mm solid black;
     border-radius: 10px;
     display: flex;
@@ -242,34 +243,46 @@ section{
     align-items: center;
     box-shadow: inset 0 0 20px 0px #666;
   }
-  
+
   .perks {
     width: 120mm;
     display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 5mm;
+  }
+  .character-spells,
+  .character-items,
+  .character-abilities {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     gap: 5mm;
   }
   .spell,
   .item,
   .ability {
     box-shadow: inset 0 0 15px 0px #666;
-    width: 35mm;
-    height: 35mm;
+    width: 30mm;
+    height: 30mm;
     border: 0.05mm solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
   }
-  
+
   .character-status-info {
     position: absolute;
-    top: 100mm;
+    top: 75mm;
     display: flex;
     flex-direction: column;
-  
-    width: 100mm;
+    align-content: center;
+    width: 80mm;
   }
   .character-status-info-title {
+    color: #ccc;
     font-size: 1.3rem;
     text-transform: uppercase;
     text-align: left;
@@ -278,26 +291,40 @@ section{
   .character-status-mana,
   .character-status-sanity {
     display: flex;
-    gap: 10mm;
+    /* gap: 5mm; */
     width: 100%;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    align-items: center;
+    justify-content: start;
+  }
+  .hp,
+  .mana,
+  .sanity {
+    border-radius: 5px;
+    height: 15mm;
+    width: 15mm;
   }
   .character-status-hp {
+    background-color: #000;
+
+    border-radius: 15px;
     .hp:last-child {
+      background-color: #000;
       color: red;
     }
   }
   .character-status-mana {
     .mana:last-child {
+      background-color: #000;
       color: blue;
     }
   }
   .character-status-sanity {
     .sanity:last-child {
+      background-color: #000;
       color: purple;
     }
   }
 }
-
 `;

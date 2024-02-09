@@ -42,7 +42,6 @@ export default function CharacterPanel({ characterCard }) {
         );
       })
     );
-
     setSanity(
       initialSanity.map((sanity, index) => {
         return (
@@ -58,47 +57,47 @@ export default function CharacterPanel({ characterCard }) {
     <CharacterPanelStyle className="character-panel">
       <header className="character-panel-header">
         <aside className="character-profile-pic">
-          {!characterCard && "Character card 63.5x88mm"}
+          {!characterCard && "Character card 95x70mm"}
         </aside>
         <main className="perks">
           <section className="character-spells">
             <div className="spell">
-              Spell 1 <br /> 35x35mm
+              Spell 1 <br /> 30x30mm
             </div>
             <div className="spell">
-              Spell 2<br /> 35x35mm
+              Spell 2<br /> 30x30mm
             </div>
             <div className="spell">
-              Spell 3<br /> 35x35mm
+              Spell 3<br /> 30x30mm
             </div>
           </section>
           <section className="character-items">
             <div className="item">
-              Item 1<br /> 35x35mm
+              Item 1<br /> 30x30mm
             </div>
             <div className="item">
-              Item 2<br /> 35x35mm
+              Item 2<br /> 30x30mm
             </div>
             <div className="item">
-              Item 3<br /> 35x35mm
+              Item 3<br /> 30x30mm
             </div>
           </section>
           <section className="character-abilities">
             <div className="ability">
-              Ability 1<br /> 35x35mm
+              Ability 1<br /> 30x30mm
             </div>
             <div className="ability">
-              Ability 2<br /> 35x35mm
+              Ability 2<br /> 30x30mm
             </div>
             <div className="ability">
-              Ability 3<br /> 35x35mm
+              Ability 3<br /> 30x30mm
+            </div>
+            {/* <div className="ability">
+              Ability 4<br /> 30x30mm
             </div>
             <div className="ability">
-              Ability 4<br /> 35x35mm
-            </div>
-            <div className="ability">
-              Ability 5<br /> 35x35mm
-            </div>
+              Ability 5<br /> 30x30mm
+            </div> */}
           </section>
         </main>
       </header>
