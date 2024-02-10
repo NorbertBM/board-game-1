@@ -1,3 +1,4 @@
+import React from "react";
 export default function Index() {
   return (
     <>
@@ -11,7 +12,7 @@ export default function Index() {
           className="game-name"
           href="https://en.wikipedia.org/wiki/Oneiros"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Oneiros{" "}
         </a>{" "}

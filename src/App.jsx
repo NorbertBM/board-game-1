@@ -1,4 +1,4 @@
-// import React, { useState, useEffect } from "react";
+import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
 import Root from "./routes/root";
@@ -18,6 +18,7 @@ import Battle from "./routes/guide_routes/battle";
 import Equipment from "./routes/guide_routes/equipment";
 import BasicMechanics from "./routes/guide_routes/basic_mechanics";
 import Decks from "./routes/guide_routes/decks";
+
 export default function App() {
   // responsive
   //   const [isMobile, setIsMobile] = useState(

@@ -1,3 +1,4 @@
+import React from "react";
 import QuestPad from "../components/QuestPad";
 
 export default function Dashboard() {

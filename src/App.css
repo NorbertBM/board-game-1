@@ -1,6 +1,6 @@
-@import url("./css/nav");
-@import url("./css/animations");
-@import url("./css/page");
+@import url("./css/nav.css");
+@import url("./css/animations.css");
+@import url("./css/page.css");
 @import url("./css/enemy-card.css");
 .App {
   text-align: center;
