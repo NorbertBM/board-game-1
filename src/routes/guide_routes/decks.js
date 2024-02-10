@@ -1,12 +1,8 @@
 import React from "react";
 import { Print } from "../../components/Print";
-import DeckCard from "../../components/cards/DeckCard";
+// import DeckCard from "../../components/cards/DeckCard";
 
 // Icons
-
-import { GiRank1, GiRank2, GiRank3 } from "react-icons/gi";
-
-import { ImLoop2 } from "react-icons/im";
 
 import { Outlet } from "react-router-dom";
 import DecksNav from "./decks/decksNav";
@@ -21,30 +17,12 @@ export default function decks() {
       <DecksNav />
       <div className="main-container">
         <Outlet />
-        <section className="end_of_turn-section hide">
+        {/* <section className="end_of_turn-section hide">
           <h3>End of turn</h3>
           <DeckCard>
             <ImLoop2 size={50} />
           </DeckCard>
-        </section>
-
-        <section className="enemies-section hide">
-          <h3>Enemies</h3>
-          <div
-            className="lvls"
-            style={{ display: "flex", gap: 20, flexWrap: "wrap" }}
-          >
-            <DeckCard>
-              <GiRank1 color="#111" size={60} />
-            </DeckCard>
-            <DeckCard>
-              <GiRank2 color="#111" size={60} />
-            </DeckCard>
-            <DeckCard>
-              <GiRank3 color="#111" size={60} />
-            </DeckCard>
-          </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

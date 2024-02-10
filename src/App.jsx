@@ -25,6 +25,7 @@ import CharacterPanel from "./components/cards/CharacterPanel";
 import CluesSolutions from "./routes/guide_routes/decks/CluesSolutions";
 import Calling from "./routes/guide_routes/decks/Calling";
 import AbilitiesDeck from "./routes/guide_routes/decks/AbilitiesDeck";
+import EnemiesDeck from "./routes/guide_routes/decks/EnemiesDeck";
 export default function App() {
   return (
     <div className="App">
@@ -48,6 +49,7 @@ export default function App() {
 
               <Route path="calling" element={<Calling />} />
               <Route path="abilities" element={<AbilitiesDeck />} />
+              <Route path="enemies" element={<EnemiesDeck />} />
             </Route>
             <Route path="units" element={<Units />} />
             <Route path="abilities" element={<Abilities />} />
