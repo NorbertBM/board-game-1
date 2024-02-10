@@ -1,5 +1,5 @@
 import React from "react";
-import DeckCard from "../../../components/Cards/DeckCard";
+import DeckCard from "../../../components/cards/DeckCard";
 import { GrVulnerability } from "react-icons/gr";
 export default function AbilitiesDeck() {
   return (

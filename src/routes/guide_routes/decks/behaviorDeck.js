@@ -1,6 +1,6 @@
 import React from "react";
-import DeckCard from "../../../components/Cards/DeckCard";
-import BehaviorCard from "../../../components/Cards/BehaviorCard";
+import DeckCard from "../../../components/cards/DeckCard";
+import BehaviorCard from "../../../components/cards/BehaviorCard";
 import { FaPersonWalkingArrowRight } from "react-icons/fa6";
 
 // Move icons
