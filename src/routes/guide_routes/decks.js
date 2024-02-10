@@ -3,7 +3,7 @@ import { Print } from "../../components/Print";
 import DeckCard from "../../components/Cards/DeckCard";
 
 // Icons
-import { GrVulnerability } from "react-icons/gr";
+
 import { GiRank1, GiRank2, GiRank3 } from "react-icons/gi";
 
 import { ImLoop2 } from "react-icons/im";
@@ -28,12 +28,6 @@ export default function decks() {
           </DeckCard>
         </section>
 
-        <section className="abilities-section hide">
-          <h3>Abilities</h3>
-          <DeckCard>
-            <GrVulnerability size={60} />
-          </DeckCard>
-        </section>
         <section className="enemies-section hide">
           <h3>Enemies</h3>
           <div

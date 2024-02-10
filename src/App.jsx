@@ -24,6 +24,7 @@ import ExplorerDeck from "./routes/guide_routes/decks/explorerDeck";
 import CharacterPanel from "./components/Cards/CharacterPanel";
 import CluesSolutions from "./routes/guide_routes/decks/CluesSolutions";
 import Calling from "./routes/guide_routes/decks/Calling";
+import AbilitiesDeck from "./routes/guide_routes/decks/AbilitiesDeck";
 export default function App() {
   return (
     <div className="App">
@@ -46,6 +47,7 @@ export default function App() {
               <Route path="cluessolutions" element={<CluesSolutions />} />
 
               <Route path="calling" element={<Calling />} />
+              <Route path="abilities" element={<AbilitiesDeck />} />
             </Route>
             <Route path="units" element={<Units />} />
             <Route path="abilities" element={<Abilities />} />
