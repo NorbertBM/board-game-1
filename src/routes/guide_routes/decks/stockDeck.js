@@ -1,5 +1,5 @@
 import React from "react";
-import DeckCard from "../../../components/Cards/DeckCard";
+import DeckCard from "../../../components/cards/DeckCard";
 export default function StockDeck() {
   return (
     <section className="abilities-section hide">

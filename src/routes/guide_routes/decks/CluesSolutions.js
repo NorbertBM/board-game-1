@@ -1,5 +1,5 @@
 import React from "react";
-import DeckCard from "../../../components/Cards/DeckCard";
+import DeckCard from "../../../components/cards/DeckCard";
 import { HiMagnifyingGlassCircle } from "react-icons/hi2";
 export default function CluesSolutions() {
   return (

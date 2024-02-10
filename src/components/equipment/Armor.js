@@ -1,5 +1,5 @@
 import React from "react";
-import EquipmentCard from "../Cards/EquipmentCard";
+import EquipmentCard from "../cards/EquipmentCard";
 export default function Armor() {
   return (
     <>

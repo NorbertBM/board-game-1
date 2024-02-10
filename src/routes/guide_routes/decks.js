@@ -1,6 +1,6 @@
 import React from "react";
 import { Print } from "../../components/Print";
-import DeckCard from "../../components/Cards/DeckCard";
+import DeckCard from "../../components/cards/DeckCard";
 
 // Icons
 

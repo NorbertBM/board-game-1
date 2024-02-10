@@ -21,7 +21,7 @@ import Decks from "./routes/guide_routes/decks";
 import BehaviorDeck from "./routes/guide_routes/decks/behaviorDeck";
 import StockDeck from "./routes/guide_routes/decks/stockDeck";
 import ExplorerDeck from "./routes/guide_routes/decks/explorerDeck";
-import CharacterPanel from "./components/Cards/CharacterPanel";
+import CharacterPanel from "./components/cards/CharacterPanel";
 import CluesSolutions from "./routes/guide_routes/decks/CluesSolutions";
 import Calling from "./routes/guide_routes/decks/Calling";
 import AbilitiesDeck from "./routes/guide_routes/decks/AbilitiesDeck";

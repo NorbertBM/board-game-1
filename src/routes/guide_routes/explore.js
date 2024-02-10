@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWpexplorer } from "react-icons/fa";
-import ExplorationCard from "../../components/Cards/ExplorationCard";
+import ExplorationCard from "../../components/cards/ExplorationCard";
 // import Slider from "../../components/Slider";
 export default function Explore() {
   // make the cards from the exploration printable
