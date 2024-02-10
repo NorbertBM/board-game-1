@@ -5,19 +5,16 @@ export const DeckCardStyle = styled.div`
   :root {
     --border-radius: 15px;
   }
-
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   font-family: "Philosopher", sans-serif;
   color: #fae9dd;
   width: 63.5mm;
   height: 88mm;
 
-  &.flip {
-    transform: rotateY(180deg);
-  }
-  &-mini {
-    width: 41mm;
-    height: 63mm;
-  }
   background: rgb(16, 16, 17);
   background: -moz-linear-gradient(
     90deg,
@@ -39,10 +36,7 @@ export const DeckCardStyle = styled.div`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 20px 10px 2px rgba(0, 0, 0, 0.2);
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.2);
-  }
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,9 +48,17 @@ export const DeckCardStyle = styled.div`
     border-radius: 15px;
     border: 1px solid beige;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  }
+  .Behavior .multiplier {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
   }
   .icon {
     color: #111;

@@ -1,13 +1,15 @@
 import React from "react";
 import { Print } from "../../components/Print";
 import DeckCard from "../../components/Cards/DeckCard";
+
+// Icons
 import { GrVulnerability } from "react-icons/gr";
 import { GiRank1, GiRank2, GiRank3 } from "react-icons/gi";
-import { FaWpexplorer } from "react-icons/fa";
+
 import { ImLoop2 } from "react-icons/im";
-import { HiMagnifyingGlassCircle } from "react-icons/hi2";
-import { GiShouting } from "react-icons/gi";
-import CharacterPanel from "../../components/Cards/CharacterPanel";
+
+import { Outlet } from "react-router-dom";
+import DecksNav from "./decks/decksNav";
 export default function decks() {
   return (
     <div className="page">
@@ -15,36 +17,17 @@ export default function decks() {
       <button onClick={() => Print("main-container", elementStyle)}>
         Print
       </button>
-
+      {/* Navigation using NavLink and outlat for decks */}
+      <DecksNav />
       <div className="main-container">
-        <section className="abilities-section hide">
-          <h3>Stock</h3>
-          <DeckCard>{/* <GrVulnerability size={60} /> */}</DeckCard>
-        </section>
-        <section className="abilities-section hide">
+        <Outlet />
+        <section className="end_of_turn-section hide">
           <h3>End of turn</h3>
           <DeckCard>
             <ImLoop2 size={50} />
           </DeckCard>
         </section>
-        <section className="explorer-section hide">
-          <h3>Explorer Deck</h3>
-          <DeckCard>
-            <FaWpexplorer size={60} />
-          </DeckCard>
-        </section>
-        <section className="abilities-section hide">
-          <h3>Clues and solutions</h3>
-          <DeckCard>
-            <HiMagnifyingGlassCircle size={60} />
-          </DeckCard>
-        </section>{" "}
-        <section className="abilities-section hide">
-          <h3>Calling</h3>
-          <DeckCard>
-            <GiShouting size={60} />
-          </DeckCard>
-        </section>
+
         <section className="abilities-section hide">
           <h3>Abilities</h3>
           <DeckCard>
@@ -68,20 +51,23 @@ export default function decks() {
             </DeckCard>
           </div>
         </section>
-        <section className="character-panel hide">
-          <h3>Character panel</h3>
-          <CharacterPanel />
-        </section>
       </div>
     </div>
   );
 }
 
 const elementStyle = `
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+  font-family: "Philosopher", sans-serif important!;
+}
 :root {
   --border-radius: 15px;
 }
-section{
+main-container{
   width: 210mm;
   
   height: 297mm;
@@ -89,21 +75,17 @@ section{
   flex-direction: column;
   justify-content: center;
  align-items: center;
+
 }
 .deck-card {
-  @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
-  font-family: "Philosopher", sans-serif;
+
+ 
+  font-size: 1.6rem;
   color: #fae9dd;
   width: 63.5mm;
   height: 88mm;
   
-  &.flip {
-    transform: rotateY(180deg);
-  }
-  &-mini {
-    width: 41mm;
-    height: 63mm;
-  }
+
   background: rgb(16, 16, 17);
   background: -moz-linear-gradient(
     90deg,
@@ -125,10 +107,7 @@ section{
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 20px 10px 2px rgba(0, 0, 0, 0.2);
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.2);
-  }
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,9 +119,17 @@ section{
     border-radius: 15px;
     border: 1px solid beige;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  }
+  .Behavior .multiplier {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
   }
   .icon {
     color: #111;
@@ -166,13 +153,13 @@ section{
     &::before {
       content: "";
       position: absolute;
-  
+
       display: inline-block;
       width: 50px;
       left: 20px;
       height: 2px;
       /* create a red orange sunlight ray */
-  
+
       background: rgb(128, 26, 22);
       background: linear-gradient(
         90deg,
@@ -186,12 +173,12 @@ section{
     &::after {
       content: "";
       position: absolute;
-  
+
       display: inline-block;
       width: 50px;
       height: 2px;
       left: 140px;
-  
+
       background: rgb(128, 26, 22);
       background: linear-gradient(
         90deg,
@@ -202,8 +189,7 @@ section{
       vertical-align: middle;
       box-shadow: 0 0 20px rgba(128, 26, 22, 1);
     }
-}
-}
+  }
 .character-panel {
   position: relative;
   width: 183.5mm;

@@ -18,19 +18,13 @@ import Battle from "./routes/guide_routes/battle";
 import Equipment from "./routes/guide_routes/equipment";
 import BasicMechanics from "./routes/guide_routes/basic_mechanics";
 import Decks from "./routes/guide_routes/decks";
-
+import BehaviorDeck from "./routes/guide_routes/decks/behaviorDeck";
+import StockDeck from "./routes/guide_routes/decks/stockDeck";
+import ExplorerDeck from "./routes/guide_routes/decks/explorerDeck";
+import CharacterPanel from "./components/Cards/CharacterPanel";
+import CluesSolutions from "./routes/guide_routes/decks/CluesSolutions";
+import Calling from "./routes/guide_routes/decks/Calling";
 export default function App() {
-  // responsive
-  //   const [isMobile, setIsMobile] = useState(
-  //     window.matchMedia("(max-width:600px)").matches
-  //   );
-
-  //   useEffect(() => {
-  //     window.addEventListener("resize", () => {
-  //       setIsMobile(window.matchMedia("(max-width:600px)").matches);
-  //     });
-  //   }, []);
-
   return (
     <div className="App">
       <Routes>
@@ -44,7 +38,15 @@ export default function App() {
             {/* nested routs */}
             <Route index element={<IndexGuide />} />
             <Route path="basic_mechanics" element={<BasicMechanics />} />
-            <Route path="decks" element={<Decks />} />
+            <Route path="decks" element={<Decks />}>
+              <Route path="stock" element={<StockDeck />} />
+              <Route path="behavior" element={<BehaviorDeck />} />
+              <Route path="explorer" element={<ExplorerDeck />} />
+              <Route path="characterPanel" element={<CharacterPanel />} />
+              <Route path="cluessolutions" element={<CluesSolutions />} />
+
+              <Route path="calling" element={<Calling />} />
+            </Route>
             <Route path="units" element={<Units />} />
             <Route path="abilities" element={<Abilities />} />
             <Route path="items" element={<Items />} />
