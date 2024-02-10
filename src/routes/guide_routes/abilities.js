@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import AbilityCard from "../../components/cards/AbilityCard";
+import AbilityCard from "../../components/Cards/AbilityCard";
 // import { GiInfinity } from "react-icons/gi";
 // import { AbilityCardStyle } from "../../components/cards/AbilityCardStyle";
 import { GrVulnerability } from "react-icons/gr";

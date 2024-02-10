@@ -1,5 +1,5 @@
 import React from "react";
-import EnemyCard from "../../components/cards/EnemyCard";
+import EnemyCard from "../../components/Cards/EnemyCard";
 
 export default function Lvl1Enemies() {
   return (

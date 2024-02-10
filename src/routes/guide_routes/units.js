@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UnitCard from "../../components/cards/UnitCard";
+import UnitCard from "../../components/Cards/UnitCard";
 
 import "../../css/page.css";
 import "../../css/units.css";

@@ -1,13 +1,13 @@
 import React from "react";
 import { Print } from "../../components/Print";
-import DeckCard from "../../components/cards/DeckCard";
+import DeckCard from "../../components/Cards/DeckCard";
 import { GrVulnerability } from "react-icons/gr";
 import { GiRank1, GiRank2, GiRank3 } from "react-icons/gi";
 import { FaWpexplorer } from "react-icons/fa";
 import { ImLoop2 } from "react-icons/im";
 import { HiMagnifyingGlassCircle } from "react-icons/hi2";
 import { GiShouting } from "react-icons/gi";
-import CharacterPanel from "../../components/cards/CharacterPanel";
+import CharacterPanel from "../../components/Cards/CharacterPanel";
 export default function decks() {
   return (
     <div className="page">
