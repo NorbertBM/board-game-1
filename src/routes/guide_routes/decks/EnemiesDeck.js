@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GiRank1, GiRank2, GiRank3 } from "react-icons/gi";
+import { TbMilitaryRank } from "react-icons/tb";
 import { getRandomCard } from "./getRandomCard";
 import DeckCard from "../../../components/cards/DeckCard";
 import { enemiesDb } from "./data/enemiesDb";
@@ -15,6 +16,9 @@ export default function EnemiesDeck() {
     </DeckCard>,
     <DeckCard>
       <GiRank3 color="#111" size={60} />
+    </DeckCard>,
+    <DeckCard>
+      <TbMilitaryRank color="#111" size={60} />
     </DeckCard>,
   ];
 

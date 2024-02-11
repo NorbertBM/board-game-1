@@ -51,6 +51,7 @@ export const DeckCardStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
   }
   .Behavior .multiplier {
@@ -62,8 +63,8 @@ export const DeckCardStyle = styled.div`
   }
   .icon {
     color: #111;
-    height: 18mm;
-    width: 18mm;
+    height: 20mm;
+    width: 20mm;
     background-color: #fae9dd;
     /* Create a gradiant inwords  */
     background: rgb(250, 233, 221);
@@ -78,6 +79,7 @@ export const DeckCardStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
     /* Add glowing sunlight lines before and after the icon center */
     &::before {
       content: "";
@@ -85,7 +87,7 @@ export const DeckCardStyle = styled.div`
 
       display: inline-block;
       width: 50px;
-      left: 20px;
+      left: 15px;
       height: 2px;
       /* create a red orange sunlight ray */
 
@@ -106,7 +108,7 @@ export const DeckCardStyle = styled.div`
       display: inline-block;
       width: 50px;
       height: 2px;
-      left: 140px;
+      left: 141px;
 
       background: rgb(128, 26, 22);
       background: linear-gradient(
