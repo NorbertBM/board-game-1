@@ -3,7 +3,10 @@ import CombatCard from "../../../components/cards/CombatCard";
 import Combat1DeckCard from "../../../components/cards/Combat1DeckCard";
 import { GiRank1, GiRank2, GiCrossedSwords } from "react-icons/gi";
 
-import { combinationsOfTwo1 } from "./data/combatDeck1Db";
+import {
+  combinationsOfTwo1,
+  combinationsOfTwo1Rev,
+} from "./data/combatDeck1Db";
 
 import { getRandomCard } from "./getRandomCard";
 export default function CombatDeck1() {
@@ -52,10 +55,7 @@ export default function CombatDeck1() {
         icon1={<GiCrossedSwords size={50} />}
         icon2={<GiRank1 size={40} />}
         icon3={<GiRank2 size={40} />}
-      >
-        {" "}
-        {combinationsOfTwo1.length}
-      </Combat1DeckCard>
+      ></Combat1DeckCard>
       {combinationsOfTwo1.length}
       {combinationsOfTwo1.map((combination, index) => (
         <CombatCard
@@ -64,27 +64,27 @@ export default function CombatDeck1() {
           iconsMid={<GiRank1 size={40} />}
           iconsRight={<GiRank2 size={40} />}
         >
-          {combination.map((action, index) => (
+          {combination.reverse().map((action, index) => (
             <p className="action" key={index}>
               {action}
             </p>
           ))}
         </CombatCard>
       ))}{" "}
-      {/* {combinationsOfTwo2.map((combination, index) => (
+      {/* {combinationsOfTwo1Rev.map((combination, index) => (
         <CombatCard
           key={index}
           iconLeft={<GiCrossedSwords size={40} />}
           iconsMid={<GiRank1 size={40} />}
           iconsRight={<GiRank2 size={40} />}
         >
-          {combination.map((action, index) => (
+          {combination.reverse().map((action, index) => (
             <p className="action" key={index}>
               {action}
             </p>
           ))}
         </CombatCard>
-      ))} */}
+      ))}{" "} */}
     </section>
   );
 }
