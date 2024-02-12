@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import CombatCard from "../../../components/cards/CombatCard";
 import Combat1DeckCard from "../../../components/cards/Combat1DeckCard";
-import { GiRank1, GiRank2, GiCrossedSwords } from "react-icons/gi";
-
-import { combinationsOfTwo1 } from "./data/combatDeck1Db";
+import { GiRank3, GiCrossedSwords } from "react-icons/gi";
+import { TbMilitaryRank } from "react-icons/tb";
+import { combinationsOfThree1 } from "./data/combatDeck1Db";
 
 import { getRandomCard } from "./getRandomCard";
-export default function CombatDeck1() {
+export default function CombatDeck2() {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
   return (
@@ -19,12 +19,12 @@ export default function CombatDeck1() {
         <button
           onClick={() =>
             getRandomCard(
-              combinationsOfTwo1.map((combination, index) => (
+              combinationsOfThree1.map((combination, index) => (
                 <CombatCard
                   key={index}
                   iconLeft={<GiCrossedSwords size={40} />}
-                  iconsMid={<GiRank1 size={40} />}
-                  iconsRight={<GiRank2 size={40} />}
+                  iconsMid={<GiRank3 size={40} />}
+                  iconsRight={<TbMilitaryRank size={40} />}
                 >
                   {combination.map((action, index) => (
                     <p className="action" key={index}>
@@ -50,19 +50,16 @@ export default function CombatDeck1() {
       </div>
       <Combat1DeckCard
         icon1={<GiCrossedSwords size={50} />}
-        icon2={<GiRank1 size={40} />}
-        icon3={<GiRank2 size={40} />}
-      >
-        {" "}
-        {combinationsOfTwo1.length}
-      </Combat1DeckCard>
-      {combinationsOfTwo1.length}
-      {combinationsOfTwo1.map((combination, index) => (
+        icon2={<GiRank3 size={40} />}
+        icon3={<TbMilitaryRank size={40} />}
+      ></Combat1DeckCard>
+      {combinationsOfThree1.length}
+      {combinationsOfThree1.map((combination, index) => (
         <CombatCard
           key={index}
           iconLeft={<GiCrossedSwords size={40} />}
-          iconsMid={<GiRank1 size={40} />}
-          iconsRight={<GiRank2 size={40} />}
+          iconsMid={<GiRank3 size={40} />}
+          iconsRight={<TbMilitaryRank size={40} />}
         >
           {combination.map((action, index) => (
             <p className="action" key={index}>
@@ -71,20 +68,6 @@ export default function CombatDeck1() {
           ))}
         </CombatCard>
       ))}{" "}
-      {/* {combinationsOfTwo2.map((combination, index) => (
-        <CombatCard
-          key={index}
-          iconLeft={<GiCrossedSwords size={40} />}
-          iconsMid={<GiRank1 size={40} />}
-          iconsRight={<GiRank2 size={40} />}
-        >
-          {combination.map((action, index) => (
-            <p className="action" key={index}>
-              {action}
-            </p>
-          ))}
-        </CombatCard>
-      ))} */}
     </section>
   );
 }

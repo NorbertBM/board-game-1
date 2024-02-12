@@ -6,9 +6,10 @@ export default function DecksNav() {
   const deckNavItems = [
     "Stock",
     "Behavior",
+    "Discover",
     "Explorer",
     "Combat1",
-    "Discover",
+    "Combat2",
     "Abilities",
     "Enemies",
     "CharacterPanel",

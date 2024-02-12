@@ -27,6 +27,7 @@ import CombatDeck1 from "./routes/guide_routes/decks/CombatDeck1";
 import AbilitiesDeck from "./routes/guide_routes/decks/AbilitiesDeck";
 import EnemiesDeck from "./routes/guide_routes/decks/EnemiesDeck";
 import DiscoverDeck from "./routes/guide_routes/decks/DiscoverDeck";
+import CombatDeck2 from "./routes/guide_routes/decks/CombatDeck2";
 export default function App() {
   return (
     <div className="App">
@@ -44,12 +45,12 @@ export default function App() {
             <Route path="decks" element={<Decks />}>
               <Route path="stock" element={<StockDeck />} />
               <Route path="behavior" element={<BehaviorDeck />} />
+              <Route path="discover" element={<DiscoverDeck />} />
               <Route path="explorer" element={<ExplorerDeck />} />
               <Route path="combat1" element={<CombatDeck1 />} />
+              <Route path="combat2" element={<CombatDeck2 />} />
               <Route path="characterPanel" element={<CharacterPanel />} />
               <Route path="cluessolutions" element={<CluesSolutions />} />
-
-              <Route path="discover" element={<DiscoverDeck />} />
               <Route path="abilities" element={<AbilitiesDeck />} />
               <Route path="enemies" element={<EnemiesDeck />} />
             </Route>
