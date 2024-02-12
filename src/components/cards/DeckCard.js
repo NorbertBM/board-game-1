@@ -1,10 +1,10 @@
 import React from "react";
 import { DeckCardStyle } from "./DeckCardStyle";
-export default function DeckCard({ children }) {
+export default function DeckCard({ children, classPlus }) {
   return (
-    <DeckCardStyle className="deck-card">
+    <DeckCardStyle className={`deck-card `}>
       <div className="border">
-        <p className="icon">{children}</p>
+        <p className={classPlus ? `icons ${classPlus}` : "icon"}>{children}</p>
       </div>
     </DeckCardStyle>
   );

@@ -1,21 +1,17 @@
-export const combatDeck1Db = [
+const actions1 = [
   "Move forward 1",
+  "Basic Attack",
+  "Ability 1",
+  "Ability 2",
+  "Cast spell",
+];
+const actions2 = [
   "Move forward 2",
   "Basic Attack",
   "Ability 1",
   "Ability 2",
   "Cast spell",
 ];
-
-const actions = [
-  "Move forward 1",
-  "Move forward 2",
-  "Basic Attack",
-  "Ability 1",
-  "Ability 2",
-  "Cast spell",
-];
-
 function getCombinations(arr, size) {
   const combinations = [];
   const generate = (start, combination) => {
@@ -31,8 +27,7 @@ function getCombinations(arr, size) {
   return combinations;
 }
 
-const combinationsOfThree = getCombinations(actions, 3);
-const combinationsOfTwo = getCombinations(actions, 2);
-
-console.log("Combinations of 3 actions:", combinationsOfThree);
-console.log("Combinations of 2 actions:", combinationsOfTwo);
+export const combinationsOfThree1 = getCombinations(actions1, 3);
+export const combinationsOfTwo1 = getCombinations(actions1, 2);
+export const combinationsOfThree2 = getCombinations(actions2, 3);
+export const combinationsOfTwo2 = getCombinations(actions2, 2);
