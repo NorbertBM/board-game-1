@@ -3,7 +3,7 @@ const actions1T12 = [
   "Basic Attack",
   "Ability 1",
   "Ability 2",
-  "Move forward 2",
+  // "Move forward 2",
 ];
 // const actions2T12 = actions1T12.reverse();
 // const reverse1T12 = actions1T12.concat(actions2T12);
@@ -13,7 +13,7 @@ const actions1T34 = [
   "Ability 1",
   "Ability 2",
   "Cast spell",
-  "Move forward 2",
+  // "Move forward 2",
 ];
 // console.log(reverse1T12);
 // const actions2T34 = [

@@ -62,8 +62,8 @@ export const CombatCardStyle = styled.div`
   .combat-card_icon-mid,
   .combat-card_icon-right {
     color: #111;
-    height: 15mm;
-    width: 15mm;
+    height: 10mm;
+    width: 10mm;
     background-color: #fae9dd;
     /* Create a gradiant inwords  */
     background: rgb(250, 233, 221);
@@ -78,23 +78,37 @@ export const CombatCardStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
-    /* Add glowing sunlight lines before and after the icon center */
+    /* box-shadow: 0 0 1px rgba(0, 0, 0, 1); */
   }
   .action {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     text-align: center;
     display: flex;
+    flex-direction: column;
     gap: 2mm;
     align-items: center;
     justify-content: center;
+    border: 1px solid #fae9dd;
+    margin: 2mm;
+    padding: 1.5mm;
+    border-radius: 5px;
+    /* text-shadow: 2px 10px 30px rgba(0, 0, 0, 1); */
+    background: rgb(250, 233, 221);
+    background: radial-gradient(
+      circle,
+      rgb(247, 237, 230) 0%,
+      rgba(181, 163, 151, 1) 100%
+    );
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 1);
+    color: rgb(16, 16, 17);
     .dice {
       border: 1px solid #fae9dd;
       padding: 1px;
       background-color: #eee;
       color: #111;
       border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     }
   }
 `;

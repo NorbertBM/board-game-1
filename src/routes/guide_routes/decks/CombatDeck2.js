@@ -33,9 +33,9 @@ export default function CombatDeck2() {
               combinationsOfThree1.map((combination, index) => (
                 <CombatCard
                   key={index}
-                  iconLeft={<GiCrossedSwords size={40} />}
-                  iconsMid={<GiRank3 size={40} />}
-                  iconsRight={<TbMilitaryRank size={40} />}
+                  iconLeft={<GiCrossedSwords size={30} />}
+                  iconsMid={<GiRank3 size={30} />}
+                  iconsRight={<TbMilitaryRank size={30} />}
                 >
                   {combination.map((action, index) => (
                     <p className="action" key={index}>
@@ -64,9 +64,9 @@ export default function CombatDeck2() {
       {combinationsOfThree1.map((combination, index) => (
         <CombatCard
           key={index}
-          iconLeft={<GiCrossedSwords size={40} />}
-          iconsMid={<GiRank3 size={40} />}
-          iconsRight={<TbMilitaryRank size={40} />}
+          iconLeft={<GiCrossedSwords size={30} />}
+          iconsMid={<GiRank3 size={30} />}
+          iconsRight={<TbMilitaryRank size={30} />}
         >
           {combination.map((action, index) => (
             <p className="action" key={index}>
