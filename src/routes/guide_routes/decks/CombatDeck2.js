@@ -41,7 +41,7 @@ export default function CombatDeck2() {
             )
           }
         >
-          Select Random Card
+          Get Random Card
         </button>
         <div id="displayCard">
           {isLoading ? (
@@ -58,20 +58,6 @@ export default function CombatDeck2() {
       ></Combat1DeckCard>
       {combinationsOfThree1.length}
       {combinationsOfThree1.map((combination, index) => (
-        <CombatCard
-          key={index}
-          iconLeft={<GiCrossedSwords size={40} />}
-          iconsMid={<GiRank3 size={40} />}
-          iconsRight={<TbMilitaryRank size={40} />}
-        >
-          {combination.map((action, index) => (
-            <p className="action" key={index}>
-              {action}
-            </p>
-          ))}
-        </CombatCard>
-      ))}{" "}
-      {combinationsOfThree1Rev.map((combination, index) => (
         <CombatCard
           key={index}
           iconLeft={<GiCrossedSwords size={40} />}

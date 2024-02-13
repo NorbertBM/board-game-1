@@ -5,7 +5,7 @@ import { GiRank1, GiRank2, GiCrossedSwords } from "react-icons/gi";
 
 import {
   combinationsOfTwo1,
-  combinationsOfTwo1Rev,
+  // combinationsOfTwo1Rev,
 } from "./data/combatDeck1Db";
 
 import { getRandomCard } from "./getRandomCard";
@@ -41,7 +41,7 @@ export default function CombatDeck1() {
             )
           }
         >
-          Select Random Card
+          Get Random Card
         </button>
         <div id="displayCard">
           {isLoading ? (
@@ -71,20 +71,6 @@ export default function CombatDeck1() {
           ))}
         </CombatCard>
       ))}{" "}
-      {/* {combinationsOfTwo1Rev.map((combination, index) => (
-        <CombatCard
-          key={index}
-          iconLeft={<GiCrossedSwords size={40} />}
-          iconsMid={<GiRank1 size={40} />}
-          iconsRight={<GiRank2 size={40} />}
-        >
-          {combination.reverse().map((action, index) => (
-            <p className="action" key={index}>
-              {action}
-            </p>
-          ))}
-        </CombatCard>
-      ))}{" "} */}
     </section>
   );
 }
