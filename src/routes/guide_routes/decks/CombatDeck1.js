@@ -3,15 +3,44 @@ import CombatCard from "../../../components/cards/CombatCard";
 import Combat1DeckCard from "../../../components/cards/Combat1DeckCard";
 import { GiRank1, GiRank2, GiCrossedSwords } from "react-icons/gi";
 
-import {
-  combinationsOfTwo1,
-  // combinationsOfTwo1Rev,
-} from "./data/combatDeck1Db";
+import { combinationsOfTwo1 } from "./data/combatDeck1Db";
 
-import { getRandomCard } from "./getRandomCard";
+import { getRandomCard } from "./functions/getRandomCard";
+import { showActionIcon } from "./functions/showActionIcon";
+import DiceRoller2 from "../../../components/Dice2";
+
 export default function CombatDeck1() {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
+  // function showActionIcon(action) {
+  //   if (action === "Move forward 1" || action === "Move forward 2") {
+  //     return (
+  //       <>
+  //         {action} <GiBarefoot className="dice" />
+  //       </>
+  //     );
+  //   } else if (action === "Basic Attack") {
+  //     return (
+  //       <>
+  //         {action} <GiCrossedSwords className="dice" />
+  //       </>
+  //     );
+  //   } else if (action === "Ability 1") {
+  //     return (
+  //       <>
+  //         {action} <GiDiceFire className="dice" color="#95440e" />
+  //       </>
+  //     );
+  //   } else if (action === "Ability 2") {
+  //     return (
+  //       <>
+  //         {action} <GiDiceFire className="dice" color="#f6a972" />
+  //       </>
+  //     );
+  //   }
+  //   return action;
+  // }
+
   return (
     <section
       className="abilities-section hide"
@@ -31,7 +60,7 @@ export default function CombatDeck1() {
                 >
                   {combination.map((action, index) => (
                     <p className="action" key={index}>
-                      {action}
+                      {showActionIcon(action)}
                     </p>
                   ))}
                 </CombatCard>
@@ -57,6 +86,7 @@ export default function CombatDeck1() {
         icon3={<GiRank2 size={40} />}
       ></Combat1DeckCard>
       {combinationsOfTwo1.length}
+      <DiceRoller2 />
       {combinationsOfTwo1.map((combination, index) => (
         <CombatCard
           key={index}
@@ -66,7 +96,8 @@ export default function CombatDeck1() {
         >
           {combination.reverse().map((action, index) => (
             <p className="action" key={index}>
-              {action}
+              {/* inf action is Move forward 1 then includ icons */}
+              {showActionIcon(action)}
             </p>
           ))}
         </CombatCard>

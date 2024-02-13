@@ -52,6 +52,23 @@ export default function BasicMechanics() {
         can only do one of these per turn, either Discover or Explore, he cannot
         do both.
       </p>
+      <h3>Battle</h3>
+      <h4>Dice role for move and basic attack</h4>
+      <p>
+        2 dice with with 6 sides, each dice has 3 sides with move 3 side with
+        attack
+      </p>
+      <p>
+        For a successful attack or move you need (75% chance) to roll at least
+        one attack or move. If you are in the back of the target and roll two
+        attacks (25% chance) you give back stab damage (same goes for the
+        opponent?) .
+      </p>
+      <h4>Dice role for ability 1,2 and magic attack</h4>
+      <p>
+        3 dice with with 6 sides, each dice has 2 sides with ability 1, 2 side
+        with ability 2, 2 side with magic attack.
+      </p>
     </div>
   );
 }

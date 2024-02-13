@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DeckCard from "../../../components/cards/DeckCard";
 import BehaviorCard from "../../../components/cards/BehaviorCard";
 import { FaPersonWalkingArrowRight } from "react-icons/fa6";
-import { getRandomCard } from "./getRandomCard";
+import { getRandomCard } from "./functions/getRandomCard";
 // Move icons
 import {
   ImArrowRight,

@@ -6,17 +6,15 @@ import {
   GiRank3,
   GiShieldImpact,
   GiCaduceus,
-} from "react-icons/gi";
-import { MdShield } from "react-icons/md";
-import { IoIosHeart } from "react-icons/io";
-
-import { BsFillEyeFill } from "react-icons/bs";
-import {
+  GiShieldBash,
   GiMagicSwirl,
   GiSwordsEmblem,
   GiPocketBow,
   GiBroadsword,
 } from "react-icons/gi";
+import { MdShield } from "react-icons/md";
+import { IoIosHeart } from "react-icons/io";
+import { PiEyeClosedFill } from "react-icons/pi";
 
 export default function EnemyCard({
   card_name,
@@ -33,6 +31,7 @@ export default function EnemyCard({
   range,
   special_1,
   special_2,
+  spell,
 }) {
   const [rank, setRank] = useState(<GiRank1 />);
   useEffect(() => {
@@ -65,7 +64,7 @@ export default function EnemyCard({
     } else if (special_1 === "heal") {
       setSpecials({ ...specials, icon_1: <GiCaduceus /> });
     }
-  }, [special_1, specials]);
+  }, []);
 
   return (
     <div className={`enemy-card`}>
@@ -95,7 +94,7 @@ export default function EnemyCard({
           </div>
           <div className="range">
             <p className="value"> {range} </p>
-            <BsFillEyeFill color="#111" size={50} />
+            <PiEyeClosedFill color="#111" size={70} />
           </div>
           {/* <div className="special">
             {special} <br /> 1x
@@ -111,6 +110,7 @@ export default function EnemyCard({
           <section className="specials">
             <div className="special_1">{specials.icon_1}</div>
             <div className="special_2">{specials.icon_2}</div>
+            {spell ? <div className="spell">{spell}</div> : null}
           </section>
         </section>
       </div>

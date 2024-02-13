@@ -17,6 +17,7 @@ export default function Lvl3Enemies() {
         special={"none"}
         range={3}
         special_1={"piercing"}
+        spell={"Spell"}
       ></EnemyCard>{" "}
       <EnemyCard
         card_name={"Skeleton Mage"}
@@ -29,6 +30,7 @@ export default function Lvl3Enemies() {
         special={"none"}
         range={3}
         special_1={"heal"}
+        spell={"Spell"}
       >
         {" "}
         {/* <p className="description">

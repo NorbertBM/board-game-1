@@ -82,7 +82,19 @@ export const CombatCardStyle = styled.div`
     /* Add glowing sunlight lines before and after the icon center */
   }
   .action {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    gap: 2mm;
+    align-items: center;
+    justify-content: center;
+    .dice {
+      border: 1px solid #fae9dd;
+      padding: 1px;
+      background-color: #eee;
+      color: #111;
+      border-radius: 5px;
+    }
   }
 `;

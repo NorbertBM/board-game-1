@@ -154,16 +154,24 @@
   }
 }
 .specials {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  grid-template-areas:
+    "special1 special2"
+    "spell spell";
 }
 .special_1,
 .special_2 {
   position: relative;
   /* margin-left: 10px; */
-  height: 15mm;
-  width: 15mm;
+  height: 14mm;
+  width: 14mm;
   background-color: #fae9dd;
   /* Create a gradiant inwords  */
   background: rgb(250, 233, 221);
@@ -183,9 +191,34 @@
   color: #000;
 }
 .special_1 {
+  grid-area: special1;
   background: radial-gradient(
     circle,
     rgb(246, 169, 114) 0%,
     rgb(149, 68, 14) 100%
   );
+}
+
+.special_2 {
+  grid-area: special2;
+  background: radial-gradient(
+    circle,
+    rgb(246, 169, 114) 0%,
+    rgb(149, 135, 14) 100%
+  );
+}
+.spell {
+  grid-area: spell;
+  position: relative;
+  height: 10mm;
+  width: 100%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #eee;
+  align-self: center;
+  background: linear-gradient(rgb(114, 237, 246) 0%, rgb(14, 52, 149) 100%);
 }

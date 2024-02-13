@@ -3,12 +3,14 @@ import CombatCard from "../../../components/cards/CombatCard";
 import Combat1DeckCard from "../../../components/cards/Combat1DeckCard";
 import { GiRank3, GiCrossedSwords } from "react-icons/gi";
 import { TbMilitaryRank } from "react-icons/tb";
-import {
-  combinationsOfThree1,
-  combinationsOfThree1Rev,
-} from "./data/combatDeck1Db";
+import { combinationsOfThree1 } from "./data/combatDeck1Db";
 
-import { getRandomCard } from "./getRandomCard";
+import { getRandomCard } from "./functions/getRandomCard";
+
+import { showActionIcon } from "./functions/showActionIcon";
+import DiceRoller3 from "../../../components/Dice3";
+import DiceRoller2 from "../../../components/Dice2";
+
 export default function CombatDeck2() {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
@@ -17,6 +19,12 @@ export default function CombatDeck2() {
       className="abilities-section hide"
       style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
     >
+      <Combat1DeckCard
+        icon1={<GiCrossedSwords size={50} />}
+        icon2={<GiRank3 size={40} />}
+        icon3={<TbMilitaryRank size={40} />}
+      ></Combat1DeckCard>
+      {combinationsOfThree1.length}
       {/* Display random Card */}
       <div className="random-card">
         <button
@@ -31,7 +39,7 @@ export default function CombatDeck2() {
                 >
                   {combination.map((action, index) => (
                     <p className="action" key={index}>
-                      {action}
+                      {showActionIcon(action)}
                     </p>
                   ))}
                 </CombatCard>
@@ -51,12 +59,8 @@ export default function CombatDeck2() {
           )}
         </div>
       </div>
-      <Combat1DeckCard
-        icon1={<GiCrossedSwords size={50} />}
-        icon2={<GiRank3 size={40} />}
-        icon3={<TbMilitaryRank size={40} />}
-      ></Combat1DeckCard>
-      {combinationsOfThree1.length}
+      <DiceRoller2 />
+      <DiceRoller3 />
       {combinationsOfThree1.map((combination, index) => (
         <CombatCard
           key={index}
@@ -66,7 +70,7 @@ export default function CombatDeck2() {
         >
           {combination.map((action, index) => (
             <p className="action" key={index}>
-              {action}
+              {showActionIcon(action)}
             </p>
           ))}
         </CombatCard>
