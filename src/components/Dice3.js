@@ -111,19 +111,24 @@ export default function DiceRoller3() {
       </button> */}
 
       <h3>Dice rules</h3>
-      <ul>
-        <p>
-          On Single Ammo Attack:If one of the dice roles "Miss" then the value
-          is "0".
-        </p>
-        <p>
-          On double Ammo Attack:If both dice roles "Miss" then depending on the
-          order of the shot ammo eider Ammo 1 or 2 will miss.
-        </p>
-        <p>
-          On All Ammo Attack:If both dice roles "Miss" then the value is "0".
-        </p>
-      </ul>
+      <p>
+        2 dice with with 6 sides, each dice has 3 sides with move 3 side with
+        attack
+      </p>
+      <p>
+        For a successful attack or move you need (75% chance) to roll at least
+        one attack or move. If you are in the back of the target and roll two
+        attacks (25% chance) you give back stab damage (same goes for the
+        opponent?) .
+      </p>
+      <p>
+        In order to move 2x you need to roll 2 move icons. (if you roll only 1
+        do you perform 1 move or miss compleetly)
+      </p>
+      <p>
+        Roll 2 dice of the same kind in order to perform a move or a ability 1,
+        2 or magic attack
+      </p>
     </div>
   );
 }

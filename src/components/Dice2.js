@@ -86,18 +86,6 @@ export default function DiceRoller2() {
       {/* <button onClick={rollDice} disabled={rolling1 || rolling2}>
         <FaDice size={40} />
       </button> */}
-
-      <h4>Dice role for move and basic attack</h4>
-      <p>
-        2 dice with with 6 sides, each dice has 3 sides with move 3 side with
-        attack
-      </p>
-      <p>
-        For a successful attack or move you need (75% chance) to roll at least
-        one attack or move. If you are in the back of the target and roll two
-        attacks (25% chance) you give back stab damage (same goes for the
-        opponent?) .
-      </p>
     </div>
   );
 }

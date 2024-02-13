@@ -8,6 +8,7 @@ import { combinationsOfTwo1 } from "./data/combatDeck1Db";
 import { getRandomCard } from "./functions/getRandomCard";
 import { showActionIcon } from "./functions/showActionIcon";
 import DiceRoller2 from "../../../components/Dice2";
+import DiceRoller3 from "../../../components/Dice3";
 
 export default function CombatDeck1() {
   const [isLoading, setIsLoading] = useState(false);
@@ -46,6 +47,12 @@ export default function CombatDeck1() {
       className="abilities-section hide"
       style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
     >
+      <Combat1DeckCard
+        icon1={<GiCrossedSwords size={50} />}
+        icon2={<GiRank1 size={40} />}
+        icon3={<GiRank2 size={40} />}
+      ></Combat1DeckCard>
+      {combinationsOfTwo1.length}
       {/* Display random Card */}
       <div className="random-card">
         <button
@@ -80,13 +87,8 @@ export default function CombatDeck1() {
           )}
         </div>
       </div>
-      <Combat1DeckCard
-        icon1={<GiCrossedSwords size={50} />}
-        icon2={<GiRank1 size={40} />}
-        icon3={<GiRank2 size={40} />}
-      ></Combat1DeckCard>
-      {combinationsOfTwo1.length}
       <DiceRoller2 />
+      <DiceRoller3 />
       {combinationsOfTwo1.map((combination, index) => (
         <CombatCard
           key={index}
