@@ -1,5 +1,5 @@
 import EnemyCard from "../../../../components/cards/EnemyCard";
-
+import { GiFlamingArrow, GiFireball } from "react-icons/gi";
 export const enemiesDb = [
   <EnemyCard
     icon_left={"1"}
@@ -28,8 +28,56 @@ export const enemiesDb = [
   <EnemyCard
     icon_left={"1"}
     icon_right={"melee"}
+    card_name={"Forest creature"}
+    img={"/img/units/enemies/lvl_1/alien-forest-2.jpg"}
+    defense={"2"}
+    hp={"2"}
+    attack={1}
+    special={"none"}
+    range={3}
+    special_1={"no-weapon"}
+  />,
+  <EnemyCard
+    icon_left={"1"}
+    icon_right={"melee"}
+    card_name={"Rocker"}
+    img={"/img/units/enemies/lvl_1/stone-creature-1.jpg"}
+    defense={"2"}
+    hp={"2"}
+    attack={1}
+    special={"none"}
+    range={3}
+    special_1={"destroy-shield"}
+  />,
+  <EnemyCard
+    icon_left={"2"}
+    icon_right={"melee"}
+    card_name={"Demonic Rocker"}
+    img={"/img/units/enemies/lvl_1/stone-creature-2.jpg"}
+    defense={"2"}
+    hp={"2"}
+    attack={3}
+    special={"none"}
+    range={3}
+    special_1={"piercing"}
+  />,
+  <EnemyCard
+    icon_left={"1"}
+    icon_right={"melee"}
     card_name={"Skeleton Warrior"}
     img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
+    defense={"2"}
+    hp={"2"}
+    attack={1}
+    special={"none"}
+    range={3}
+    special_1={"piercing"}
+  />,
+  <EnemyCard
+    icon_left={"1"}
+    icon_right={"melee"}
+    card_name={"Warrior"}
+    img={"/img/units/enemies/lvl_1/stone-creature-5.jpg"}
     defense={"2"}
     hp={"2"}
     attack={1}
@@ -52,8 +100,8 @@ export const enemiesDb = [
   <EnemyCard
     icon_left={"1"}
     icon_right={"melee"}
-    card_name={"Skeleton Warrior"}
-    img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
+    card_name={"Warrior"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-6.jpg"}
     defense={"2"}
     hp={"2"}
     attack={1}
@@ -64,8 +112,8 @@ export const enemiesDb = [
   <EnemyCard
     icon_left={"1"}
     icon_right={"melee"}
-    card_name={"Skeleton Warrior"}
-    img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
+    card_name={"Warrior"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-7.jpg"}
     defense={"2"}
     hp={"2"}
     attack={1}
@@ -76,44 +124,8 @@ export const enemiesDb = [
   <EnemyCard
     icon_left={"1"}
     icon_right={"melee"}
-    card_name={"Skeleton Warrior"}
-    img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
-    defense={"2"}
-    hp={"2"}
-    attack={1}
-    special={"none"}
-    range={3}
-    special_1={"piercing"}
-  />,
-  <EnemyCard
-    icon_left={"1"}
-    icon_right={"melee"}
-    card_name={"Skeleton Warrior"}
-    img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
-    defense={"2"}
-    hp={"2"}
-    attack={1}
-    special={"none"}
-    range={3}
-    special_1={"piercing"}
-  />,
-  <EnemyCard
-    icon_left={"1"}
-    icon_right={"melee"}
-    card_name={"Skeleton Warrior"}
-    img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
-    defense={"2"}
-    hp={"2"}
-    attack={1}
-    special={"none"}
-    range={3}
-    special_1={"piercing"}
-  />,
-  <EnemyCard
-    icon_left={"1"}
-    icon_right={"melee"}
-    card_name={"Skeleton Warrior"}
-    img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
+    card_name={"Warrior"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-8.jpg"}
     defense={"2"}
     hp={"2"}
     attack={1}
@@ -146,10 +158,10 @@ export const enemiesDb = [
     special_1={"heal"}
   />,
   <EnemyCard
-    card_name={"Skeleton Mage"}
+    card_name={"Barbarian warrior"}
     icon_left={"1"}
     icon_right={"melee"}
-    img={"/img/units/melee/big-dude-1.jpeg"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-1.jpg"}
     defense={"1"}
     hp={"2"}
     attack={3}
@@ -160,20 +172,44 @@ export const enemiesDb = [
   <EnemyCard
     icon_left={"2"}
     icon_right={"melee"}
-    card_name={"Skeleton Warrior"}
-    img={"/img/units/enemies/lvl_1/skeleton-archer-warrior-1.jpeg"}
+    card_name={"Barbarian warrior"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-2.jpg"}
     defense={"2"}
     hp={"2"}
-    attack={1}
+    attack={2}
     special={"none"}
     range={3}
     special_1={"piercing"}
   ></EnemyCard>,
   <EnemyCard
-    card_name={"Skeleton Mage"}
+    card_name={"Warrior"}
     icon_left={"2"}
     icon_right={"magic"}
-    img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-2.jpeg"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-3.jpg"}
+    defense={"1"}
+    hp={"1"}
+    attack={1}
+    special={"none"}
+    range={3}
+    special_1={"heal"}
+  ></EnemyCard>,
+  <EnemyCard
+    card_name={"Warrior"}
+    icon_left={"2"}
+    icon_right={"magic"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-4.jpg"}
+    defense={"1"}
+    hp={"1"}
+    attack={1}
+    special={"none"}
+    range={3}
+    special_1={"heal"}
+  ></EnemyCard>,
+  <EnemyCard
+    card_name={"Warrior"}
+    icon_left={"2"}
+    icon_right={"magic"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-5.jpg"}
     defense={"1"}
     hp={"1"}
     attack={1}
@@ -230,10 +266,10 @@ export const enemiesDb = [
     special_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
-    card_name={"Skeleton Mage"}
+    card_name={"Vyver"}
     icon_left={"2"}
     icon_right={"magic"}
-    img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-2.jpeg"}
+    img={"/img/units/enemies/lvl_1/stone-Vyver-2.jpg"}
     defense={"1"}
     hp={"1"}
     attack={1}
@@ -242,34 +278,10 @@ export const enemiesDb = [
     special_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
-    card_name={"Skeleton Mage"}
+    card_name={"Vyver"}
     icon_left={"2"}
     icon_right={"magic"}
-    img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-2.jpeg"}
-    defense={"1"}
-    hp={"1"}
-    attack={1}
-    special={"none"}
-    range={3}
-    special_1={"heal"}
-  ></EnemyCard>,
-  <EnemyCard
-    card_name={"Skeleton Mage"}
-    icon_left={"2"}
-    icon_right={"magic"}
-    img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-2.jpeg"}
-    defense={"1"}
-    hp={"1"}
-    attack={1}
-    special={"none"}
-    range={3}
-    special_1={"heal"}
-  ></EnemyCard>,
-  <EnemyCard
-    card_name={"Skeleton Mage"}
-    icon_left={"2"}
-    icon_right={"magic"}
-    img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-2.jpeg"}
+    img={"/img/units/enemies/lvl_1/stone-Vyver-1.jpg"}
     defense={"1"}
     hp={"1"}
     attack={1}
@@ -340,12 +352,12 @@ export const enemiesDbTier34 = [
     special_1={"heal"}
   />,
   <EnemyCard
-    card_name={"Skeleton Mage"}
+    card_name={"Forest Warrior"}
     icon_left={"3"}
     icon_right={"melee"}
     img={"/img/units/melee/big-dude-1.jpeg"}
     defense={"1"}
-    hp={"2"}
+    hp={"5"}
     attack={3}
     special={"none"}
     range={3}
@@ -362,6 +374,8 @@ export const enemiesDbTier34 = [
     special={"none"}
     range={3}
     special_1={"piercing"}
+    spell={<GiFlamingArrow />}
+    spellValue={"2"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -374,5 +388,21 @@ export const enemiesDbTier34 = [
     special={"none"}
     range={3}
     special_1={"heal"}
+    spell={<GiFireball />}
+    spellValue={"2(1)"}
+  ></EnemyCard>,
+  <EnemyCard
+    card_name={"Skeleton Mage"}
+    icon_left={"4"}
+    icon_right={"magic"}
+    img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-2.jpeg"}
+    defense={"1"}
+    hp={"1"}
+    attack={1}
+    special={"none"}
+    range={3}
+    special_1={"heal"}
+    spell={<GiFireball />}
+    spellValue={"2"}
   ></EnemyCard>,
 ];

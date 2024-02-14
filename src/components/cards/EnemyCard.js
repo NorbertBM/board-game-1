@@ -12,11 +12,15 @@ import {
   GiPocketBow,
   GiBroadsword,
   GiSlime,
+  GiAncientSword,
+  GiSurroundedShield,
+  GiFlamingArrow,
+  GiStrikingSplinter,
 } from "react-icons/gi";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
 import { PiEyeClosedFill } from "react-icons/pi";
-
+import { TbMilitaryRank } from "react-icons/tb";
 export default function EnemyCard({
   card_name,
   customImgStyle,
@@ -33,6 +37,7 @@ export default function EnemyCard({
   special_1,
   special_2,
   spell,
+  spellValue,
 }) {
   const [rank, setRank] = useState(<GiRank1 />);
   useEffect(() => {
@@ -40,6 +45,8 @@ export default function EnemyCard({
       setRank(<GiRank2 color="#111" size={30} />);
     } else if (icon_left === "3") {
       setRank(<GiRank3 color="#111" size={30} />);
+    } else if (icon_left === "4") {
+      setRank(<TbMilitaryRank color="#111" size={30} />);
     } else {
       setRank(<GiRank1 color="#111" size={30} />);
     }
@@ -66,8 +73,12 @@ export default function EnemyCard({
       setSpecials({ ...specials, icon_1: <GiCaduceus /> });
     } else if (special_1 === "slime") {
       setSpecials({ ...specials, icon_1: <GiSlime /> });
+    } else if (special_1 === "no-weapon") {
+      setSpecials({ ...specials, icon_1: <GiAncientSword /> });
+    } else if (special_1 === "destroy-shield") {
+      setSpecials({ ...specials, icon_1: <GiSurroundedShield /> });
     }
-  }, []);
+  }, [special_1]);
 
   return (
     <div className={`enemy-card`}>
@@ -113,7 +124,12 @@ export default function EnemyCard({
           <section className="specials">
             <div className="special_1">{specials.icon_1}</div>
             <div className="special_2">{specials.icon_2}</div>
-            {spell ? <div className="spell">{spell}</div> : null}
+            {spell ? (
+              <div className="spell">
+                {spell}
+                <div className="value">{spellValue}</div>
+              </div>
+            ) : null}
           </section>
         </section>
       </div>

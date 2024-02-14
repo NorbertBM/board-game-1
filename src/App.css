@@ -4,7 +4,9 @@
 @import url("./css/enemy-card.css");
 .App {
   text-align: center;
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #02461a;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
   min-height: 100vh;
   /* display: flex;
   flex-direction: column;

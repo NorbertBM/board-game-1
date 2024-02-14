@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DeckCard from "../../../components/cards/DeckCard";
 import { FaWpexplorer } from "react-icons/fa";
-import { enemiesDb } from "./data/enemiesDb";
+import { enemiesDbTier34 } from "./data/enemiesDb";
 import { explorerDb } from "./data/explorerDb";
 import { getRandomCard } from "./functions/getRandomCard";
 
@@ -10,7 +10,7 @@ export default function ExplorerDeck() {
   const [selectedCard, setSelectedCard] = useState(null);
   // Combine all combinations of two cards
   function mixCardCombo() {
-    const allCombinations = [...enemiesDb, ...explorerDb];
+    const allCombinations = [...enemiesDbTier34, ...explorerDb];
     return allCombinations;
   }
   return (
@@ -46,12 +46,12 @@ export default function ExplorerDeck() {
       {explorerDb.map((card, index) => (
         <div key={index}>{card}</div>
       ))}
-      {enemiesDb.length}
+      {enemiesDbTier34.length}
       {/* Display random Card */}
       <div className="random-card">
         <button
           onClick={() =>
-            getRandomCard(enemiesDb, setIsLoading, setSelectedCard)
+            getRandomCard(enemiesDbTier34, setIsLoading, setSelectedCard)
           }
         >
           Get Random Card
@@ -67,7 +67,7 @@ export default function ExplorerDeck() {
       </div>
       {/* Enemies Tier 1-2 */}
       <section style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-        {enemiesDb.map((enemy, index) => (
+        {enemiesDbTier34.map((enemy, index) => (
           <div key={index}>{enemy}</div>
         ))}
       </section>

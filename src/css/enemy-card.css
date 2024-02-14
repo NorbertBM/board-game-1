@@ -147,7 +147,7 @@
         position: absolute;
         top: 5px;
         font-size: 1.4rem;
-        color: rgb(245, 162, 103);
+        color: #f5a267;
         /* color: #95440e; */
       }
     }
@@ -156,69 +156,74 @@
 .specials {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
   align-self: center;
   align-content: center;
-  grid-template-areas:
-    "special1 special2"
-    "spell spell";
+  gap: 5px;
 }
 .special_1,
-.special_2 {
+.special_2,
+.spell {
   position: relative;
-  /* margin-left: 10px; */
-  height: 14mm;
-  width: 14mm;
-  background-color: #fae9dd;
-  /* Create a gradiant inwords  */
+  height: 20mm;
+  width: 12mm;
+  /* background-color: #fae9dd;
   background: rgb(250, 233, 221);
   background: radial-gradient(
     circle,
     rgb(247, 237, 230) 0%,
     rgba(181, 163, 151, 1) 100%
-  );
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
-  /* opacity: 0.7; */
-  border-radius: 50%;
-  border: 1px solid #111;
+  ); */
+  border: 1px solid #c5bcb6;
+  background-color: #000;
+  box-shadow: inset 0 0 10px rgb(144, 139, 139);
+  border-radius: 10%;
+  /* border: 1px solid #111; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
   font-size: 3rem;
-  color: #000;
+  color: #f5a267;
+  /* & .value {
+    color: #000;
+
+    font-weight: 700;
+  } */
 }
+
 .special_1 {
-  grid-area: special1;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgb(246, 169, 114) 0%,
     rgb(149, 68, 14) 100%
-  );
+  ); */
+  /* box-shadow: inset 0 0 20px rgba(149, 68, 14, 1); */
+  border-bottom: 3px solid rgb(149, 68, 14);
 }
 
 .special_2 {
-  grid-area: special2;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgb(246, 169, 114) 0%,
     rgb(149, 135, 14) 100%
-  );
+  ); */
+  /* box-shadow: inset 0 0 20px rgba(149, 135, 14, 1); */
+  border-bottom: 3px solid rgb(149, 135, 14);
 }
 .spell {
-  grid-area: spell;
-  position: relative;
-  height: 10mm;
-  width: 100%;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
-  border-radius: 5px;
+  /* box-shadow: inset 0 0 20px rgba(114, 237, 246, 1); */
+  border-bottom: 3px solid rgb(68, 108, 208);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
-  color: #eee;
+  font-size: 1.6rem;
+  /* color: #eee; */
   align-self: center;
-  background: linear-gradient(rgb(114, 237, 246) 0%, rgb(14, 52, 149) 100%);
+  /* border: 3px solid rgb(14, 52, 149); */
+  /* background: linear-gradient(rgb(114, 237, 246) 0%, rgb(14, 52, 149) 100%); */
 }
