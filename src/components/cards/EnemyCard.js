@@ -11,6 +11,7 @@ import {
   GiSwordsEmblem,
   GiPocketBow,
   GiBroadsword,
+  GiSlime,
 } from "react-icons/gi";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
@@ -63,6 +64,8 @@ export default function EnemyCard({
       setSpecials({ ...specials, icon_1: <GiShieldImpact /> });
     } else if (special_1 === "heal") {
       setSpecials({ ...specials, icon_1: <GiCaduceus /> });
+    } else if (special_1 === "slime") {
+      setSpecials({ ...specials, icon_1: <GiSlime /> });
     }
   }, []);
 

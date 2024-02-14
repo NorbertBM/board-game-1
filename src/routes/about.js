@@ -7,11 +7,6 @@ export default function About() {
 
   const [page, setPage] = useState("");
   useEffect(() => {
-    // fetch(file_name)
-    //   .then((response) => response.text())
-    //   .then((text) => {
-    //     setPage(text);
-    //   });
     import(`../markdown/${file_name}`).then((response) => {
       fetch(response.default)
         .then((response) => response.text())
