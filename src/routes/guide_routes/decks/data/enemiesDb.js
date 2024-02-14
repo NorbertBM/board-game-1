@@ -1,3 +1,4 @@
+import React from "react";
 import EnemyCard from "../../../../components/cards/EnemyCard";
 import { GiFlamingArrow, GiFireball } from "react-icons/gi";
 export const enemiesDb = [
