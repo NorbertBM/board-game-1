@@ -18,6 +18,16 @@ export function showActionIcon(action) {
         </div>
       </>
     );
+  } else if (action === "Move forward") {
+    return (
+      <>
+        {action}{" "}
+        <div className="dice-container">
+          <GiBarefoot className="dice" /> or
+          <GiBarefoot className="dice" /> <GiBarefoot className="dice" />
+        </div>
+      </>
+    );
   } else if (action === "Basic Attack") {
     return (
       <>

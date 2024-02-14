@@ -3,7 +3,10 @@ import CombatCard from "../../../components/cards/CombatCard";
 import Combat1DeckCard from "../../../components/cards/Combat1DeckCard";
 import { GiRank3, GiCrossedSwords } from "react-icons/gi";
 import { TbMilitaryRank } from "react-icons/tb";
-import { combinationsOfThree1 } from "./data/combatDeck1Db";
+import {
+  combinationsOfThree1,
+  combinationsOfThree1Rev,
+} from "./data/combatDeck1Db";
 
 import { getRandomCard } from "./functions/getRandomCard";
 
@@ -14,6 +17,15 @@ import DiceRoller2 from "../../../components/Dice2";
 export default function CombatDeck2() {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
+
+  function mixCardCombo() {
+    const allCombinations = [
+      ...combinationsOfThree1,
+      ...combinationsOfThree1Rev,
+    ];
+    return allCombinations;
+  }
+
   return (
     <section
       className="abilities-section hide"
@@ -24,13 +36,13 @@ export default function CombatDeck2() {
         icon2={<GiRank3 size={40} />}
         icon3={<TbMilitaryRank size={40} />}
       ></Combat1DeckCard>
-      {combinationsOfThree1.length}
+      {mixCardCombo().length}
       {/* Display random Card */}
       <div className="random-card">
         <button
           onClick={() =>
             getRandomCard(
-              combinationsOfThree1.map((combination, index) => (
+              mixCardCombo().map((combination, index) => (
                 <CombatCard
                   key={index}
                   iconLeft={<GiCrossedSwords size={30} />}
@@ -61,20 +73,22 @@ export default function CombatDeck2() {
       </div>
       <DiceRoller2 />
       <DiceRoller3 />
-      {combinationsOfThree1.map((combination, index) => (
-        <CombatCard
-          key={index}
-          iconLeft={<GiCrossedSwords size={30} />}
-          iconsMid={<GiRank3 size={30} />}
-          iconsRight={<TbMilitaryRank size={30} />}
-        >
-          {combination.map((action, index) => (
-            <p className="action" key={index}>
-              {showActionIcon(action)}
-            </p>
-          ))}
-        </CombatCard>
-      ))}{" "}
+      <section style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+        {mixCardCombo().map((combination, index) => (
+          <CombatCard
+            key={index}
+            iconLeft={<GiCrossedSwords size={30} />}
+            iconsMid={<GiRank3 size={30} />}
+            iconsRight={<TbMilitaryRank size={30} />}
+          >
+            {combination.map((action, index) => (
+              <p className="action" key={index}>
+                {showActionIcon(action)}
+              </p>
+            ))}
+          </CombatCard>
+        ))}{" "}
+      </section>
     </section>
   );
 }

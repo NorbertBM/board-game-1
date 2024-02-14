@@ -72,13 +72,12 @@ export const CombatCardStyle = styled.div`
       rgb(247, 237, 230) 0%,
       rgba(181, 163, 151, 1) 100%
     );
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
-    box-shadow: 0 0 40px rgba(128, 26, 22, 1);
+    /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 10px rgba(128, 26, 22, 1);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0 0 1px rgba(0, 0, 0, 1); */
   }
   .action {
     font-size: 1.4rem;
