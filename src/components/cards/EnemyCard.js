@@ -16,6 +16,7 @@ import {
   GiSurroundedShield,
   GiFlamingArrow,
   GiStrikingSplinter,
+  GiSwordsPower,
 } from "react-icons/gi";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
@@ -34,7 +35,6 @@ export default function EnemyCard({
   defense,
   hp,
   range,
-
   ability_1,
   ability_1Value,
   ability_2,
@@ -67,21 +67,7 @@ export default function EnemyCard({
   }, [icon_right]);
 
   // Specials
-
-  // const [specials, setSpecials] = useState({ icon_1: "", icon_2: "" });
-  // useEffect(() => {
-  //   if (special_1 === "piercing") {
-  //     setSpecials({ ...specials, icon_1: <GiShieldImpact /> });
-  //   } else if (special_1 === "heal") {
-  //     setSpecials({ ...specials, icon_1: <GiCaduceus /> });
-  //   } else if (special_1 === "slime") {
-  //     setSpecials({ ...specials, icon_1: <GiSlime /> });
-  //   } else if (special_1 === "no-weapon") {
-  //     setSpecials({ ...specials, icon_1: <GiAncientSword /> });
-  //   } else if (special_1 === "destroy-shield") {
-  //     setSpecials({ ...specials, icon_1: <GiSurroundedShield /> });
-  //   }
-  // }, [special_1]);
+  // ability 1
   const [ability1, setAbility1] = useState(ability_1);
   useEffect(() => {
     if (ability_1 === "flaming-arrow") {
@@ -92,8 +78,21 @@ export default function EnemyCard({
       setAbility1(<GiShieldBash />);
     } else if (ability_1 === "magic-swirl") {
       setAbility1(<GiMagicSwirl />);
+    } else if (ability_1 === "heal") {
+      setAbility1(<GiCaduceus />);
+    } else if (ability_1 === "piercing") {
+      setAbility1(<GiShieldImpact />);
+    } else if (ability_1 === "slime") {
+      setAbility1(<GiSlime />);
+    } else if (ability_1 === "ancient-sword") {
+      setAbility1(<GiAncientSword />);
+    } else if (ability_1 === "surrounded-shield") {
+      setAbility1(<GiSurroundedShield />);
+    } else if (ability_1 === "dual-wild") {
+      setAbility1(<GiSwordsPower />);
     }
   }, [ability_1]);
+
   const [ability2, setAbility2] = useState(ability_2);
   useEffect(() => {
     if (ability_2 === "flaming-arrow") {
@@ -104,6 +103,18 @@ export default function EnemyCard({
       setAbility2(<GiShieldBash />);
     } else if (ability_2 === "magic-swirl") {
       setAbility2(<GiMagicSwirl />);
+    } else if (ability_2 === "heal") {
+      setAbility2(<GiCaduceus />);
+    } else if (ability_2 === "piercing") {
+      setAbility2(<GiShieldImpact />);
+    } else if (ability_2 === "slime") {
+      setAbility2(<GiSlime />);
+    } else if (ability_2 === "ancient-sword") {
+      setAbility2(<GiAncientSword />);
+    } else if (ability_2 === "surrounded-shield") {
+      setAbility2(<GiSurroundedShield />);
+    } else if (ability_2 === "dual-wild") {
+      setAbility2(<GiSwordsPower />);
     }
   }, [ability_2]);
   return (
@@ -126,7 +137,8 @@ export default function EnemyCard({
             <MdShield color="#111" size={45} />
           </div>
           <div className="body">
-            <p className="value">{hp}</p> <IoIosHeart color="#111" size={50} />
+            <p className="value">{hp}</p>
+            <IoIosHeart color="#111" size={50} />
           </div>
           <div className="attack">
             <p className="value">{attack}</p>
@@ -140,19 +152,19 @@ export default function EnemyCard({
             {special} <br /> 1x
           </div> */}
         </div>
-        <section className="img-and-specials">
+        <section className="img-and-abilities">
           <img
             src={img}
             alt="img"
             style={customImgStyle}
             className="enemy-img"
           />
-          <section className="specials">
-            <div className="special_1">
+          <section className="abilities">
+            <div className="ability_1">
               {ability1}
               <div className="value">{ability_1Value}</div>
             </div>
-            <div className="special_2">
+            <div className="ability_2">
               {ability2} <div className="value">{ability_2Value}</div>
             </div>
             {spell ? (

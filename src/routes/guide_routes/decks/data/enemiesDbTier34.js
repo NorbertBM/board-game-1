@@ -72,7 +72,7 @@ export const enemiesDbTier34 = [
     card_name={"Skeleton Mage"}
     icon_left={"4"}
     icon_right={"magic"}
-    img={"/img/units/enemies/lvl_1/skeleton-mage-warrior-2.jpeg"}
+    img={"/img/units/enemies/lvl_1/barbarian-warrior-10.jpg"}
     defense={"1"}
     hp={"1"}
     attack={1}
@@ -98,7 +98,7 @@ export const enemiesDbTier34 = [
   ></EnemyCard>,
   <EnemyCard
     card_name={"Rogue"}
-    icon_left={"3"}
+    icon_left={"4"}
     icon_right={"melee"}
     img={"/img/units/enemies/lvl_1/rogue-2.jpg"}
     defense={"1"}
@@ -106,8 +106,27 @@ export const enemiesDbTier34 = [
     attack={1}
     special={"none"}
     range={3}
-    ability_1={"striking-splinter"}
+    ability_1={"dual-wild"}
     ability_1Value={"2"}
+    ability_2={"dual-wild"}
+    ability_2Value={"3"}
+    spell={<GiBackstab />}
+    spellValue={"4"}
+  ></EnemyCard>,
+  <EnemyCard
+    card_name={"Rogue"}
+    icon_left={"4"}
+    icon_right={"melee"}
+    img={"/img/units/enemies/lvl_1/rogue-1.jpg"}
+    defense={"1"}
+    hp={"1"}
+    attack={1}
+    special={"none"}
+    range={3}
+    ability_1={"dual-wild"}
+    ability_1Value={"2"}
+    ability_2={"dual-wild"}
+    ability_2Value={"3"}
     spell={<GiBackstab />}
     spellValue={"4"}
   ></EnemyCard>,
