@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DeckCard from "../../../components/cards/DeckCard";
 import { FaWpexplorer } from "react-icons/fa";
-import { enemiesDbTier34 } from "./data/enemiesDb";
+import { enemiesDbTier34 } from "./data/enemiesDbTier34";
 import { explorerDb } from "./data/explorerDb";
 import { getRandomCard } from "./functions/getRandomCard";
 

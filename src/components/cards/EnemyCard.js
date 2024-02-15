@@ -34,8 +34,11 @@ export default function EnemyCard({
   defense,
   hp,
   range,
-  special_1,
-  special_2,
+
+  ability_1,
+  ability_1Value,
+  ability_2,
+  ability_2Value,
   spell,
   spellValue,
 }) {
@@ -65,21 +68,44 @@ export default function EnemyCard({
 
   // Specials
 
-  const [specials, setSpecials] = useState({ icon_1: "", icon_2: "" });
+  // const [specials, setSpecials] = useState({ icon_1: "", icon_2: "" });
+  // useEffect(() => {
+  //   if (special_1 === "piercing") {
+  //     setSpecials({ ...specials, icon_1: <GiShieldImpact /> });
+  //   } else if (special_1 === "heal") {
+  //     setSpecials({ ...specials, icon_1: <GiCaduceus /> });
+  //   } else if (special_1 === "slime") {
+  //     setSpecials({ ...specials, icon_1: <GiSlime /> });
+  //   } else if (special_1 === "no-weapon") {
+  //     setSpecials({ ...specials, icon_1: <GiAncientSword /> });
+  //   } else if (special_1 === "destroy-shield") {
+  //     setSpecials({ ...specials, icon_1: <GiSurroundedShield /> });
+  //   }
+  // }, [special_1]);
+  const [ability1, setAbility1] = useState(ability_1);
   useEffect(() => {
-    if (special_1 === "piercing") {
-      setSpecials({ ...specials, icon_1: <GiShieldImpact /> });
-    } else if (special_1 === "heal") {
-      setSpecials({ ...specials, icon_1: <GiCaduceus /> });
-    } else if (special_1 === "slime") {
-      setSpecials({ ...specials, icon_1: <GiSlime /> });
-    } else if (special_1 === "no-weapon") {
-      setSpecials({ ...specials, icon_1: <GiAncientSword /> });
-    } else if (special_1 === "destroy-shield") {
-      setSpecials({ ...specials, icon_1: <GiSurroundedShield /> });
+    if (ability_1 === "flaming-arrow") {
+      setAbility1(<GiFlamingArrow />);
+    } else if (ability_1 === "striking-splinter") {
+      setAbility1(<GiStrikingSplinter />);
+    } else if (ability_1 === "shield-bash") {
+      setAbility1(<GiShieldBash />);
+    } else if (ability_1 === "magic-swirl") {
+      setAbility1(<GiMagicSwirl />);
     }
-  }, [special_1]);
-
+  }, [ability_1]);
+  const [ability2, setAbility2] = useState(ability_2);
+  useEffect(() => {
+    if (ability_2 === "flaming-arrow") {
+      setAbility2(<GiFlamingArrow />);
+    } else if (ability_2 === "striking-splinter") {
+      setAbility2(<GiStrikingSplinter />);
+    } else if (ability_2 === "shield-bash") {
+      setAbility2(<GiShieldBash />);
+    } else if (ability_2 === "magic-swirl") {
+      setAbility2(<GiMagicSwirl />);
+    }
+  }, [ability_2]);
   return (
     <div className={`enemy-card`}>
       <header className="enemy-card-header">
@@ -122,8 +148,13 @@ export default function EnemyCard({
             className="enemy-img"
           />
           <section className="specials">
-            <div className="special_1">{specials.icon_1}</div>
-            <div className="special_2">{specials.icon_2}</div>
+            <div className="special_1">
+              {ability1}
+              <div className="value">{ability_1Value}</div>
+            </div>
+            <div className="special_2">
+              {ability2} <div className="value">{ability_2Value}</div>
+            </div>
             {spell ? (
               <div className="spell">
                 {spell}

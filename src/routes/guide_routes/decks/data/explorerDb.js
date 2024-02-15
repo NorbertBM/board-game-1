@@ -178,4 +178,13 @@ export const explorerDb = [
   >
     <p className="description">The stairs that lead up to the moon.</p>
   </ExplorationCard>,
+  <ExplorationCard
+    card_name={"Forsaken forest"}
+    card_type={"explore"}
+    img={"/img/explore/explore-forsaken-forest-1.jpg"}
+    speed={1}
+    sight={-1}
+  >
+    <p className="description">Home of the forsacen.</p>
+  </ExplorationCard>,
 ];
