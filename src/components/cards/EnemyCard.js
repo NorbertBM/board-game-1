@@ -17,6 +17,8 @@ import {
   GiFlamingArrow,
   GiStrikingSplinter,
   GiSwordsPower,
+  GiBleedingWound,
+  GiVomiting,
 } from "react-icons/gi";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
@@ -90,6 +92,10 @@ export default function EnemyCard({
       setAbility1(<GiSurroundedShield />);
     } else if (ability_1 === "dual-wild") {
       setAbility1(<GiSwordsPower />);
+    } else if (ability_1 === "bleed") {
+      setAbility1(<GiBleedingWound />);
+    } else if (ability_1 === "vomit") {
+      setAbility1(<GiVomiting />);
     }
   }, [ability_1]);
 

@@ -54,14 +54,14 @@ export default function App() {
               <Route path="abilities" element={<AbilitiesDeck />} />
               <Route path="enemies" element={<EnemiesDeck />} />
             </Route>
-            <Route path="units" element={<Units />} />
+            {/* <Route path="units" element={<Units />} /> */}
             <Route path="abilities" element={<Abilities />} />
-            <Route path="items" element={<Items />} />
-            <Route path="equipment" element={<Equipment />} />
-            <Route path="explore" element={<Explore />} />
+            {/* <Route path="items" element={<Items />} /> */}
+            {/* <Route path="equipment" element={<Equipment />} /> */}
+            {/* <Route path="explore" element={<Explore />} /> */}
             <Route path="gameplay" element={<GamePlay />} />
-            <Route path="battle" element={<Battle />} />
-            <Route path="enemies" element={<Enemies />} />
+            {/* <Route path="battle" element={<Battle />} /> */}
+            {/* <Route path="enemies" element={<Enemies />} /> */}
             <Route path="/guide/" element={<NoMatch />} />
           </Route>
           <Route path="*" element={<NoMatch />} />

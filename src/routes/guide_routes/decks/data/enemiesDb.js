@@ -5,6 +5,49 @@ export const enemiesDb = [
   <EnemyCard
     icon_left={"1"}
     icon_right={"melee"}
+    card_name={"Carver"}
+    img={"/img/units/enemies/lvl_1/carver.jpg"}
+    defense={"2"}
+    hp={"2"}
+    attack={1}
+    special={"none"}
+    range={3}
+    special_1={"piercing"}
+    ability_1={"bleed"}
+    ability_1Value={"1/3"}
+  />,
+  <EnemyCard
+    icon_left={"1"}
+    icon_right={"melee"}
+    card_name={"Gorger"}
+    img={"/img/units/enemies/lvl_1/gorger.jpg"}
+    defense={"2"}
+    hp={"2"}
+    attack={1}
+    special={"none"}
+    range={3}
+    special_1={"piercing"}
+    ability_1={"vomit"}
+    ability_1Value={1}
+  />,
+  <EnemyCard
+    icon_left={"2"}
+    icon_right={"melee"}
+    card_name={"Raider"}
+    img={"/img/units/enemies/lvl_1/raider.jpg"}
+    defense={"2"}
+    hp={"2"}
+    attack={1}
+    special={"none"}
+    range={3}
+    ability_1={"piercing"}
+    ability_1Value={1}
+    ability_2={"shield-bash"}
+    ability_2Value={1}
+  />,
+  <EnemyCard
+    icon_left={"1"}
+    icon_right={"melee"}
     card_name={"Skeleton Warrior"}
     img={"/img/units/enemies/lvl_1/skeleton-worier-1.jpeg"}
     defense={"2"}
@@ -12,7 +55,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -24,7 +67,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"slime"}
+    ability_1={"slime"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -36,7 +79,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"no-weapon"}
+    ability_1={"no-weapon"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -48,7 +91,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"destroy-shield"}
+    ability_1={"destroy-shield"}
   />,
   <EnemyCard
     icon_left={"2"}
@@ -60,7 +103,7 @@ export const enemiesDb = [
     attack={3}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -72,7 +115,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -84,7 +127,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -96,7 +139,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -108,7 +151,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -120,7 +163,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -132,7 +175,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -144,7 +187,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -156,7 +199,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   />,
   <EnemyCard
     card_name={"Barbarian warrior"}
@@ -168,7 +211,7 @@ export const enemiesDb = [
     attack={3}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   />,
   <EnemyCard
     icon_left={"2"}
@@ -180,7 +223,7 @@ export const enemiesDb = [
     attack={2}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Warrior"}
@@ -192,7 +235,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Warrior"}
@@ -204,7 +247,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Warrior"}
@@ -216,7 +259,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -228,7 +271,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -240,7 +283,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -252,7 +295,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -264,7 +307,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Vyver"}
@@ -276,7 +319,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Vyver"}
@@ -288,7 +331,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -300,7 +343,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -312,7 +355,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -324,7 +367,7 @@ export const enemiesDb = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   ></EnemyCard>,
 ];
 export const enemiesDbTier34 = [
@@ -338,7 +381,7 @@ export const enemiesDbTier34 = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
   />,
   <EnemyCard
     card_name={"Skeleton Mage"}
@@ -350,7 +393,7 @@ export const enemiesDbTier34 = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   />,
   <EnemyCard
     card_name={"Forest Warrior"}
@@ -362,7 +405,7 @@ export const enemiesDbTier34 = [
     attack={3}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
   />,
   <EnemyCard
     icon_left={"4"}
@@ -374,7 +417,7 @@ export const enemiesDbTier34 = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"piercing"}
+    ability_1={"piercing"}
     spell={<GiFlamingArrow />}
     spellValue={"2"}
   ></EnemyCard>,
@@ -388,7 +431,7 @@ export const enemiesDbTier34 = [
     attack={1}
     special={"none"}
     range={3}
-    special_1={"heal"}
+    ability_1={"heal"}
     spell={<GiFireball />}
     spellValue={"2(1)"}
   ></EnemyCard>,

@@ -11,7 +11,7 @@ export default function Aside_nav({ activate_nav }) {
         <li>
           <NavLink to="/guide/decks">Decks</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/guide/units">Units</NavLink>
         </li>
         <li>
@@ -34,7 +34,7 @@ export default function Aside_nav({ activate_nav }) {
         </li>{" "}
         <li>
           <NavLink to="/guide/battle">Battle</NavLink>
-        </li>
+        </li> */}
         {/* <li>
             <Link to="/nothing-here">Nothing Here</Link>
             </li> */}
