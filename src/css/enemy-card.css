@@ -121,11 +121,12 @@
     .defense,
     .body,
     .attack,
-    .range {
+    .range,
+    .speed {
       position: relative;
       margin-left: 10px;
-      height: 13mm;
-      width: 13mm;
+      height: 12mm;
+      width: 12mm;
       background-color: #fae9dd;
       /* Create a gradiant inwords  */
       background: rgb(250, 233, 221);
@@ -134,7 +135,7 @@
         rgb(247, 237, 230) 0%,
         rgba(181, 163, 151, 1) 100%
       );
-      box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
       /* opacity: 0.7; */
       border-radius: 50%;
       border: 1px solid #111;
@@ -148,7 +149,7 @@
         top: 5px;
         font-size: 1.4rem;
         color: #f5a267;
-        /* color: #95440e; */
+        text-shadow: 1px 2px 3px rgb(21, 3, 3);
       }
     }
   }

@@ -19,6 +19,7 @@ import {
   GiSwordsPower,
   GiBleedingWound,
   GiVomiting,
+  GiBarefoot,
 } from "react-icons/gi";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
@@ -37,6 +38,7 @@ export default function EnemyCard({
   defense,
   hp,
   range,
+  speed,
   ability_1,
   ability_1Value,
   ability_2,
@@ -138,14 +140,14 @@ export default function EnemyCard({
       </header>
       <div className="enemy-details-container">
         <div className="enemy-details">
-          <div className="defense">
-            <p className="value">{defense}</p>{" "}
-            <MdShield color="#111" size={45} />
-          </div>
           <div className="body">
             <p className="value">{hp}</p>
             <IoIosHeart color="#111" size={50} />
           </div>
+          {/* <div className="defense">
+            <p className="value">{defense}</p>{" "}
+            <MdShield color="#111" size={45} />
+          </div> */}
           <div className="attack">
             <p className="value">{attack}</p>
             <GiSwordsEmblem color="#111" size={50} />
@@ -153,6 +155,10 @@ export default function EnemyCard({
           <div className="range">
             <p className="value"> {range} </p>
             <PiEyeClosedFill color="#111" size={70} />
+          </div>{" "}
+          <div className="speed">
+            <p className="value"> {speed} </p>
+            <GiBarefoot color="#111" size={35} />
           </div>
           {/* <div className="special">
             {special} <br /> 1x
