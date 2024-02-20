@@ -10,12 +10,11 @@ export const enemiesDb = [
     hp={4}
     defense={2}
     attack={1}
-    special={"none"}
     range={3}
     speed={1}
     special_1={"piercing"}
     ability_1={"bleed"}
-    ability_1Value={"1/3"}
+    ability_1Value={"2"}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -25,10 +24,34 @@ export const enemiesDb = [
     defense={2}
     hp={5}
     attack={1}
-    special={"none"}
     range={3}
-    special_1={"piercing"}
+    speed={1}
     ability_1={"vomit"}
+    ability_1Value={1}
+  />,
+
+  <EnemyCard
+    icon_left={"1"}
+    icon_right={"melee"}
+    card_name={"Ru' Athar"}
+    img={"/img/units/enemies/lvl_1/ruathar.jpg"}
+    defense={"2"}
+    hp={"3"}
+    attack={1}
+    range={3}
+    speed={1}
+  />,
+  <EnemyCard
+    icon_left={"1"}
+    icon_right={"melee"}
+    card_name={"Stalker"}
+    img={"/img/units/enemies/lvl_1/stalker.jpg"}
+    defense={"2"}
+    hp={5}
+    range={4}
+    speed={2}
+    attack={2}
+    ability_1={"trick shot"}
     ability_1Value={1}
   />,
   <EnemyCard
@@ -36,15 +59,56 @@ export const enemiesDb = [
     icon_right={"melee"}
     card_name={"Raider"}
     img={"/img/units/enemies/lvl_1/raider.jpg"}
-    defense={"2"}
-    hp={"2"}
-    attack={1}
-    special={"none"}
+    hp={6}
+    attack={3}
     range={3}
+    speed={2}
     ability_1={"piercing"}
     ability_1Value={1}
     ability_2={"shield-bash"}
     ability_2Value={1}
+  />,
+  <EnemyCard
+    icon_left={"2"}
+    icon_right={"melee"}
+    card_name={"Seeker"}
+    img={"/img/units/enemies/lvl_1/seeker.jpg"}
+    range={5}
+    speed={3}
+    hp={3}
+    attack={3}
+    ability_1={"dash"}
+    ability_1Value={""}
+    ability_2={"pounce"}
+    ability_2Value={""}
+  />,
+  <EnemyCard
+    icon_left={"2"}
+    icon_right={"melee"}
+    card_name={"Trapper"}
+    img={"/img/units/enemies/lvl_1/trapper.jpg"}
+    range={5}
+    speed={3}
+    hp={7}
+    attack={3}
+    ability_1={"trap"}
+    ability_1Value={""}
+    ability_2={"disengage"}
+    ability_2Value={""}
+  />,
+  <EnemyCard
+    icon_left={"2"}
+    icon_right={"melee"}
+    card_name={"Fiend"}
+    img={"/img/units/enemies/lvl_1/fiend.jpg"}
+    range={5}
+    speed={3}
+    hp={8}
+    attack={5}
+    ability_1={"trap"}
+    ability_1Value={""}
+    ability_2={"disengage"}
+    ability_2Value={""}
   />,
   <EnemyCard
     icon_left={"1"}
@@ -54,7 +118,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -66,7 +129,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"slime"}
   />,
@@ -78,7 +140,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"no-weapon"}
   />,
@@ -90,7 +151,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"destroy-shield"}
   />,
@@ -102,7 +162,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={3}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -114,7 +173,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -126,7 +184,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -138,7 +195,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -150,7 +206,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -162,7 +217,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -174,7 +228,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -186,7 +239,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -198,7 +250,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   />,
@@ -210,7 +261,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"2"}
     attack={3}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   />,
@@ -222,7 +272,6 @@ export const enemiesDb = [
     defense={"2"}
     hp={"2"}
     attack={2}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   ></EnemyCard>,
@@ -234,7 +283,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -246,7 +294,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -258,7 +305,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -270,7 +316,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -282,7 +327,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -294,7 +338,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -306,7 +349,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -318,7 +360,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -330,7 +371,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -342,7 +382,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -354,7 +393,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -366,7 +404,6 @@ export const enemiesDb = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   ></EnemyCard>,
@@ -380,7 +417,6 @@ export const enemiesDbTier34 = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
   />,
@@ -392,7 +428,6 @@ export const enemiesDbTier34 = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   />,
@@ -404,7 +439,6 @@ export const enemiesDbTier34 = [
     defense={"1"}
     hp={"5"}
     attack={3}
-    special={"none"}
     range={3}
     ability_1={"heal"}
   />,
@@ -416,7 +450,6 @@ export const enemiesDbTier34 = [
     defense={"2"}
     hp={"2"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"piercing"}
     spell={<GiFlamingArrow />}
@@ -430,7 +463,6 @@ export const enemiesDbTier34 = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     ability_1={"heal"}
     spell={<GiFireball />}
@@ -444,7 +476,6 @@ export const enemiesDbTier34 = [
     defense={"1"}
     hp={"1"}
     attack={1}
-    special={"none"}
     range={3}
     special_1={"heal"}
     spell={<GiFireball />}

@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom";
 
 export default function DecksNav() {
   const deckNavItems = [
-    "Stock",
+    // "Stock",
     "Behavior",
     "Discover",
     "Explorer",
     "Combat1",
     "Combat2",
     "Abilities",
-    "Enemies",
+    // "Enemies",
     "CharacterPanel",
   ];
   return (

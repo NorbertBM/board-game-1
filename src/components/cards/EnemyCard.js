@@ -20,7 +20,12 @@ import {
   GiBleedingWound,
   GiVomiting,
   GiBarefoot,
+  GiSlingshot,
+  GiPounce,
+  GiWolfTrap,
+  GiLevelFour,
 } from "react-icons/gi";
+import { FaPersonWalkingDashedLineArrowRight } from "react-icons/fa6";
 import { MdShield } from "react-icons/md";
 import { IoIosHeart } from "react-icons/io";
 import { PiEyeClosedFill } from "react-icons/pi";
@@ -98,6 +103,14 @@ export default function EnemyCard({
       setAbility1(<GiBleedingWound />);
     } else if (ability_1 === "vomit") {
       setAbility1(<GiVomiting />);
+    } else if (ability_1 === "trick shot") {
+      setAbility1(<GiSlingshot />);
+    } else if (ability_1 === "dash") {
+      setAbility1(<FaPersonWalkingDashedLineArrowRight />);
+    } else if (ability_1 === "trap") {
+      setAbility1(<GiWolfTrap />);
+    } else {
+      setAbility1("");
     }
   }, [ability_1]);
 
@@ -123,6 +136,12 @@ export default function EnemyCard({
       setAbility2(<GiSurroundedShield />);
     } else if (ability_2 === "dual-wild") {
       setAbility2(<GiSwordsPower />);
+    } else if (ability_2 === "pounce") {
+      setAbility2(<GiPounce />);
+    } else if (ability_2 === "disengage") {
+      setAbility2(<GiLevelFour />);
+    } else {
+      setAbility2("");
     }
   }, [ability_2]);
   return (
@@ -141,25 +160,25 @@ export default function EnemyCard({
       <div className="enemy-details-container">
         <div className="enemy-details">
           <div className="body">
+            <IoIosHeart color="#111" size={30} />
             <p className="value">{hp}</p>
-            <IoIosHeart color="#111" size={50} />
+          </div>
+          <div className="attack">
+            <GiSwordsEmblem color="#111" size={35} />
+            <p className="value">{attack}</p>
+          </div>
+          <div className="range">
+            <PiEyeClosedFill color="#111" size={35} />
+            <p className="value"> {range} </p>
+          </div>{" "}
+          <div className="speed">
+            <GiBarefoot color="#111" size={25} />
+            <p className="value"> {speed} </p>
           </div>
           {/* <div className="defense">
             <p className="value">{defense}</p>{" "}
             <MdShield color="#111" size={45} />
           </div> */}
-          <div className="attack">
-            <p className="value">{attack}</p>
-            <GiSwordsEmblem color="#111" size={50} />
-          </div>
-          <div className="range">
-            <p className="value"> {range} </p>
-            <PiEyeClosedFill color="#111" size={70} />
-          </div>{" "}
-          <div className="speed">
-            <p className="value"> {speed} </p>
-            <GiBarefoot color="#111" size={35} />
-          </div>
           {/* <div className="special">
             {special} <br /> 1x
           </div> */}

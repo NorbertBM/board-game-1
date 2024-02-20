@@ -116,8 +116,8 @@
   .enemy-details {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 5px;
+    /* justify-content: space-around; */
+    gap: 15px;
     .defense,
     .body,
     .attack,
@@ -126,7 +126,7 @@
       position: relative;
       margin-left: 10px;
       height: 12mm;
-      width: 12mm;
+      width: 15mm;
       background-color: #fae9dd;
       /* Create a gradiant inwords  */
       background: rgb(250, 233, 221);
@@ -137,19 +137,23 @@
       );
       box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
       /* opacity: 0.7; */
-      border-radius: 50%;
+      /* border-radius: 50%; */
+      border-radius: 10%;
       border: 1px solid #111;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
+
+      /* font-size: 1.5rem; */
 
       .value {
-        position: absolute;
-        top: 5px;
+        /* position: absolute; */
+        /* top: 5px; */
         font-size: 1.4rem;
         color: #f5a267;
-        text-shadow: 1px 2px 3px rgb(21, 3, 3);
+        text-shadow: 2px 2px 3px rgb(21, 3, 3);
+        border-left: 1px solid #111;
+        padding-left: 2px;
       }
     }
   }
