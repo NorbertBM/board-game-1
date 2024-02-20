@@ -24,12 +24,17 @@ import {
   GiPounce,
   GiWolfTrap,
   GiLevelFour,
+  GiSilenced,
+  GiBlindfold,
+  GiSaberSlash,
+  GiRaiseZombie,
 } from "react-icons/gi";
 import { FaPersonWalkingDashedLineArrowRight } from "react-icons/fa6";
-import { MdShield } from "react-icons/md";
+
 import { IoIosHeart } from "react-icons/io";
 import { PiEyeClosedFill } from "react-icons/pi";
 import { TbMilitaryRank } from "react-icons/tb";
+
 export default function EnemyCard({
   card_name,
   customImgStyle,
@@ -109,6 +114,10 @@ export default function EnemyCard({
       setAbility1(<FaPersonWalkingDashedLineArrowRight />);
     } else if (ability_1 === "trap") {
       setAbility1(<GiWolfTrap />);
+    } else if (ability_1 === "silence") {
+      setAbility1(<GiSilenced />);
+    } else if (ability_1 === "envelop") {
+      setAbility1(<GiSaberSlash />);
     } else {
       setAbility1("");
     }
@@ -140,6 +149,10 @@ export default function EnemyCard({
       setAbility2(<GiPounce />);
     } else if (ability_2 === "disengage") {
       setAbility2(<GiLevelFour />);
+    } else if (ability_2 === "blind") {
+      setAbility2(<GiBlindfold />);
+    } else if (ability_2 === "summons") {
+      setAbility2(<GiRaiseZombie />);
     } else {
       setAbility2("");
     }
