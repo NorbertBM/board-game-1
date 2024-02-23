@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "../../css/enemy-card.css";
+// import "../../css/enemy-card.css";
+import { EnemyCardStyle } from "./EnemyCardStyle";
 import {
   GiRank1,
   GiRank2,
@@ -158,7 +159,7 @@ export default function EnemyCard({
     }
   }, [ability_2]);
   return (
-    <div className={`enemy-card`}>
+    <EnemyCardStyle className="enemy-card">
       <header className="enemy-card-header">
         <div className="enemy-lvl">
           {rank}
@@ -221,6 +222,6 @@ export default function EnemyCard({
         </section>
       </div>
       {children}
-    </div>
+    </EnemyCardStyle>
   );
 }

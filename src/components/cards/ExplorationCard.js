@@ -1,14 +1,11 @@
 import React from "react";
 import { FaWpexplorer } from "react-icons/fa";
-import { FaEye } from "react-icons/fa6";
 import { GiWingfoot } from "react-icons/gi";
-// import "../../css/exploration-card.css";
 import { ExplorationCardStyle } from "./ExplorationCardStyle";
-export default function ExplorationCard({ children, card_name, speed, img }) {
-  // onclick flip the selected card to show the description
 
+export default function ExplorationCard({ children, card_name, speed, img }) {
   return (
-    <ExplorationCardStyle>
+    <ExplorationCardStyle className="exploration-card">
       <header className="card-header">
         <p className="hp">
           <FaWpexplorer size={30} />
