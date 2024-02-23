@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+import styled from "styled-components";
+export const ExplorationCardStyle = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 
-.exploration-card {
   font-family: "Philosopher", sans-serif;
   color: #fae9dd;
   width: 63.5mm;
@@ -86,4 +87,4 @@
     color: #ddd;
     padding: 0 10px;
   }
-}
+`;
