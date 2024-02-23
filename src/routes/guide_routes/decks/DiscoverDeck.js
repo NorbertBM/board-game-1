@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DeckCard from "../../../components/cards/DeckCard";
 import { enemiesDb } from "./data/enemiesDb";
+import { itemsDb } from "./data/itemsDb";
 import { getRandomCard } from "./functions/getRandomCard";
 import { GiArchiveResearch } from "react-icons/gi";
 export default function DiscoverDeck() {
@@ -8,10 +9,10 @@ export default function DiscoverDeck() {
   const [selectedCard, setSelectedCard] = useState(null);
 
   // Combine all combinations of two cards
-  // function mixCardCombo() {
-  //   const allCombinations = [...combinationsOfTwo1, ...combinationsOfTwo1Rev];
-  //   return allCombinations;
-  // }
+  function mixCardCombo() {
+    const allCombinations = [...enemiesDb, ...itemsDb];
+    return allCombinations;
+  }
 
   return (
     <section
@@ -26,7 +27,7 @@ export default function DiscoverDeck() {
       <div className="random-card">
         <button
           onClick={() =>
-            getRandomCard(enemiesDb, setIsLoading, setSelectedCard)
+            getRandomCard(mixCardCombo(), setIsLoading, setSelectedCard)
           }
         >
           Select Random Card
@@ -42,7 +43,7 @@ export default function DiscoverDeck() {
       </div>
       {/* Enemies Tier 1-2 */}
       <section style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-        {enemiesDb.map((enemy, index) => (
+        {mixCardCombo().map((enemy, index) => (
           <div key={index}>{enemy}</div>
         ))}
       </section>

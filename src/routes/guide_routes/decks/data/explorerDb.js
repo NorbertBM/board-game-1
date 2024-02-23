@@ -187,4 +187,13 @@ export const explorerDb = [
   >
     <p className="description">Home of the forsacen.</p>
   </ExplorationCard>,
+  <ExplorationCard
+    card_name={"Shuffle World"}
+    card_type={"explore"}
+    img={"/img/items/world-shuffle.jpeg"}
+    speed={0}
+    sight={-1}
+  >
+    <p className="description">Rearranges the world.</p>
+  </ExplorationCard>,
 ];
