@@ -27,7 +27,7 @@ export const enemiesDb = [
     range={3}
     speed={1}
     ability_1={"vomit"}
-    ability_1Value={1}
+    ability_1Value={2}
   />,
 
   <EnemyCard
@@ -75,7 +75,7 @@ export const enemiesDb = [
     img={"/img/units/enemies/lvl_1/seeker.jpg"}
     range={5}
     speed={3}
-    hp={3}
+    hp={7}
     attack={3}
     ability_1={"dash"}
     ability_1Value={""}
